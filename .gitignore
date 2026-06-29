@@ -1,3 +1,26 @@
 .DS_Store
 Thumbs.db
+
+# Local design assets (keep on disk, not in repo)
+PNG/
+logo.ai
 *.ai
+SVG/big-flower-c.svg
+SVG/big-flower-t.svg
+SVG/c-color.svg
+SVG/c.svg
+SVG/crown.svg
+SVG/crown2-black.svg
+SVG/crown2.svg
+SVG/little-flower-c.svg
+SVG/little-flower-t.svg
+SVG/v1-color.svg
+SVG/v1-red.svg
+SVG/v1.svg
+SVG/v2-color.svg
+SVG/v2-red.svg
+SVG/v2.svg
+Photos/eyebrows.png
+Photos/haircut1.jpg
+Photos/makeup.png
+Photos/toes.png
