@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F8F7F3">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=yes">
+
+<title>Afanasyeva Салон красоты</title>
+<meta name="description" id="meta-desc" content="Салон красоты Afanasyeva в Кишинёве. Запись по телефону или email.">
+<meta name="author" content="Afanasyeva">
+<link rel="canonical" id="canonical" href="./">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Afanasyeva">
+<meta property="og:locale" content="ru_RU" id="og-locale">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ro_RO">
+<meta property="og:title" id="og-title" content="Afanasyeva Салон красоты">
+<meta property="og:description" id="og-desc" content="Салон красоты Afanasyeva в Кишинёве. Запись по телефону или email.">
+<meta property="og:url" id="og-url" content="">
+<meta property="og:image" id="og-image" content="">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" id="tw-title" content="Afanasyeva Салон красоты">
+<meta name="twitter:description" id="tw-desc" content="Салон красоты Afanasyeva в Кишинёве. Запись по телефону или email.">
+<meta name="twitter:image" id="tw-image" content="">
+
+<link rel="alternate" hreflang="ru" href="./">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="ro" href="./">
+<link rel="alternate" hreflang="x-default" href="./">
+
+<link rel="icon" href="SVG/crownheart.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="SVG/crownheart.svg">
+<link rel="manifest" href="manifest.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@400;500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+<script type="application/ld+json" id="schema-org">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Afanasyeva",
+  "description": "Семейная студия красоты в Кишинёве с 2017 года.",
+  "url": "",
+  "image": "Photos/hero.png",
+  "telephone": "+37369177796",
+  "email": "goldenfishsalon@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. 31 августа 1989, Союз писателей (каб. 100)",
+    "addressLocality": "Кишинёв",
+    "addressCountry": "MD"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "20:00" }
+  ],
+  "priceRange": "$$",
+  "foundingDate": "2017",
+  "sameAs": []
+}
+</script>
+<style>
+  :root{
+    --cream:#F8F7F3;
+    --paper:#FFFFFF;
+    --ink:#121212;
+    --charcoal:#40403F;
+    --gold:#A88755;
+    --line:#DDDDDD;
+    --taupe:#ECE7DD;          /* placeholder fill */
+    --sand:#EFE7D7;           /* warm gold wash for CTA */
+    --text:#2B2926;
+    --muted:#857F75;
+
+    --serif:'Spectral', Georgia, 'Times New Roman', serif;
+    --sans:'Manrope', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+    --bound:1280px;
+    --pad:clamp(20px,4vw,40px);
+    --section-y:clamp(56px,7vw,88px);
+    --header:64px;
+    --pill:999px;
+
+    /* Type scale: readable, consistent across sections */
+    --fs-body:clamp(0.9375rem,.9rem + .18vw,1rem);
+    --fs-body-sm:clamp(0.8125rem,.79rem + .1vw,.875rem);
+    --fs-body-lg:clamp(1.03125rem,.98rem + .25vw,1.125rem);
+    --fs-caption:clamp(0.6875rem,.67rem + .08vw,.75rem);
+    --fs-eyebrow:clamp(0.6875rem,.66rem + .1vw,.71875rem);
+    --fs-h3:clamp(1.0625rem,1rem + .3vw,1.1875rem);
+    --fs-h2:clamp(1.75rem,1.42rem + 1.1vw,2.375rem);
+    --fs-h1:clamp(2rem,1.5rem + 1.8vw,2.875rem);
+    --fs-quote:clamp(1.0625rem,1rem + .28vw,1.1875rem);
+    --lh-body:1.65;
+    --lh-heading:1.12;
+    --gallery-radius:16px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;background:var(--cream);color:var(--text);
+    font-family:var(--sans);font-size:var(--fs-body);
+    line-height:var(--lh-body);font-weight:400;-webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;overflow-x:hidden;
+  }
+  ::selection{background:var(--gold);color:var(--cream);}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;height:auto;}
+  img[loading="lazy"]{content-visibility:auto;}
+
+  .wrap{width:100%;max-width:var(--bound);margin-inline:auto;padding-inline:var(--pad);}
+  .section{padding-block:var(--section-y);}
+  .section-head{margin-bottom:clamp(24px,3vw,36px);}
+  .section-head h2{font-size:var(--fs-h2);font-weight:400;line-height:var(--lh-heading);}
+  .band-sand{background:var(--sand);}
+  .band-taupe{background:var(--taupe);}
+  .band-paper{background:var(--paper);}
+  section{scroll-margin-top:calc(var(--header) + 12px);}
+  .center{text-align:center;}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
+  h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:var(--lh-heading);color:var(--ink);letter-spacing:.004em;}
+  p{margin:0;}
+
+  .eyebrow{font-size:var(--fs-eyebrow);font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 .85rem;}
+  .lead{font-size:var(--fs-body-lg);color:var(--charcoal);line-height:var(--lh-body);}
+  .muted{color:var(--muted);}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:var(--fs-body-sm);font-weight:600;
+    letter-spacing:.01em;padding:.55rem 1.35rem;border-radius:var(--pill);border:1px solid transparent;cursor:pointer;
+    transition:transform .25s,background .25s,color .25s,border-color .25s;white-space:nowrap;line-height:1.2;}
+  .btn .arr{transition:transform .3s;}
+  .btn:hover .arr{transform:translateX(4px);}
+  .btn-primary{background:var(--ink);color:var(--cream);}
+  .btn-primary:hover{transform:translateY(-2px);background:#000;}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line);}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px);}
+  .hero .btn,.cta-actions .btn,.panel-foot .btn{padding-block:.65rem;padding-inline:1.35rem;}
+
+  /* photos */
+  .ph{position:relative;background:var(--taupe);overflow:hidden;width:100%;}
+  .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .ph:has(img){background:transparent;}
+  .ph:has(img)::after{display:none;}
+  .ph::after{content:attr(data-tag);position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);
+    text-align:center;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);opacity:.7;z-index:0;}
+  .arch-wide{border-radius:clamp(70px,16vw,180px) clamp(70px,16vw,180px) 22px 22px;}
+  .arch-tall{border-radius:999px 999px 16px 16px;}
+  .soft{border-radius:20px;}
+
+  /* header */
+  header{position:sticky;top:0;z-index:80;background:rgba(248,247,243,.84);
+    backdrop-filter:saturate(150%) blur(12px);-webkit-backdrop-filter:saturate(150%) blur(12px);
+    border-bottom:1px solid transparent;transition:border-color .3s,background .3s;}
+  header.scrolled{border-color:var(--line);}
+  .nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1.4rem;height:var(--header);position:relative;z-index:81;}
+  .brand{display:flex;flex-direction:column;line-height:1;justify-self:start;}
+  .brand .nm{font-family:var(--serif);font-size:clamp(1.2rem,1.1rem + .4vw,1.35rem);color:var(--ink);letter-spacing:.02em;}
+  .brand .sb{font-size:var(--fs-caption);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:3px;}
+  .nav-links{display:flex;gap:1.9rem;justify-self:center;grid-column:2;}
+  .nav-links a{
+    font-size:var(--fs-body-sm);letter-spacing:.03em;color:var(--charcoal);
+    padding-block:.3rem;transition:color .2s;
+  }
+  .nav-links a:hover{color:var(--gold);}
+  .nav-links a.is-active{color:var(--gold);}
+  .nav-right{display:flex;align-items:center;gap:1rem;justify-self:end;grid-column:3;}
+  .nav-right .btn{padding:.48rem 1.15rem;font-size:var(--fs-body-sm);}
+  .lang-dd{position:relative;display:inline-block;}
+  .lang-dd-btn{
+    display:inline-flex;align-items:center;justify-content:space-between;gap:.55rem;
+    font-family:var(--sans);font-size:var(--fs-body-sm);font-weight:600;letter-spacing:.05em;
+    color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:var(--pill);
+    padding:.44rem .7rem .44rem .9rem;cursor:pointer;min-width:5rem;line-height:1.2;
+    transition:border-color .22s,box-shadow .22s,background .22s;
+  }
+  .lang-dd-btn:hover{border-color:var(--charcoal);background:var(--paper);}
+  .lang-dd-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+  .lang-dd.open .lang-dd-btn{border-color:var(--gold);background:var(--paper);box-shadow:0 0 0 1px rgba(168,135,85,.25);}
+  .lang-dd-val{min-width:1.6rem;text-align:left;}
+  .lang-dd-arrow{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:.75rem;height:.75rem;color:var(--gold);flex-shrink:0;
+    transition:transform .25s ease;
+  }
+  .lang-dd.open .lang-dd-arrow{transform:rotate(180deg);}
+  .lang-dd-arrow svg{display:block;width:100%;height:100%;}
+  .lang-dd-menu{
+    position:absolute;top:calc(100% + .65rem);left:0;right:0;min-width:100%;
+    margin:0;padding:.4rem;list-style:none;
+    background:var(--paper);border:1px solid var(--line);border-radius:16px;
+    box-shadow:0 14px 36px rgba(43,41,38,.1);
+    opacity:0;visibility:hidden;pointer-events:none;
+    transform:translateY(-8px);transition:opacity .22s ease,transform .22s ease,visibility .22s;
+    z-index:95;
+  }
+  .lang-dd.open .lang-dd-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);}
+  .lang-dd-menu li{margin:0;}
+  .lang-dd-menu button{
+    width:100%;display:block;text-align:left;font-family:var(--sans);font-size:var(--fs-body-sm);font-weight:600;
+    letter-spacing:.05em;color:var(--charcoal);background:transparent;border:none;border-radius:11px;
+    padding:.52rem .75rem;cursor:pointer;transition:background .15s,color .15s;
+  }
+  .lang-dd-menu button:hover{background:var(--taupe);color:var(--ink);}
+  .lang-dd-menu button[aria-selected="true"]{background:var(--ink);color:var(--cream);}
+  .menu-btn{
+    display:none;border:none;background:transparent;border-radius:0;padding:.4rem;
+    cursor:pointer;color:var(--ink);outline:none;width:48px;height:48px;
+    align-items:center;justify-content:center;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .menu-btn-icon{
+    display:flex;flex-direction:column;justify-content:center;align-items:stretch;
+    gap:7px;width:28px;height:20px;
+  }
+  .menu-btn-line{
+    display:block;width:100%;height:2.5px;background:currentColor;border-radius:2px;
+    transition:transform .32s cubic-bezier(.4,0,.2,1),opacity .22s ease;
+    transform-origin:center;
+  }
+  .menu-btn[aria-expanded="true"] .menu-btn-line:nth-child(1){transform:translateY(9.5px) rotate(45deg);}
+  .menu-btn[aria-expanded="true"] .menu-btn-line:nth-child(2){opacity:0;transform:scaleX(0);}
+  .menu-btn[aria-expanded="true"] .menu-btn-line:nth-child(3){transform:translateY(-9.5px) rotate(-45deg);}
+  .menu-btn:focus,.menu-btn:focus-visible{outline:none;box-shadow:none;}
+  body.menu-open{overflow:hidden;}
+  body.menu-open header{background:var(--cream);border-color:var(--line);}
+
+  .panel{
+    position:fixed;top:0;left:0;width:100%;height:100%;height:100dvh;
+    z-index:75;display:flex;align-items:center;justify-content:center;
+    background:var(--cream);opacity:0;visibility:hidden;pointer-events:none;
+    transition:opacity .45s ease,visibility .45s;
+  }
+  .panel.open{opacity:1;visibility:visible;pointer-events:auto;}
+  .panel-inner{
+    display:flex;flex-direction:column;align-items:center;
+    text-align:center;width:100%;max-width:var(--bound);
+    padding:calc(var(--header) + clamp(1.5rem,4vh,2.5rem)) var(--pad) 0;
+    min-height:100dvh;box-sizing:border-box;
+  }
+  .panel-nav{
+    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:clamp(.15rem,1vh,.5rem);width:100%;
+  }
+  .panel-nav a{
+    font-family:var(--serif);font-size:clamp(1.5rem,4.5vw,2.125rem);font-weight:400;
+    letter-spacing:.01em;color:var(--charcoal);padding:.5rem 0;border:none;
+    opacity:0;transform:translateY(18px);transition:color .2s;
+  }
+  .panel-nav a:hover{color:var(--gold);}
+  .panel-nav a.is-active{color:var(--gold);}
+  .panel.open .panel-nav a{animation:menu-link-in .55s ease forwards;}
+  .panel.open .panel-nav a:nth-child(1){animation-delay:.12s;}
+  .panel.open .panel-nav a:nth-child(2){animation-delay:.2s;}
+  .panel.open .panel-nav a:nth-child(3){animation-delay:.28s;}
+  .panel.open .panel-nav a:nth-child(4){animation-delay:.36s;}
+  .panel.open .panel-nav a:nth-child(5){animation-delay:.44s;}
+  .panel.open .panel-nav a:nth-child(6){animation-delay:.52s;}
+  .panel-foot{
+    flex-shrink:0;margin-top:auto;width:100%;
+    display:flex;flex-direction:column;align-items:center;
+    padding:clamp(1.25rem,4vh,2rem) var(--pad) max(1.5rem, env(safe-area-inset-bottom));
+    opacity:0;transform:translateY(18px);
+  }
+  .panel.open .panel-foot{animation:menu-link-in .55s ease .6s forwards;}
+  @keyframes menu-link-in{to{opacity:1;transform:none;}}
+
+  /* hero */
+  .hero{
+    min-height:calc(100dvh - var(--header));
+    display:flex;align-items:center;
+    padding-block:clamp(28px,5vh,56px);
+  }
+  .hero-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(24px,4vw,56px);align-items:center;width:100%;}
+  .hero-copy{text-align:left;}
+  .hero h1{font-size:var(--fs-h1);font-weight:300;letter-spacing:-.01em;max-width:18ch;text-wrap:balance;}
+  .hero .lead{margin:1.15rem 0 0;max-width:38ch;}
+  .hero .hero-cta{display:flex;gap:.75rem;justify-content:flex-start;flex-wrap:wrap;margin-top:1.5rem;}
+  .hero-img{margin-top:0;aspect-ratio:1024/827;max-height:min(calc(100dvh - var(--header) - 112px),580px);width:100%;border-radius:clamp(70px,16vw,180px) clamp(70px,16vw,180px) 8px 8px;}
+  @media(max-width:900px){
+    :root{--section-y:clamp(48px,8vw,72px);}
+    .hero{min-height:auto;padding-block:clamp(32px,6vw,56px);}
+    .hero-grid{grid-template-columns:1fr;gap:clamp(28px,5vw,40px);}
+    .hero-copy{text-align:center;}
+    .hero h1{max-width:18ch;margin-inline:auto;}
+    .hero .lead{margin-inline:auto;}
+    .hero .hero-cta{justify-content:center;}
+    .hero-img{margin-top:clamp(4px,1vw,8px);max-height:none;aspect-ratio:1024/827;}
+    .team-grid{grid-template-columns:repeat(2,1fr);}
+    .member{text-align:center;}
+  }
+
+  /* about */
+  .about-grid{
+    display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:clamp(32px,5vw,72px);align-items:center;width:100%;
+  }
+  .about-media{display:flex;flex-direction:column;gap:1rem;width:100%;max-width:92%;margin-inline:auto;}
+  .about-portrait{aspect-ratio:2/3;width:100%;max-width:none;}
+  .about-portrait img{object-position:center 12%;}
+  .about-copy{padding-block:clamp(0px,1vw,12px);}
+  .about h2{font-size:var(--fs-h2);font-weight:400;max-width:15ch;}
+  .about-body{margin-top:1.25rem;line-height:var(--lh-body);}
+  .about-body + .about-body{margin-top:1rem;}
+  .about .cap{margin-top:0;font:italic 300 var(--fs-body-sm)/1.5 var(--serif);letter-spacing:.02em;color:var(--muted);max-width:none;white-space:nowrap;}
+  @media(min-width:881px){
+    .about-grid{grid-template-columns:minmax(0,.48fr) minmax(0,.52fr);gap:clamp(48px,6vw,88px);align-items:center;}
+    .about-media{justify-content:center;}
+    .about-portrait{max-height:min(680px,66vh);}
+    .about-copy{display:flex;flex-direction:column;justify-content:center;min-height:100%;padding-block:clamp(12px,2vw,28px);}
+    .about h2{max-width:16ch;}
+    .about-body{max-width:52ch;margin-top:1.35rem;}
+      .about .cap{white-space:normal;text-align:center;}
+  }
+
+  /* prices */
+  .tabs{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:clamp(24px,3vw,36px) 0 clamp(20px,3vw,32px);}
+  .tab{font-family:var(--sans);font-size:var(--fs-body-sm);font-weight:600;letter-spacing:.02em;color:var(--charcoal);
+    background:transparent;border:1px solid var(--line);border-radius:var(--pill);padding:.5rem 1.1rem;cursor:pointer;transition:.22s;}
+  .tab:hover{border-color:var(--ink);color:var(--ink);}
+  .tab[aria-selected="true"]{background:var(--ink);color:var(--cream);border-color:var(--ink);}
+  .pricewrap{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3vw,40px);width:100%;}
+  .pricegroup{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(28px,4vw,64px);}
+  @media(max-width:680px){.pricegroup{grid-template-columns:1fr;}}
+  .pricegroup[hidden]{display:none;}
+  .prow{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding:.72rem 0;border-bottom:1px solid rgba(221,221,221,.6);}
+  .prow .nm{flex:1;min-width:0;color:var(--text);font-size:var(--fs-body);}
+  .prow .pr{font-weight:600;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:var(--fs-body);}
+  .prow .pr .pl{color:var(--gold);}
+  .price-note{margin:clamp(18px,2.5vw,24px) 0 0;text-align:center;font-size:var(--fs-body-sm);color:var(--muted);line-height:var(--lh-body);}
+
+  /* team */
+  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,24px);width:100%;}
+  .member{transition:transform .35s ease;}
+  @media(hover:hover){.member:hover{transform:translateY(-6px);}}
+  .member .ph{aspect-ratio:3/4;margin-bottom:.85rem;}
+  .member h3{font-size:var(--fs-h3);font-weight:500;}
+  .member .role{font-size:var(--fs-caption);letter-spacing:.04em;color:var(--muted);margin-top:.2rem;}
+  @media(max-width:480px){.team-grid{grid-template-columns:1fr;max-width:320px;margin-inline:auto;}}
+
+  /* gallery */
+  .gallery-grid{
+    display:flex;flex-direction:column;gap:clamp(14px,1.8vw,20px);width:100%;
+  }
+  .gallery-row{
+    display:grid;grid-template-columns:2fr 1fr 1fr;gap:clamp(14px,1.8vw,20px);
+    align-items:stretch;
+  }
+  .gallery-row--center{grid-template-columns:1fr 2fr 1fr;}
+  .gallery-row--flip{grid-template-columns:1fr 1fr 2fr;}
+  .gallery-item{margin:0;min-width:0;display:flex;flex-direction:column;min-height:0;}
+  .gallery-item:not(.gallery-item--wide){align-self:start;}
+  .gallery-item .ph{width:100%;overflow:hidden;}
+  .gallery-item:not(.gallery-item--wide) .ph{aspect-ratio:3/4;border-radius:var(--gallery-radius);}
+  .gallery-item--wide{flex:1;}
+  .gallery-item--wide .ph{flex:1;min-height:0;height:100%;border-radius:var(--gallery-radius);}
+  .gallery-item--arch .ph{border-radius:999px 999px var(--gallery-radius) var(--gallery-radius);}
+  @media(max-width:900px){
+    .gallery-row,.gallery-row--center,.gallery-row--flip{grid-template-columns:1fr 1fr;}
+    .gallery-item--wide{grid-column:span 2;align-self:auto;}
+    .gallery-item:not(.gallery-item--wide){align-self:auto;}
+    .gallery-item--wide .ph{aspect-ratio:3/2;height:auto;flex:none;}
+  }
+
+  .reviews-head{margin-bottom:clamp(28px,3.5vw,40px);}
+  .reviews-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:0;width:100%;align-items:stretch;
+  }
+  .review-card{
+    margin:0;padding:clamp(4px,1vw,8px) clamp(28px,3.5vw,44px);
+    display:flex;flex-direction:column;gap:1.15rem;background:none;border:none;border-radius:0;box-shadow:none;
+    min-height:100%;
+  }
+  .review-card:not(:first-child){border-left:1px solid rgba(168,135,85,.22);}
+  .review-card .stars{color:var(--gold);letter-spacing:.2em;font-size:var(--fs-caption);line-height:1;}
+  .review-quote{
+    font-family:var(--serif);font-size:var(--fs-quote);font-weight:300;font-style:italic;
+    color:var(--charcoal);line-height:var(--lh-body);margin:0;
+  }
+  .review-author{
+    display:block;background:none;border:none;
+    font-family:var(--serif);font-size:var(--fs-body);font-weight:400;font-style:italic;
+    letter-spacing:.01em;text-transform:none;color:var(--muted);margin-top:auto;padding-top:0;
+  }
+  .review-author::before{content:"— ";color:var(--gold);font-weight:400;}
+  .reviews-cta{display:flex;justify-content:center;margin-top:clamp(28px,3.5vw,40px);}
+  .reviews-cta .btn.is-empty{opacity:.55;cursor:default;}
+  .reviews-cta .btn.is-empty:hover{transform:none;background:var(--ink);}
+  @media(max-width:980px){
+    .reviews-grid{grid-template-columns:1fr;gap:0;}
+    .review-card{
+      padding:0 clamp(0px,2vw,8px) clamp(32px,5vw,40px);text-align:center;max-width:36rem;margin-inline:auto;
+    }
+    .review-card:not(:first-child){border-left:none;padding-top:clamp(32px,5vw,40px);border-top:1px solid rgba(168,135,85,.22);}
+    .review-quote{max-width:34ch;margin-inline:auto;}
+  }
+
+  /* faq */
+  .faq details{border-bottom:1px solid var(--line);}
+  .faq details:first-of-type{border-top:1px solid var(--line);}
+  .faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1.25rem;
+    padding:1.2rem .2rem;font-family:var(--serif);font-size:var(--fs-body-lg);color:var(--ink);font-weight:400;line-height:1.35;}
+  .faq summary > :first-child{flex:1;min-width:0;padding-right:.25rem;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq .mk{flex:0 0 auto;width:26px;height:26px;position:relative;}
+  .faq .mk::before,.faq .mk::after{content:"";position:absolute;background:var(--gold);transition:transform .3s,opacity .3s;}
+  .faq .mk::before{top:12px;left:4px;right:4px;height:1.5px;}
+  .faq .mk::after{left:12px;top:4px;bottom:4px;width:1.5px;}
+  .faq details[open] .mk::after{transform:scaleY(0);opacity:0;}
+  .faq .ans{padding:0 .2rem 1.25rem;color:var(--charcoal);max-width:none;font-size:var(--fs-body);line-height:var(--lh-body);}
+  .faq details[open] .ans{animation:fade .4s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(-4px);}to{opacity:1;transform:none;}}
+
+  /* cta band */
+  .cta-panel{background:var(--sand);border-radius:clamp(40px,8vw,100px) clamp(40px,8vw,100px) 22px 22px;
+    padding:clamp(40px,6vw,80px) clamp(24px,4vw,56px);text-align:center;width:100%;}
+  .cta-panel h2{font-size:var(--fs-h2);font-weight:300;max-width:min(36rem,100%);margin:0 auto;line-height:var(--lh-heading);}
+  .cta-panel .lead{margin:1.25rem auto 0;max-width:min(42rem,100%);color:var(--charcoal);}
+  .cta-actions{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.75rem;}
+  .cta-actions .btn-ghost{
+    background:var(--paper);color:var(--ink);border-color:rgba(18,18,18,.22);
+  }
+  .cta-actions .btn-ghost:hover{background:var(--paper);border-color:var(--ink);}
+  /* footer */
+  footer{border-top:1px solid var(--line);background:var(--paper);}
+  .foot{padding-block:clamp(48px,6vw,72px);width:100%;}
+  .foot-layout{
+    display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,1.05fr);
+    gap:clamp(40px,5vw,64px);align-items:stretch;
+  }
+  .foot-content{display:flex;flex-direction:column;gap:clamp(24px,3vw,32px);justify-content:center;}
+  .foot-brand{display:flex;flex-direction:column;line-height:1;text-decoration:none;color:inherit;}
+  .foot-brand .nm{font-family:var(--serif);font-size:clamp(1.25rem,1.1rem + .5vw,1.45rem);color:var(--ink);}
+  .foot-brand .sb{font-size:var(--fs-caption);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:6px;}
+  .foot-block{display:flex;flex-direction:column;gap:.65rem;}
+  .foot-label{
+    margin:0;font-family:var(--sans);font-size:var(--fs-eyebrow);font-weight:600;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--gold);
+  }
+  .foot-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.7rem;}
+  .foot-list li{display:flex;align-items:center;gap:.7rem;font-size:var(--fs-body-sm);color:var(--charcoal);line-height:1.45;}
+  .foot-list a{color:var(--charcoal);transition:color .2s;overflow-wrap:anywhere;}
+  .foot-list a:hover{color:var(--ink);}
+  .foot-ico{
+    flex:0 0 18px;width:18px;height:18px;color:var(--ink);display:inline-flex;align-items:center;justify-content:center;
+  }
+  .foot-ico svg{width:100%;height:100%;display:block;}
+  .foot-hours-main{font-family:var(--serif);font-size:var(--fs-body-lg);color:var(--ink);line-height:1.4;margin:0;}
+  .foot-hours-sub{font-size:var(--fs-body-sm);color:var(--muted);margin:.1rem 0 0;line-height:1.45;}
+  .foot-social{display:flex;gap:.6rem;}
+  .foot-social a{
+    display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+    color:var(--ink);transition:color .22s;
+  }
+  @media(hover:hover){.foot-social a:hover{color:var(--gold);}}
+  .foot-social a.is-empty{cursor:default;opacity:.45;}
+  @media(hover:hover){.foot-social a.is-empty:hover{color:var(--ink);}}
+  .foot-social svg{width:20px;height:20px;display:block;}
+  .foot-map{
+    width:100%;min-height:clamp(300px,100%,380px);border-radius:16px;
+    overflow:hidden;border:1px solid var(--line);background:var(--cream);
+  }
+  .foot-map iframe{width:100%;height:100%;min-height:clamp(300px,36vw,380px);border:0;display:block;}
+  .foot-bottom{border-top:1px solid var(--line);background:var(--paper);}
+  .foot-bottom .wrap{
+    display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;
+    padding-block:1rem;font-size:var(--fs-caption);color:var(--muted);letter-spacing:.02em;
+  }
+  .foot-bottom a{color:var(--charcoal);transition:color .2s;}
+  .foot-bottom a:hover{color:#000;}
+  @media(max-width:820px){
+    .foot-layout{grid-template-columns:1fr;gap:clamp(32px,5vw,40px);}
+    .foot-content{align-items:center;text-align:center;}
+    .foot-block{align-items:center;width:100%;}
+    .foot-list{align-items:center;width:100%;max-width:24rem;}
+    .foot-list li{justify-content:center;text-align:center;}
+    .foot-map{min-height:clamp(260px,50vw,320px);}
+    .foot-map iframe{min-height:clamp(260px,50vw,320px);}
+  }
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media(max-width:880px){
+    .about-grid{grid-template-columns:1fr;gap:clamp(28px,5vw,40px);align-items:start;}
+    .about-media{max-width:min(380px,100%);margin-inline:auto;}
+    .about-portrait{order:0;max-height:none;}
+    .about-copy{text-align:center;padding-block:0;}
+    .about h2,.about-body,.about .cap{margin-inline:auto;}
+    .about h2{max-width:none;}
+    .about-body{max-width:min(36rem,100%);}
+    .about .cap{white-space:normal;max-width:min(34ch,100%);}
+  }
+
+  /* Tablet nav tightening */
+  @media(min-width:761px) and (max-width:980px){
+    .nav{gap:.85rem;}
+    .nav-links{gap:clamp(.45rem,1vw,.75rem);}
+    .nav-links a{font-size:clamp(.74rem,.72rem + .08vw,.8125rem);letter-spacing:.01em;}
+    .nav-right{gap:.65rem;}
+    .nav-right .btn{padding:.42rem .85rem;font-size:clamp(.74rem,.72rem + .08vw,.8125rem);}
+    .brand .nm{font-size:clamp(1.05rem,1rem + .25vw,1.2rem);}
+    .brand .sb{letter-spacing:.18em;}
+  }
+
+  @media(max-width:760px){
+    :root{
+      --section-y:clamp(40px,9vw,56px);
+      --pad:clamp(18px,5vw,28px);
+    }
+    .nav{grid-template-columns:1fr auto;gap:.65rem;}
+    .brand{grid-column:1;}
+    .nav-right{grid-column:2;gap:.5rem;}
+    .nav-links,.nav-right .btn{display:none;}
+    .nav-right .lang-dd,.menu-btn{display:inline-flex;}
+    .section-head{margin-bottom:clamp(20px,4vw,28px);}
+    .gallery-row:nth-child(n+4){display:none;}
+    .faq summary{padding:1rem 0;font-size:var(--fs-body);}
+    .faq .ans{padding-inline:0;}
+    .foot{padding-block:clamp(40px,8vw,56px);}
+    .foot-bottom .wrap{
+      flex-direction:column;justify-content:center;align-items:center;
+      text-align:center;gap:.45rem;
+      padding-block:1rem max(1rem, env(safe-area-inset-bottom));
+    }
+  }
+
+  @media(max-width:520px){
+    .prow{flex-wrap:wrap;row-gap:.35rem;padding:.65rem 0;}
+    .prow .pr{margin-left:auto;}
+    .tabs{gap:.4rem;margin:clamp(20px,4vw,28px) 0 clamp(16px,3vw,24px);}
+    .tab{padding:.45rem .85rem;}
+    .pricewrap{padding:clamp(18px,4vw,28px);border-radius:18px;}
+    .cta-panel{padding:clamp(32px,8vw,52px) clamp(20px,5vw,28px);border-radius:clamp(28px,10vw,48px) clamp(28px,10vw,48px) 18px 18px;}
+    .review-quote{max-width:none;}
+    .hero h1,.hero .lead{max-width:100%;}
+    .gallery-row,.gallery-row--center,.gallery-row--flip{grid-template-columns:1fr;}
+    .gallery-item--wide{grid-column:span 1;}
+  }
+
+  @media(max-width:400px){
+    .hero-cta,.cta-actions{
+      flex-direction:column;align-items:stretch;width:100%;max-width:18rem;margin-inline:auto;
+    }
+    .hero-cta .btn,.cta-actions .btn{justify-content:center;width:100%;}
+    .panel-foot .btn{width:100%;max-width:18rem;}
+    .btn{white-space:normal;text-align:center;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none!important;animation:none!important;}
+    .reveal{opacity:1;transform:none;}
+    .panel-nav a,.panel-foot{opacity:1;transform:none;}
+  }
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px;}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Afanasyeva">
+      <span class="nm" data-i18n="brand">Afanasyeva</span>
+      <span class="sb" data-i18n="brandsub">салон красоты</span>
+    </a>
+    <nav class="nav-links" aria-label="Навигация">
+      <a href="#about" data-i18n="nav_about">О студии</a>
+      <a href="#prices" data-i18n="nav_prices">Цены</a>
+      <a href="#team" data-i18n="nav_team">Команда</a>
+      <a href="#gallery" data-i18n="nav_gallery">Галерея</a>
+      <a href="#reviews" data-i18n="nav_reviews">Отзывы</a>
+      <a href="#faq" data-i18n="nav_faq">Вопросы</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-dd">
+        <button type="button" class="lang-dd-btn" aria-label="Язык / Language" aria-haspopup="listbox" aria-expanded="false">
+          <span class="lang-dd-val">RU</span>
+          <span class="lang-dd-arrow" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 4.25 6 7.75 9.5 4.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <ul class="lang-dd-menu" role="listbox" aria-label="Язык / Language">
+          <li><button type="button" role="option" data-lang="ru" aria-selected="true">RU</button></li>
+          <li><button type="button" role="option" data-lang="en" aria-selected="false">EN</button></li>
+          <li><button type="button" role="option" data-lang="ro" aria-selected="false">RO</button></li>
+        </ul>
+      </div>
+      <a class="btn btn-primary" href="#book" data-i18n="nav_book">Записаться на приём</a>
+      <button class="menu-btn" type="button" aria-label="Меню" aria-expanded="false" aria-controls="panel">
+        <span class="menu-btn-icon" aria-hidden="true">
+          <span class="menu-btn-line"></span>
+          <span class="menu-btn-line"></span>
+          <span class="menu-btn-line"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="panel" id="panel" aria-hidden="true">
+  <div class="panel-inner">
+    <nav class="panel-nav" aria-label="Мобильная навигация">
+      <a href="#about" data-i18n="nav_about">О студии</a>
+      <a href="#prices" data-i18n="nav_prices">Цены</a>
+      <a href="#team" data-i18n="nav_team">Команда</a>
+      <a href="#gallery" data-i18n="nav_gallery">Галерея</a>
+      <a href="#reviews" data-i18n="nav_reviews">Отзывы</a>
+      <a href="#faq" data-i18n="nav_faq">Вопросы</a>
+    </nav>
+    <div class="panel-foot">
+      <a class="btn btn-primary" href="#book" data-i18n="nav_book">Записаться на приём</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" aria-label="Afanasyeva">
+  <div class="wrap hero-grid reveal">
+    <div class="hero-copy">
+      <p class="eyebrow" data-i18n="hero_eyebrow">Салон красоты · Кишинёв</p>
+      <h1 data-i18n="hero_title">Почувствуйте себя собой снова</h1>
+      <p class="lead" data-i18n="hero_lead" data-i18n-html>Место, где можно выдохнуть и<br>позаботиться о себе.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#book"><span data-i18n="hero_cta1">Записаться</span> <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="#prices" data-i18n="hero_cta2">Услуги и цены</a>
+      </div>
+    </div>
+    <div class="ph arch-wide hero-img">
+      <img src="Photos/hero.png" alt="Детская стрижка в салоне Afanasyeva" width="1024" height="827" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section band-taupe about" id="about">
+  <div class="wrap about-grid reveal">
+    <div class="about-media">
+      <div class="ph arch-tall about-portrait">
+        <img src="Photos/Татьяна.png" alt="Татьяна Афанасьева, основательница салона" width="1021" height="1025" loading="lazy" decoding="async">
+      </div>
+      <p class="cap" data-i18n="about_cap">Татьяна Афанасьева, основательница, мастер высшей категории</p>
+    </div>
+    <div class="about-copy">
+      <h2 data-i18n="about_title">Семейная студия с 2017 года</h2>
+      <p class="about-body" data-i18n="about_body">Салон основала Татьяна Афанасьева, семейная студия с профессиональной командой. Мастер высшей категории и лауреат «Золотые ножницы», она собрала коллектив единомышленников, для которых важны качество, комфорт и индивидуальный подход.</p>
+      <p class="about-body" data-i18n="about_body2">Мы предоставляем полный спектр услуг по уходу за волосами и руками для гостей любого возраста, в атмосфере уюта, доверия и эстетики.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="section" id="prices">
+  <div class="wrap reveal">
+    <div class="center section-head">
+      <h2 data-i18n="price_title">Услуги и цены</h2>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true"  data-cat="hair"    data-i18n="cat_hair">Стрижки</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="style"   data-i18n="cat_style">Укладка</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="color"   data-i18n="cat_color">Окрашивание</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="brows"   data-i18n="cat_brows">Брови</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="mani"    data-i18n="cat_mani">Маникюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="pedi"    data-i18n="cat_pedi">Педикюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="makeup"  data-i18n="cat_makeup">Макияж</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="massage" data-i18n="cat_massage">Массаж</button>
+    </div>
+
+    <div class="pricewrap">
+      <div class="pricegroup" data-group="hair">
+        <div class="prow"><span class="nm" data-i18n="s_kids">Детская стрижка</span><span class="pr">200<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_women">Женская стрижка</span><span class="pr">350<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_men">Мужская стрижка</span><span class="pr">250<span class="pl">+</span> MDL</span></div>
+      </div>
+
+      <div class="pricegroup" data-group="style" hidden>
+        <div class="prow"><span class="nm" data-i18n="s_bioperm">Биозавивка (любая длина)</span><span class="pr">500<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_long">Укладка на длинные волосы</span><span class="pr">500<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_mid">Укладка на среднюю длину</span><span class="pr">400 MDL</span></div>
+      </div>
+
+      <div class="pricegroup" data-group="color" hidden>
+        <div class="prow"><span class="nm" data-i18n="s_curls">Локоны</span><span class="pr">400<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_updo">Вечерняя / свадебная причёска</span><span class="pr">800<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_lighttone">Осветление + тонирование</span><span class="pr">800<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_lightroots">Осветление корней</span><span class="pr">350<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_hidden">Скрытое окрашивание</span><span class="pr">500<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm">Air Touch</span><span class="pr">1200<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_ombre">Омбре</span><span class="pr">800<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_highlights">Мелирование</span><span class="pr">1000 MDL</span></div>
+        <div class="prow"><span class="nm">Балаяж</span><span class="pr">800<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_labor">Работа (без материалов)</span><span class="pr">200<span class="pl">+</span> MDL</span></div>
+      </div>
+
+      <div class="pricegroup" data-group="brows" hidden>
+        <div class="prow"><span class="nm" data-i18n="s_browshape">Оформление бровей</span><span class="pr">150<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_browtint">Окрашивание бровей</span><span class="pr">100 MDL</span></div>
+      </div>
+
+      <div class="pricegroup" data-group="mani" hidden>
+        <div class="prow"><span class="nm" data-i18n="s_manigel">Маникюр + гель-лак</span><span class="pr">700 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_manicombo">Комбинированный / аппаратный</span><span class="pr">300 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_strength">Укрепление гелем / базой</span><span class="pr">100 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_french">Френч / лунный</span><span class="pr">100 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_design">Дизайн (за ноготь)</span><span class="pr">10<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_repair">Ремонт ногтя</span><span class="pr">50 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_removal">Снятие</span><span class="pr">100 MDL</span></div>
+      </div>
+
+      <div class="pricegroup" data-group="pedi" hidden>
+        <div class="prow"><span class="nm" data-i18n="s_pedigel">Педикюр + гель-лак</span><span class="pr">1000 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_pediclassic">Классический / комбинированный</span><span class="pr">700 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_pediapp">Аппаратный</span><span class="pr">500 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_pediedge">Обрезной</span><span class="pr">450 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_removal">Снятие</span><span class="pr">100 MDL</span></div>
+      </div>
+
+      <div class="pricegroup" data-group="makeup" hidden>
+        <div class="prow"><span class="nm" data-i18n="s_makeup">Вечерний макияж</span><span class="pr">750 MDL</span></div>
+      </div>
+
+      <div class="pricegroup" data-group="massage" hidden>
+        <div class="prow"><span class="nm" data-i18n="s_lymph">Лимфодренажный массаж</span><span class="pr">500–600 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_paraffin">Парафинотерапия</span><span class="pr">200–300 MDL</span></div>
+      </div>
+    </div>
+    <p class="price-note" data-i18n="price_note">Указана минимальная стоимость. Точная цена зависит от длины волос и материалов. Уточняйте при записи.</p>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section band-paper" id="team">
+  <div class="wrap reveal">
+    <div class="center section-head">
+      <h2 data-i18n="team_title">Мастера студии</h2>
+    </div>
+    <div class="team-grid">
+      <div class="member"><div class="ph arch-tall"><img src="Photos/Татьяна.png" alt="Татьяна, стилист, трихолог" width="1021" height="1025" loading="lazy" decoding="async"></div><h3 data-i18n="m1_name">Татьяна</h3><p class="role" data-i18n="m1_role">Стилист, трихолог</p></div>
+      <div class="member"><div class="ph arch-tall"><img src="Photos/Елена.jpg" alt="Елена, лимфодренажный массаж" width="993" height="996" loading="lazy" decoding="async"></div><h3 data-i18n="m2_name">Елена</h3><p class="role" data-i18n="m2_role">Лимфодренажный массаж</p></div>
+      <div class="member"><div class="ph arch-tall"><img src="Photos/Кристина.jpg" alt="Кристина, нейл-мастер" width="955" height="955" loading="lazy" decoding="async"></div><h3 data-i18n="m3_name">Кристина</h3><p class="role" data-i18n="m3_role">Нейл-мастер</p></div>
+      <div class="member"><div class="ph arch-tall"><img src="Photos/Инна.jpg" alt="Инна, мастер маникюра" width="1102" height="1147" loading="lazy" decoding="async"></div><h3 data-i18n="m4_name">Инна</h3><p class="role" data-i18n="m4_role">Мастер маникюра</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap reveal">
+    <div class="center section-head">
+      <h2 data-i18n="gal_title">Галерея</h2>
+    </div>
+    <div class="gallery-grid" aria-label="Галерея работ">
+      <div class="gallery-row gallery-row--center">
+        <figure class="gallery-item gallery-item--arch"><div class="ph"><img src="Photos/g6.jpg" alt="Окрашивание волос" width="1280" height="741" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g3.jpg" alt="Семейная атмосфера салона" width="1280" height="655" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img src="Photos/g4.jpg" alt="Окрашивание, винные локоны" width="1280" height="1366" loading="lazy" decoding="async"></div></figure>
+      </div>
+      <div class="gallery-row gallery-row--flip">
+        <figure class="gallery-item"><div class="ph"><img src="Photos/g8.jpg" alt="Мытьё и уход за волосами" width="1280" height="1252" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img src="Photos/g13.jpg" alt="Мужская стрижка с кудрями" width="963" height="988" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g7.jpg" alt="Работа мастера в студии" width="1280" height="601" loading="lazy" decoding="async"></div></figure>
+      </div>
+      <div class="gallery-row">
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g12.jpg" alt="Татьяна и Елена, мастера студии" width="1280" height="630" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img src="Photos/nails.jpg" alt="Маникюр, французский омбре" width="1280" height="1135" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--arch"><div class="ph"><img src="Photos/hair-coloring.jpg" alt="Окрашивание и тонирование" width="1204" height="1067" loading="lazy" decoding="async"></div></figure>
+      </div>
+      <div class="gallery-row gallery-row--center">
+        <figure class="gallery-item"><div class="ph"><img src="Photos/massage.jpg" alt="Лимфодренажный массаж" width="698" height="619" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g2.jpg" alt="Мелирование и завивка" width="1135" height="736" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img src="Photos/face-paint.jpg" alt="Макияж" width="946" height="839" loading="lazy" decoding="async"></div></figure>
+      </div>
+      <div class="gallery-row gallery-row--flip">
+        <figure class="gallery-item"><div class="ph"><img src="Photos/g5.jpg" alt="Укладка и уход за волосами" width="1280" height="741" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img src="Photos/g10.jpg" alt="Окрашивание и укладка, платиновый блонд" width="853" height="961" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g9.jpg" alt="Маникюр в студии" width="1280" height="697" loading="lazy" decoding="async"></div></figure>
+      </div>
+      <div class="gallery-row">
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g1.jpg" alt="Стрижка в салоне Afanasyeva" width="1280" height="830" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--arch"><div class="ph"><img src="Photos/g11.jpg" alt="Стрижка и стайлинг" width="1280" height="693" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img src="Photos/g14.jpg" alt="Уход за волосами" width="1280" height="696" loading="lazy" decoding="async"></div></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section band-sand" id="reviews">
+  <div class="wrap reveal">
+    <div class="reviews-head center section-head">
+      <h2 data-i18n="rev_title">От наших гостей</h2>
+    </div>
+    <div class="reviews-grid">
+      <blockquote class="review-card">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p class="review-quote" data-i18n="rev1_text">«Татьяна и Елена были восхитительны. Я посещаю Молдову и услышала о салоне Татьяны, поэтому захотела попробовать: мне понравилась их семейная, дружелюбная атмосфера…»</p>
+        <cite class="review-author" data-i18n="rev1_author">Алекс</cite>
+      </blockquote>
+      <blockquote class="review-card">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p class="review-quote" data-i18n="rev2_text">«Мастера студии знают, как стричь мужчин. Я пришёл домой к жене, и она была очень рада увидеть такую хорошую стрижку. Большое спасибо!»</p>
+        <cite class="review-author" data-i18n="rev2_author">Картер</cite>
+      </blockquote>
+      <blockquote class="review-card">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p class="review-quote" data-i18n="rev3_text">«Настоящий рай для тех, кто хочет расслабиться и почувствовать заботу. Приятная атмосфера, внимательные мастера и высокий уровень сервиса. После массажа и ухода чувствую себя обновлённой. Обязательно вернусь снова!»</p>
+        <cite class="review-author" data-i18n="rev3_author">Ольга</cite>
+      </blockquote>
+    </div>
+    <div class="reviews-cta">
+      <a id="reviews-google" class="btn btn-primary" data-i18n="foot_review">Оставьте отзыв</a>
+    </div>
+  </div>
+</section>
+<section class="section band-paper faq" id="faq">
+  <div class="wrap reveal">
+    <div class="center section-head">
+      <h2 data-i18n="faq_title">Частые вопросы</h2>
+    </div>
+    <details>
+      <summary><span data-i18n="q1">Как нас найти?</span><span class="mk" aria-hidden="true"></span></summary>
+      <div class="ans" data-i18n="a1">Студия в здании Союза писателей на ул. 31 августа 1989, кабинет 100. Карта и маршрут указаны внизу страницы.</div>
+    </details>
+    <details>
+      <summary><span data-i18n="q2">Можно ли прийти с детьми?</span><span class="mk" aria-hidden="true"></span></summary>
+      <div class="ans" data-i18n="a2">Да. Проводим детские стрижки и подстраиваемся под темп ребёнка, чтобы визит был спокойным.</div>
+    </details>
+    <details>
+      <summary><span data-i18n="q3">Сколько длится окрашивание?</span><span class="mk" aria-hidden="true"></span></summary>
+      <div class="ans" data-i18n="a3">В среднем от 2 до 4 часов, в зависимости от техники и длины волос. Точное время мастер назовёт на консультации.</div>
+    </details>
+    <details>
+      <summary><span data-i18n="q4">Нужна ли консультация перед окрашиванием?</span><span class="mk" aria-hidden="true"></span></summary>
+      <div class="ans" data-i18n="a4">Да, для сложных техник. Консультация бесплатна и помогает подобрать лучший вариант для ваших волос.</div>
+    </details>
+    <details>
+      <summary><span data-i18n="q5">Какие способы оплаты?</span><span class="mk" aria-hidden="true"></span></summary>
+      <div class="ans" data-i18n="a5">Принимаем наличные и карты.</div>
+    </details>
+    <details>
+      <summary><span data-i18n="q6">Что если нужно перенести визит?</span><span class="mk" aria-hidden="true"></span></summary>
+      <div class="ans" data-i18n="a6">Просто предупредите заранее, и мы с радостью подберём новое время.</div>
+    </details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" id="book">
+  <div class="wrap reveal">
+    <div class="cta-panel">
+      <h2 data-i18n="cta_title">Запишитесь на визит</h2>
+      <p class="lead" data-i18n="cta_lead">Будем рады вашему звонку или письму. Подберём удобное время, поможем выбрать мастера и ответим на вопросы до визита.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="tel:+37369177796"><span data-i18n="cta_call">Позвонить</span> <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="mailto:goldenfishsalon@gmail.com" data-i18n="cta_write">Написать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot">
+    <div class="foot-layout">
+      <div class="foot-content">
+        <a class="foot-brand" href="#top" aria-label="Afanasyeva">
+          <span class="nm" data-i18n="brand">Afanasyeva</span>
+          <span class="sb" data-i18n="brandsub">салон красоты</span>
+        </a>
+
+        <div class="foot-block">
+          <p class="foot-label" data-i18n="foot_contact">Контакты</p>
+          <ul class="foot-list">
+            <li>
+              <span class="foot-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              </span>
+              <a id="foot-maps" href="https://maps.app.goo.gl/4YQQCcAZAjaKsDeN8" target="_blank" rel="noopener noreferrer" data-i18n="con_addrval">ул. 31 августа 1989, Кишинёв · Союз писателей (каб. 100)</a>
+            </li>
+            <li>
+              <span class="foot-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.56 1 1 0 0 1-.25 1.01l-2.2 2.22z"/></svg>
+              </span>
+              <a href="tel:+37369177796">+373 691 77 796</a>
+            </li>
+            <li>
+              <span class="foot-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.99l7.29 6.36a1 1 0 0 0 1.42 0L20 8.99V18H4z"/></svg>
+              </span>
+              <a href="mailto:goldenfishsalon@gmail.com">goldenfishsalon@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-block">
+          <p class="foot-label" data-i18n="foot_hours">Часы работы</p>
+          <p class="foot-hours-main" data-i18n="con_days">Вторник – суббота · 09:00–20:00</p>
+          <p class="foot-hours-sub" data-i18n="con_closed">Воскресенье и понедельник: выходной</p>
+        </div>
+
+        <div class="foot-block">
+          <p class="foot-label" data-i18n="foot_social">Мы в соцсетях</p>
+          <div class="foot-social">
+            <a id="foot-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm6.25-2.75a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z"/></svg>
+            </a>
+            <a id="foot-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13.5 3H16V0h-2.5C10.98 0 9 1.98 9 4.5V7H6v3h3v10h3V10h2.55L15 7h-3V4.86C12 3.83 12.83 3 13.5 3z"/></svg>
+            </a>
+            <a id="foot-tiktok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.18 8.18 0 0 0 4.76 1.52V6.84a4.85 4.85 0 0 1-1-.15z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot-map">
+        <iframe
+          title="Afanasyeva, салон красоты на карте"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4314.506617153144!2d28.81331007540806!3d47.02964769940416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d0e1eba2f39%3A0xa17d3769a3f59d2e!2sGolden%20Fish!5e0!3m2!1sen!2s!4v1782735649310!5m2!1sen!2s"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="wrap">
+      <span data-i18n="footer">© 2026 Afanasyeva · салон красоты · Кишинёв</span>
+      <a href="mailto:goldenfishsalon@gmail.com" data-i18n="foot_join">Хотите в команду? Напишите нам.</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Set your live domain here before deploy, e.g. 'https://afanasyeva.md' */
+const SITE = {
+  url: '',
+  instagram: '', // e.g. 'https://www.instagram.com/yourhandle'
+  facebook: '',  // e.g. 'https://www.facebook.com/yourpage'
+  tiktok: '',    // e.g. 'https://www.tiktok.com/@yourhandle'
+  googleReview: '', // e.g. 'https://g.page/r/XXXXX/review'
+  googleMaps: 'https://maps.app.goo.gl/4YQQCcAZAjaKsDeN8',
+  googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4314.506617153144!2d28.81331007540806!3d47.02964769940416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d0e1eba2f39%3A0xa17d3769a3f59d2e!2sGolden%20Fish!5e0!3m2!1sen!2s!4v1782735649310!5m2!1sen!2s'
+};
+const LANG_KEY = 'afanasyeva-lang';
+const OG_LOCALE = { ru: 'ru_RU', en: 'en_US', ro: 'ro_RO' };
+let currentLang = 'ru';
+
+const I18N = {
+  ru:{
+    brand:"Afanasyeva", brandsub:"салон красоты",
+    nav_about:"О студии", nav_prices:"Цены", nav_team:"Команда", nav_gallery:"Галерея", nav_reviews:"Отзывы", nav_faq:"Вопросы", nav_book:"Записаться на приём",
+    hero_eyebrow:"Салон красоты · Кишинёв",
+    hero_title:"Почувствуйте себя собой снова",
+    hero_lead:"Место, где можно выдохнуть и<br>позаботиться о себе.",
+    hero_cta1:"Записаться", hero_cta2:"Услуги и цены",
+    about_eyebrow:"О студии", about_title:"Семейная студия с 2017 года",
+    about_body:"Салон основала Татьяна Афанасьева, семейная студия с профессиональной командой. Мастер высшей категории и лауреат «Золотые ножницы», она собрала коллектив единомышленников, для которых важны качество, комфорт и индивидуальный подход.",
+    about_body2:"Мы предоставляем полный спектр услуг по уходу за волосами и руками для гостей любого возраста, в атмосфере уюта, доверия и эстетики.",
+    about_cap:"Татьяна Афанасьева, основательница, мастер высшей категории",
+    price_eyebrow:"Прайс", price_title:"Услуги и цены",
+    price_note:"Указана минимальная стоимость. Точная цена зависит от длины волос и материалов. Уточняйте при записи.",
+    cat_hair:"Стрижки", cat_style:"Укладка", cat_color:"Окрашивание", cat_brows:"Брови", cat_mani:"Маникюр", cat_pedi:"Педикюр", cat_makeup:"Макияж", cat_massage:"Массаж",
+    s_kids:"Детская стрижка", s_women:"Женская стрижка", s_men:"Мужская стрижка",
+    s_bioperm:"Биозавивка (любая длина)", s_long:"Укладка на длинные волосы", s_mid:"Укладка на среднюю длину",
+    s_curls:"Локоны", s_updo:"Вечерняя / свадебная причёска", s_lighttone:"Осветление + тонирование", s_lightroots:"Осветление корней", s_hidden:"Скрытое окрашивание", s_ombre:"Омбре", s_highlights:"Мелирование", s_labor:"Работа (без материалов)",
+    s_browshape:"Оформление бровей", s_browtint:"Окрашивание бровей",
+    s_manigel:"Маникюр + гель-лак", s_manicombo:"Комбинированный / аппаратный", s_strength:"Укрепление гелем / базой", s_french:"Френч / лунный", s_design:"Дизайн (за ноготь)", s_repair:"Ремонт ногтя", s_removal:"Снятие",
+    s_pedigel:"Педикюр + гель-лак", s_pediclassic:"Классический / комбинированный", s_pediapp:"Аппаратный", s_pediedge:"Обрезной",
+    s_makeup:"Вечерний макияж", s_lymph:"Лимфодренажный массаж", s_paraffin:"Парафинотерапия",
+    team_eyebrow:"Команда", team_title:"Мастера студии",
+    m1_name:"Татьяна", m1_role:"Стилист, трихолог", m2_name:"Елена", m2_role:"Лимфодренажный массаж", m3_name:"Кристина", m3_role:"Нейл-мастер", m4_name:"Инна", m4_role:"Мастер маникюра",
+    gal_eyebrow:"Работы", gal_title:"Галерея", hint:"листайте в сторону →",
+    rev_eyebrow:"Отзывы", rev_title:"От наших гостей",
+    rev1_text:"«Татьяна и Елена были восхитительны. Я посещаю Молдову и услышала о салоне Татьяны, поэтому захотела попробовать: мне понравилась их семейная, дружелюбная атмосфера…»",
+    rev1_author:"Алекс",
+    rev2_text:"«Мастера студии знают, как стричь мужчин. Я пришёл домой к жене, и она была очень рада увидеть такую хорошую стрижку. Большое спасибо!»",
+    rev2_author:"Картер",
+    rev3_text:"«Настоящий рай для тех, кто хочет расслабиться и почувствовать заботу. Приятная атмосфера, внимательные мастера и высокий уровень сервиса. После массажа и ухода чувствую себя обновлённой. Обязательно вернусь снова!»",
+    rev3_author:"Ольга",
+    faq_eyebrow:"Вопросы", faq_title:"Частые вопросы",
+    q1:"Как нас найти?", a1:"Студия в здании Союза писателей на ул. 31 августа 1989, кабинет 100. Карта и маршрут указаны внизу страницы.",
+    q2:"Можно ли прийти с детьми?", a2:"Да. Проводим детские стрижки и подстраиваемся под темп ребёнка, чтобы визит был спокойным.",
+    q3:"Сколько длится окрашивание?", a3:"В среднем от 2 до 4 часов, в зависимости от техники и длины волос. Точное время мастер назовёт на консультации.",
+    q4:"Нужна ли консультация перед окрашиванием?", a4:"Да, для сложных техник. Консультация бесплатна и помогает подобрать лучший вариант для ваших волос.",
+    q5:"Какие способы оплаты?", a5:"Принимаем наличные и карты.",
+    q6:"Что если нужно перенести визит?", a6:"Просто предупредите заранее, и мы с радостью подберём новое время.",
+    cta_eyebrow:"Запись", cta_title:"Запишитесь на визит",
+    cta_lead:"Будем рады вашему звонку или письму. Подберём удобное время, поможем выбрать мастера и ответим на вопросы до визита.",
+    cta_call:"Позвонить", cta_write:"Написать",
+    foot_explore:"Разделы", foot_contact:"Контакты", foot_hours:"Часы работы", foot_review:"Оставьте отзыв",
+    foot_directions:"Маршрут", foot_social:"Мы в соцсетях",
+    con_addrval:"ул. 31 августа 1989, Кишинёв · Союз писателей (каб. 100)",
+    con_days:"Вторник – суббота · 09:00–20:00", con_closed:"Воскресенье и понедельник: выходной",
+    footer:"© 2026 Afanasyeva · салон красоты · Кишинёв", foot_join:"Хотите в команду? Напишите нам.",
+    _title:"Afanasyeva Салон красоты", _tag:"фото",
+    _desc:"Салон красоты Afanasyeva в Кишинёве. Запись по телефону или email.",
+    _menu:"Меню", _menu_close:"Закрыть меню"
+  },
+  en:{
+    brand:"Afanasyeva", brandsub:"beauty salon",
+    nav_about:"Studio", nav_prices:"Prices", nav_team:"Team", nav_gallery:"Gallery", nav_reviews:"Reviews", nav_faq:"FAQ", nav_book:"Book appointment",
+    hero_eyebrow:"Beauty salon · Chișinău",
+    hero_title:"Feel like yourself again",
+    hero_lead:"A place to breathe and take care of yourself.",
+    hero_cta1:"Book a visit", hero_cta2:"Services & prices",
+    about_eyebrow:"Our studio", about_title:"A family studio since 2017",
+    about_body:"Tatiana Afanasyeva founded the salon, a family studio with a professional team. A top-category master and Golden Scissors award winner, she brought together like-minded masters focused on quality, comfort, and individual care.",
+    about_body2:"We offer a full range of hair and hand care for guests of every age, in an atmosphere of warmth, trust, and aesthetics.",
+    about_cap:"Tatiana Afanasyeva, founder, top-category master",
+    price_eyebrow:"Pricing", price_title:"Services & prices",
+    price_note:"Prices shown are starting points. The final cost depends on hair length and materials. Confirm when you book.",
+    cat_hair:"Haircuts", cat_style:"Styling", cat_color:"Colour", cat_brows:"Brows", cat_mani:"Manicure", cat_pedi:"Pedicure", cat_makeup:"Makeup", cat_massage:"Massage",
+    s_kids:"Kids' haircut", s_women:"Women's haircut", s_men:"Men's haircut",
+    s_bioperm:"Bio-perm (any length)", s_long:"Styling, long hair", s_mid:"Styling, medium hair",
+    s_curls:"Curls", s_updo:"Evening / bridal updo", s_lighttone:"Lightening + toning", s_lightroots:"Root lightening", s_hidden:"Hidden colour", s_ombre:"Ombré", s_highlights:"Highlights", s_labor:"Labour (excl. materials)",
+    s_browshape:"Brow shaping", s_browtint:"Brow tinting",
+    s_manigel:"Manicure + gel polish", s_manicombo:"Combined / e-file", s_strength:"Gel / base strengthening", s_french:"French / moon", s_design:"Design (per nail)", s_repair:"Nail repair", s_removal:"Removal",
+    s_pedigel:"Pedicure + gel polish", s_pediclassic:"Classic / combined", s_pediapp:"E-file", s_pediedge:"Trimmed",
+    s_makeup:"Evening makeup", s_lymph:"Lymphatic drainage massage", s_paraffin:"Paraffin therapy",
+    team_eyebrow:"The team", team_title:"Our masters",
+    m1_name:"Tatiana", m1_role:"Stylist & trichologist", m2_name:"Elena", m2_role:"Lymphatic massage", m3_name:"Kristina", m3_role:"Nail artist", m4_name:"Inna", m4_role:"Manicurist",
+    gal_eyebrow:"Our work", gal_title:"Gallery", hint:"scroll sideways →",
+    rev_eyebrow:"Reviews", rev_title:"From our guests",
+    rev1_text:"“Tatiana and Elena were wonderful. I was visiting Moldova and heard about Tatiana's salon. I wanted to try it because I loved their warm, family atmosphere…”",
+    rev1_author:"Alex",
+    rev2_text:"“The masters here know how to cut men’s hair. I came home to my wife and she was so happy to see such a great haircut. Thank you!”",
+    rev2_author:"Carter",
+    rev3_text:"“A true paradise for anyone who wants to relax and feel cared for. A lovely atmosphere, attentive masters and excellent service. After my massage and treatment I feel renewed. I’ll definitely be back!”",
+    rev3_author:"Olga",
+    faq_eyebrow:"FAQ", faq_title:"Frequently asked questions",
+    q1:"How do I find you?", a1:"We are in the Writers' Union building at 31 August 1989 St, room 100. See the map and directions at the bottom of the page.",
+    q2:"Can I bring children?", a2:"Yes. We offer kids' haircuts and work at your child's pace so the visit stays calm.",
+    q3:"How long does colouring take?", a3:"Usually 2 to 4 hours, depending on the technique and hair length. Your master will confirm at the consultation.",
+    q4:"Do I need a consultation before colouring?", a4:"For complex techniques, yes. The consultation is free and helps us choose the best option for your hair.",
+    q5:"What payment methods do you accept?", a5:"We accept cash and cards.",
+    q6:"What if I need to reschedule?", a6:"Just let us know in advance, and we will gladly find a new time.",
+    cta_eyebrow:"Booking", cta_title:"Book your visit",
+    cta_lead:"We are happy to hear from you. Call or email and we will help you pick a time, choose the right master, and answer any questions before your visit.",
+    cta_call:"Call us", cta_write:"Email us",
+    foot_explore:"Explore", foot_contact:"Contact", foot_hours:"Hours", foot_review:"Leave a review",
+    foot_directions:"Get directions", foot_social:"Follow us",
+    con_addrval:"31 August 1989 St, Chișinău · Writers' Union (room 100)",
+    con_days:"Tuesday – Saturday · 09:00–20:00", con_closed:"Sunday and Monday: closed",
+    footer:"© 2026 Afanasyeva · beauty salon · Chișinău", foot_join:"Want to join our team? Get in touch.",
+    _title:"Afanasyeva Beauty Salon", _tag:"photo",
+    _desc:"Afanasyeva beauty salon in Chișinău. Book by phone or email.",
+    _menu:"Menu", _menu_close:"Close menu"
+  },
+  ro:{
+    brand:"Afanasyeva", brandsub:"salon de înfrumusețare",
+    nav_about:"Studio", nav_prices:"Prețuri", nav_team:"Echipa", nav_gallery:"Galerie", nav_reviews:"Recenzii", nav_faq:"Întrebări", nav_book:"Programează o vizită",
+    hero_eyebrow:"Salon de înfrumusețare · Chișinău",
+    hero_title:"Simte-te din nou ca tine",
+    hero_lead:"Un loc unde poți respira și avea grijă de tine.",
+    hero_cta1:"Programează-te", hero_cta2:"Servicii și prețuri",
+    about_eyebrow:"Studioul nostru", about_title:"Un studio de familie din 2017",
+    about_body:"Salonul a fost fondat de Tatiana Afanasyeva, un studio de familie cu o echipă profesionistă. Maestru de categorie superioară și laureată a premiului «Foarfecele de Aur», a adunat o echipă de maeștri orientați spre calitate, confort și abordare individuală.",
+    about_body2:"Oferim un spectru complet de servicii pentru păr și mâini, pentru oaspeți de toate vârstele, într-o atmosferă de confort, încredere și estetică.",
+    about_cap:"Tatiana Afanasyeva, fondatoare, maestru de categorie superioară",
+    price_eyebrow:"Prețuri", price_title:"Servicii și prețuri",
+    price_note:"Prețurile afișate sunt minime. Costul exact depinde de lungimea părului și materiale. Confirmați la programare.",
+    cat_hair:"Tunsori", cat_style:"Coafură", cat_color:"Vopsire", cat_brows:"Sprâncene", cat_mani:"Manichiură", cat_pedi:"Pedichiură", cat_makeup:"Machiaj", cat_massage:"Masaj",
+    s_kids:"Tuns pentru copii", s_women:"Tuns damă", s_men:"Tuns bărbați",
+    s_bioperm:"Biopermanent (orice lungime)", s_long:"Coafură, păr lung", s_mid:"Coafură, păr mediu",
+    s_curls:"Bucle", s_updo:"Coafură de seară / mireasă", s_lighttone:"Decolorare + tonifiere", s_lightroots:"Decolorarea rădăcinilor", s_hidden:"Vopsire ascunsă", s_ombre:"Ombré", s_highlights:"Șuvițe", s_labor:"Manoperă (fără materiale)",
+    s_browshape:"Modelarea sprâncenelor", s_browtint:"Vopsirea sprâncenelor",
+    s_manigel:"Manichiură + ojă semipermanentă", s_manicombo:"Combinată / cu aparat", s_strength:"Întărire cu gel / bază", s_french:"Franceză / lună", s_design:"Design (per unghie)", s_repair:"Reparația unghiei", s_removal:"Înlăturare",
+    s_pedigel:"Pedichiură + ojă semipermanentă", s_pediclassic:"Clasică / combinată", s_pediapp:"Cu aparat", s_pediedge:"Cu tăiere",
+    s_makeup:"Machiaj de seară", s_lymph:"Masaj de drenaj limfatic", s_paraffin:"Terapie cu parafină",
+    team_eyebrow:"Echipa", team_title:"Maeștrii noștri",
+    m1_name:"Tatiana", m1_role:"Stilistă, tricholog", m2_name:"Elena", m2_role:"Masaj limfatic", m3_name:"Kristina", m3_role:"Tehnician unghii", m4_name:"Inna", m4_role:"Manichiuristă",
+    gal_eyebrow:"Lucrări", gal_title:"Galerie", hint:"derulați lateral →",
+    rev_eyebrow:"Recenzii", rev_title:"De la oaspeții noștri",
+    rev1_text:"„Tatiana și Elena au fost minunate. Vizitam Moldova și am auzit de salonul Tatianei. Am vrut să încerc pentru că mi-a plăcut atmosfera caldă, de familie…”",
+    rev1_author:"Alex",
+    rev2_text:"„Maeștrii de aici știu cum se taie părul bărbaților. Am venit acasă la soție și ea a fost foarte bucuroasă să vadă o tunsoare atât de bună. Mulțumim!”",
+    rev2_author:"Carter",
+    rev3_text:"„Un adevărat paradis pentru cei care vor să se relaxeze și să simtă grijă. Atmosferă plăcută, maeștri atenți și servicii de înaltă calitate. După masaj și îngrijire mă simt reînnoită. Cu siguranță voi reveni!”",
+    rev3_author:"Olga",
+    faq_eyebrow:"Întrebări", faq_title:"Întrebări frecvente",
+    q1:"Cum ne găsiți?", a1:"Studioul se află în clădirea Uniunii Scriitorilor, str. 31 August 1989, cabinetul 100. Harta și indicațiile sunt la finalul paginii.",
+    q2:"Pot veni cu copiii?", a2:"Da. Oferim tuns pentru copii și ne adaptăm ritmului copilului, ca vizita să fie liniștită.",
+    q3:"Cât durează vopsirea?", a3:"De obicei 2 până la 4 ore, în funcție de tehnică și lungimea părului. Maestrul confirmă la consultație.",
+    q4:"Am nevoie de consultație înainte de vopsire?", a4:"Pentru tehnicile complexe, da. Consultația este gratuită și ne ajută să alegem cea mai bună variantă.",
+    q5:"Ce metode de plată acceptați?", a5:"Acceptăm numerar și card.",
+    q6:"Ce fac dacă trebuie să reprogramez?", a6:"Anunțați-ne din timp, și vom găsi cu plăcere o altă oră.",
+    cta_eyebrow:"Programare", cta_title:"Rezervați-vă vizita",
+    cta_lead:"Ne bucurăm să auzim de la dumneavoastră. Sunați sau scrieți-ne și vă ajutăm să alegeți ora, maestrul potrivit, și răspundem la întrebări înainte de vizită.",
+    cta_call:"Sunați", cta_write:"Scrieți-ne",
+    foot_explore:"Secțiuni", foot_contact:"Contact", foot_hours:"Program", foot_review:"Lăsați o recenzie",
+    foot_directions:"Indicații", foot_social:"Urmăriți-ne",
+    con_addrval:"str. 31 August 1989, Chișinău · Uniunea Scriitorilor (cab. 100)",
+    con_days:"Marți – sâmbătă · 09:00–20:00", con_closed:"Duminică și luni: închis",
+    footer:"© 2026 Afanasyeva · salon de înfrumusețare · Chișinău", foot_join:"Vrei să te alături echipei? Scrie-ne.",
+    _title:"Afanasyeva Salon de Înfrumusețare", _tag:"foto",
+    _desc:"Salon de înfrumusețare Afanasyeva în Chișinău. Programare la telefon sau email.",
+    _menu:"Meniu", _menu_close:"Închide meniul"
+  }
+};
+
+function absUrl(path){
+  const base = SITE.url || window.location.origin + window.location.pathname.replace(/[^/]*$/, '');
+  return new URL(path, base).href;
+}
+
+function initSiteLinks(){
+  [
+    ['foot-instagram', SITE.instagram, true],
+    ['foot-facebook', SITE.facebook, true],
+    ['foot-tiktok', SITE.tiktok, true],
+    ['reviews-google', SITE.googleReview, true]
+  ].forEach(([id, url, external])=>{
+    const el=document.getElementById(id);
+    if(!el) return;
+    if(url){
+      el.href=url;
+      if(external){
+        el.target='_blank';
+        el.rel='noopener noreferrer';
+      }
+    }else{
+      el.classList.add('is-empty');
+      el.removeAttribute('href');
+      el.setAttribute('aria-disabled','true');
+      el.addEventListener('click',e=>e.preventDefault());
+    }
+  });
+}
+
+function initSiteMeta(){
+  const pageUrl = absUrl('./');
+  const imageUrl = absUrl('Photos/hero.png');
+  const canonical = document.getElementById('canonical');
+  if(canonical) canonical.setAttribute('href', pageUrl);
+  setMeta('og-url', pageUrl);
+  setMeta('og-image', imageUrl);
+  setMeta('tw-image', imageUrl);
+  const schema = document.getElementById('schema-org');
+  if(schema){
+    const data = JSON.parse(schema.textContent);
+    data.url = pageUrl;
+    data.image = imageUrl;
+    const sameAs=[SITE.instagram,SITE.facebook,SITE.tiktok].filter(Boolean);
+    if(sameAs.length) data.sameAs=sameAs;
+    schema.textContent = JSON.stringify(data);
+  }
+  initSiteLinks();
+  const footMaps = document.getElementById('foot-maps');
+  if(footMaps && SITE.googleMaps) footMaps.href = SITE.googleMaps;
+  const mapFrame = document.querySelector('.foot-map iframe');
+  if(mapFrame && SITE.googleMapsEmbed) mapFrame.src = SITE.googleMapsEmbed;
+}
+
+function setMeta(id, value){
+  const el = document.getElementById(id);
+  if(el) el.setAttribute('content', value);
+}
+
+function detectLang(){
+  try{
+    const saved = localStorage.getItem(LANG_KEY);
+    if(saved && I18N[saved]) return saved;
+  }catch(e){}
+  const nav = (navigator.language || 'ru').toLowerCase();
+  if(nav.startsWith('ro')) return 'ro';
+  if(nav.startsWith('en')) return 'en';
+  return 'ru';
+}
+
+function setLang(lang){
+  const d = I18N[lang];
+  if(!d) return;
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.title = d._title;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(d[k]===undefined) return;
+    if(el.hasAttribute('data-i18n-html')) el.innerHTML=d[k];
+    else el.textContent=d[k];
+  });
+  document.querySelectorAll('.ph:not(:has(img))').forEach(el=> el.setAttribute('data-tag', d._tag));
+  syncLangDropdowns(lang);
+  setMeta('meta-desc', d._desc);
+  setMeta('og-title', d._title);
+  setMeta('og-desc', d._desc);
+  setMeta('tw-title', d._title);
+  setMeta('tw-desc', d._desc);
+  setMeta('og-locale', OG_LOCALE[lang]);
+  updateMenuAriaLabel(document.getElementById('panel')?.classList.contains('open'));
+  try{ localStorage.setItem(LANG_KEY, lang); }catch(e){}
+}
+function updateMenuAriaLabel(open){
+  const mb = document.querySelector('.menu-btn');
+  const d = I18N[currentLang];
+  if(!mb || !d) return;
+  mb.setAttribute('aria-label', open ? d._menu_close : d._menu);
+}
+function syncLangDropdowns(lang){
+  document.querySelectorAll('.lang-dd').forEach(dd=>{
+    const val = dd.querySelector('.lang-dd-val');
+    if(val) val.textContent = lang.toUpperCase();
+    dd.querySelectorAll('[data-lang]').forEach(btn=>{
+      btn.setAttribute('aria-selected', btn.dataset.lang===lang?'true':'false');
+    });
+  });
+}
+function closeLangDropdowns(except){
+  document.querySelectorAll('.lang-dd.open').forEach(dd=>{
+    if(dd===except) return;
+    dd.classList.remove('open');
+    const btn = dd.querySelector('.lang-dd-btn');
+    if(btn) btn.setAttribute('aria-expanded','false');
+  });
+}
+document.querySelectorAll('.lang-dd').forEach(dd=>{
+  const btn = dd.querySelector('.lang-dd-btn');
+  dd.querySelectorAll('[data-lang]').forEach(opt=>{
+    opt.addEventListener('click', e=>{
+      e.stopPropagation();
+      setLang(opt.dataset.lang);
+      dd.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    });
+  });
+  btn.addEventListener('click', e=>{
+    e.stopPropagation();
+    const open = !dd.classList.contains('open');
+    closeLangDropdowns(dd);
+    dd.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open?'true':'false');
+  });
+});
+document.addEventListener('click', ()=> closeLangDropdowns());
+document.addEventListener('keydown', e=>{
+  if(e.key==='Escape') closeLangDropdowns();
+});
+
+/* price tabs */
+const groups = document.querySelectorAll('.pricegroup');
+document.querySelectorAll('.tab').forEach(tab=>{
+  tab.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab').forEach(t=> t.setAttribute('aria-selected','false'));
+    tab.setAttribute('aria-selected','true');
+    const cat = tab.dataset.cat;
+    groups.forEach(g=> g.hidden = (g.dataset.group !== cat));
+  });
+});
+
+/* header + menu */
+const header=document.querySelector('header');
+const onScroll=()=> header.classList.toggle('scrolled', window.scrollY>8);
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+/* active nav section */
+const NAV_SECTIONS=['about','prices','team','gallery','reviews','faq'];
+const navAnchors=document.querySelectorAll('.nav-links a[href^="#"], .panel-nav a[href^="#"]');
+const spySections=NAV_SECTIONS.map(id=>document.getElementById(id)).filter(Boolean);
+
+function setActiveNav(id){
+  navAnchors.forEach(a=>{
+    const match=a.getAttribute('href')==='#'+id;
+    a.classList.toggle('is-active',match);
+    if(match) a.setAttribute('aria-current','page');
+    else a.removeAttribute('aria-current');
+  });
+}
+function updateActiveNav(){
+  const offset=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header'),10)+20;
+  let current='';
+  spySections.forEach(sec=>{
+    if(sec.getBoundingClientRect().top<=offset) current=sec.id;
+  });
+  if(current) setActiveNav(current);
+  else navAnchors.forEach(a=>{ a.classList.remove('is-active'); a.removeAttribute('aria-current'); });
+}
+updateActiveNav();
+window.addEventListener('scroll', updateActiveNav, {passive:true});
+
+const mb=document.querySelector('.menu-btn'), panel=document.getElementById('panel');
+function setMenuOpen(open){
+  panel.classList.toggle('open', open);
+  panel.setAttribute('aria-hidden', open?'false':'true');
+  mb.setAttribute('aria-expanded', open?'true':'false');
+  updateMenuAriaLabel(open);
+  document.body.classList.toggle('menu-open', open);
+}
+mb.addEventListener('click', ()=> setMenuOpen(!panel.classList.contains('open')));
+panel.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> setMenuOpen(false)));
+document.addEventListener('keydown', e=>{ if(e.key==='Escape' && panel.classList.contains('open')) setMenuOpen(false); });
+
+/* reveal */
+const io=new IntersectionObserver((es)=>{ es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
+
+setLang(detectLang());
+initSiteMeta();
+</script>
+</body>
+</html>

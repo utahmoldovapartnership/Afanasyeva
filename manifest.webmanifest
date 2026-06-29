@@ -1,0 +1,19 @@
+{
+  "name": "Afanasyeva · салон красоты",
+  "short_name": "Afanasyeva",
+  "description": "Семейная студия красоты в Кишинёве с 2017 года.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F8F7F3",
+  "theme_color": "#F8F7F3",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "SVG/crownheart.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
