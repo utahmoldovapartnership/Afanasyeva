@@ -10,9 +10,9 @@
   "lang": "ru",
   "icons": [
     {
-      "src": "SVG/crownheart.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "SVG/v3.png",
+      "sizes": "145x150",
+      "type": "image/png",
       "purpose": "any"
     }
   ]
