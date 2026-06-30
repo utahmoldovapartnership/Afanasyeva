@@ -605,7 +605,7 @@
 (function(){
   var k='afanasyeva-lang',l;
   try{l=localStorage.getItem(k);}catch(e){}
-  if(!l){var n=(navigator.language||'ru').toLowerCase();l=n.startsWith('ro')?'ro':n.startsWith('en')?'en':'ru';}
+  if(!l){l='ru';}
   document.documentElement.lang=l;
 })();
 </script>
@@ -1224,9 +1224,6 @@ function detectLang(){
     const saved = localStorage.getItem(LANG_KEY);
     if(saved && I18N[saved]) return saved;
   }catch(e){}
-  const nav = (navigator.language || 'ru').toLowerCase();
-  if(nav.startsWith('ro')) return 'ro';
-  if(nav.startsWith('en')) return 'en';
   return 'ru';
 }
 
