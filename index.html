@@ -2,9 +2,11 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#F8F7F3">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" id="theme-color" content="#F8F7F3">
+<meta name="apple-mobile-web-app-title" content="Afanasyeva">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="format-detection" content="telephone=yes">
@@ -23,13 +25,14 @@
 <meta property="og:title" id="og-title" content="Afanasyeva Салон красоты">
 <meta property="og:description" id="og-desc" content="Салон красоты Afanasyeva в Кишинёве. Запись по телефону или email.">
 <meta property="og:url" id="og-url" content="">
-<meta property="og:image" id="og-image" content="">
+<meta property="og:image" id="og-image" content="Photos/hero.jpg">
+<meta property="og:image:alt" content="Afanasyeva beauty salon">
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" id="tw-title" content="Afanasyeva Салон красоты">
 <meta name="twitter:description" id="tw-desc" content="Салон красоты Afanasyeva в Кишинёве. Запись по телефону или email.">
-<meta name="twitter:image" id="tw-image" content="">
+<meta name="twitter:image" id="tw-image" content="Photos/hero.jpg">
 
 <link rel="alternate" hreflang="ru" href="./">
 <link rel="alternate" hreflang="en" href="./">
@@ -39,6 +42,8 @@
 <link rel="icon" href="SVG/crownheart.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="SVG/crownheart.svg">
 <link rel="manifest" href="manifest.webmanifest">
+
+<link rel="preload" as="image" href="Photos/hero.jpg" fetchpriority="high">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,9 +58,15 @@
   "name": "Afanasyeva",
   "description": "Семейная студия красоты в Кишинёве с 2017 года.",
   "url": "",
-  "image": "Photos/hero.png",
+  "image": "Photos/hero.jpg",
   "telephone": "+37369177796",
   "email": "goldenfishsalon@gmail.com",
+  "hasMap": "https://maps.app.goo.gl/4YQQCcAZAjaKsDeN8",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.0287344,
+    "longitude": 28.8207074
+  },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "ул. 31 августа 1989, Союз писателей (каб. 100)",
@@ -113,6 +124,7 @@
     font-family:var(--sans);font-size:var(--fs-body);
     line-height:var(--lh-body);font-weight:400;-webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;overflow-x:hidden;
+    padding-bottom:env(safe-area-inset-bottom, 0px);
   }
   ::selection{background:var(--gold);color:var(--cream);}
   a{color:inherit;text-decoration:none;}
@@ -163,7 +175,9 @@
   /* header */
   header{position:sticky;top:0;z-index:80;background:rgba(248,247,243,.84);
     backdrop-filter:saturate(150%) blur(12px);-webkit-backdrop-filter:saturate(150%) blur(12px);
-    border-bottom:1px solid transparent;transition:border-color .3s,background .3s;}
+    border-bottom:1px solid transparent;transition:border-color .3s,background .3s;
+    padding-top:env(safe-area-inset-top, 0px);
+  }
   header.scrolled{border-color:var(--line);}
   .nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1.4rem;height:var(--header);position:relative;z-index:81;}
   .brand{display:flex;flex-direction:column;line-height:1;justify-self:start;}
@@ -270,10 +284,11 @@
   .panel.open .panel-nav a:nth-child(6){animation-delay:.52s;}
   .panel-foot{
     flex-shrink:0;margin-top:auto;width:100%;
-    display:flex;flex-direction:column;align-items:center;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
     padding:clamp(1.25rem,4vh,2rem) var(--pad) max(1.5rem, env(safe-area-inset-bottom));
     opacity:0;transform:translateY(18px);
   }
+  .panel-foot .btn{margin-inline:auto;justify-content:center;}
   .panel.open .panel-foot{animation:menu-link-in .55s ease .6s forwards;}
   @keyframes menu-link-in{to{opacity:1;transform:none;}}
 
@@ -322,7 +337,7 @@
     .about-copy{display:flex;flex-direction:column;justify-content:center;min-height:100%;padding-block:clamp(12px,2vw,28px);}
     .about h2{max-width:16ch;}
     .about-body{max-width:52ch;margin-top:1.35rem;}
-      .about .cap{white-space:normal;text-align:center;}
+      .about .cap{white-space:nowrap;text-align:center;max-width:none;}
   }
 
   /* prices */
@@ -340,6 +355,7 @@
   .prow .pr{font-weight:600;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:var(--fs-body);}
   .prow .pr .pl{color:var(--gold);}
   .price-note{margin:clamp(18px,2.5vw,24px) 0 0;text-align:center;font-size:var(--fs-body-sm);color:var(--muted);line-height:var(--lh-body);}
+  .price-cta{margin-top:clamp(20px,3vw,28px);}
 
   /* team */
   .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,24px);width:100%;}
@@ -452,6 +468,8 @@
   .foot-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.7rem;}
   .foot-list li{display:flex;align-items:center;gap:.7rem;font-size:var(--fs-body-sm);color:var(--charcoal);line-height:1.45;}
   .foot-list a{color:var(--charcoal);transition:color .2s;overflow-wrap:anywhere;}
+  br.m-only{display:none;}
+  .addr-sep{white-space:nowrap;}
   .foot-list a:hover{color:var(--ink);}
   .foot-ico{
     flex:0 0 18px;width:18px;height:18px;color:var(--ink);display:inline-flex;align-items:center;justify-content:center;
@@ -480,7 +498,10 @@
   }
   .foot-bottom a{color:var(--charcoal);transition:color .2s;}
   .foot-bottom a:hover{color:#000;}
+  .foot-join-action{font-weight:600;text-decoration:underline;text-underline-offset:2px;}
   @media(max-width:820px){
+    br.m-only{display:block;}
+    .addr-sep{display:none;}
     .foot-layout{grid-template-columns:1fr;gap:clamp(32px,5vw,40px);}
     .foot-content{align-items:center;text-align:center;}
     .foot-block{align-items:center;width:100%;}
@@ -502,7 +523,7 @@
     .about h2,.about-body,.about .cap{margin-inline:auto;}
     .about h2{max-width:none;}
     .about-body{max-width:min(36rem,100%);}
-    .about .cap{white-space:normal;max-width:min(34ch,100%);}
+    .about .cap{white-space:nowrap;max-width:none;}
   }
 
   /* Tablet nav tightening */
@@ -556,7 +577,7 @@
       flex-direction:column;align-items:stretch;width:100%;max-width:18rem;margin-inline:auto;
     }
     .hero-cta .btn,.cta-actions .btn{justify-content:center;width:100%;}
-    .panel-foot .btn{width:100%;max-width:18rem;}
+    .panel-foot .btn{width:100%;max-width:18rem;margin-inline:auto;}
     .btn{white-space:normal;text-align:center;}
   }
   @media(prefers-reduced-motion:reduce){
@@ -566,9 +587,28 @@
     .panel-nav a,.panel-foot{opacity:1;transform:none;}
   }
   :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px;}
+
+  .skip-link{
+    position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:200;
+  }
+  .skip-link:focus{
+    left:var(--pad);top:calc(var(--header) + 8px);width:auto;height:auto;
+    padding:.55rem 1rem;background:var(--ink);color:var(--cream);
+    font-family:var(--sans);font-size:var(--fs-body-sm);font-weight:600;border-radius:var(--pill);
+  }
 </style>
+<script>
+(function(){
+  var k='afanasyeva-lang',l;
+  try{l=localStorage.getItem(k);}catch(e){}
+  if(!l){var n=(navigator.language||'ru').toLowerCase();l=n.startsWith('ro')?'ro':n.startsWith('en')?'en':'ru';}
+  document.documentElement.lang=l;
+})();
+</script>
 </head>
 <body>
+
+<a class="skip-link" href="#about" data-i18n="_skip">Перейти к содержанию</a>
 
 <header id="top">
   <div class="wrap nav">
@@ -637,7 +677,7 @@
       </div>
     </div>
     <div class="ph arch-wide hero-img">
-      <img src="Photos/hero.png" alt="Детская стрижка в салоне Afanasyeva" width="1024" height="827" loading="eager" fetchpriority="high" decoding="async">
+      <img src="Photos/hero.jpg" alt="Детская стрижка в салоне Afanasyeva" width="1024" height="827" loading="eager" fetchpriority="high" decoding="async">
     </div>
   </div>
 </section>
@@ -647,7 +687,7 @@
   <div class="wrap about-grid reveal">
     <div class="about-media">
       <div class="ph arch-tall about-portrait">
-        <img src="Photos/Татьяна.png" alt="Татьяна Афанасьева, основательница салона" width="1021" height="1025" loading="lazy" decoding="async">
+        <img src="Photos/Татьяна.jpg" alt="Татьяна Афанасьева, основательница салона" width="1021" height="1025" loading="lazy" decoding="async">
       </div>
       <p class="cap" data-i18n="about_cap">Татьяна Афанасьева, основательница, мастер высшей категории</p>
     </div>
@@ -736,6 +776,10 @@
       </div>
     </div>
     <p class="price-note" data-i18n="price_note">Указана минимальная стоимость. Точная цена зависит от длины волос и материалов. Уточняйте при записи.</p>
+    <div class="cta-actions price-cta">
+      <a class="btn btn-primary" href="tel:+37369177796"><span data-i18n="cta_call">Позвонить</span> <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="mailto:goldenfishsalon@gmail.com" data-i18n="cta_write">Написать</a>
+    </div>
   </div>
 </section>
 
@@ -746,7 +790,7 @@
       <h2 data-i18n="team_title">Мастера студии</h2>
     </div>
     <div class="team-grid">
-      <div class="member"><div class="ph arch-tall"><img src="Photos/Татьяна.png" alt="Татьяна, стилист, трихолог" width="1021" height="1025" loading="lazy" decoding="async"></div><h3 data-i18n="m1_name">Татьяна</h3><p class="role" data-i18n="m1_role">Стилист, трихолог</p></div>
+      <div class="member"><div class="ph arch-tall"><img src="Photos/Татьяна.jpg" alt="Татьяна, стилист, трихолог" width="1021" height="1025" loading="lazy" decoding="async"></div><h3 data-i18n="m1_name">Татьяна</h3><p class="role" data-i18n="m1_role">Стилист, трихолог</p></div>
       <div class="member"><div class="ph arch-tall"><img src="Photos/Елена.jpg" alt="Елена, лимфодренажный массаж" width="993" height="996" loading="lazy" decoding="async"></div><h3 data-i18n="m2_name">Елена</h3><p class="role" data-i18n="m2_role">Лимфодренажный массаж</p></div>
       <div class="member"><div class="ph arch-tall"><img src="Photos/Кристина.jpg" alt="Кристина, нейл-мастер" width="955" height="955" loading="lazy" decoding="async"></div><h3 data-i18n="m3_name">Кристина</h3><p class="role" data-i18n="m3_role">Нейл-мастер</p></div>
       <div class="member"><div class="ph arch-tall"><img src="Photos/Инна.jpg" alt="Инна, мастер маникюра" width="1102" height="1147" loading="lazy" decoding="async"></div><h3 data-i18n="m4_name">Инна</h3><p class="role" data-i18n="m4_role">Мастер маникюра</p></div>
@@ -886,7 +930,7 @@
               <span class="foot-ico" aria-hidden="true">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
               </span>
-              <a id="foot-maps" href="https://maps.app.goo.gl/4YQQCcAZAjaKsDeN8" target="_blank" rel="noopener noreferrer" data-i18n="con_addrval">ул. 31 августа 1989, Кишинёв · Союз писателей (каб. 100)</a>
+              <a id="foot-maps" href="https://maps.app.goo.gl/4YQQCcAZAjaKsDeN8" target="_blank" rel="noopener noreferrer" data-i18n="con_addrval" data-i18n-html>ул. 31 августа 1989, Кишинёв<span class="addr-sep"> · </span><br class="m-only">Союз писателей (каб. 100)</a>
             </li>
             <li>
               <span class="foot-ico" aria-hidden="true">
@@ -939,7 +983,7 @@
   <div class="foot-bottom">
     <div class="wrap">
       <span data-i18n="footer">© 2026 Afanasyeva · салон красоты · Кишинёв</span>
-      <a href="mailto:goldenfishsalon@gmail.com" data-i18n="foot_join">Хотите в команду? Напишите нам.</a>
+      <a href="mailto:goldenfishsalon@gmail.com" data-i18n="foot_join" data-i18n-html>Хотите в команду? <span class="foot-join-action">Напишите нам.</span></a>
     </div>
   </div>
 </footer>
@@ -1003,12 +1047,12 @@ const I18N = {
     cta_call:"Позвонить", cta_write:"Написать",
     foot_explore:"Разделы", foot_contact:"Контакты", foot_hours:"Часы работы", foot_review:"Оставьте отзыв",
     foot_directions:"Маршрут", foot_social:"Мы в соцсетях",
-    con_addrval:"ул. 31 августа 1989, Кишинёв · Союз писателей (каб. 100)",
+    con_addrval:"ул. 31 августа 1989, Кишинёв<span class=\"addr-sep\"> · </span><br class=\"m-only\">Союз писателей (каб. 100)",
     con_days:"Вторник – суббота · 09:00–20:00", con_closed:"Воскресенье и понедельник: выходной",
-    footer:"© 2026 Afanasyeva · салон красоты · Кишинёв", foot_join:"Хотите в команду? Напишите нам.",
+    footer:"© 2026 Afanasyeva · салон красоты · Кишинёв", foot_join:"Хотите в команду? <span class=\"foot-join-action\">Напишите нам.</span>",
     _title:"Afanasyeva Салон красоты", _tag:"фото",
     _desc:"Салон красоты Afanasyeva в Кишинёве. Запись по телефону или email.",
-    _menu:"Меню", _menu_close:"Закрыть меню"
+    _menu:"Меню", _menu_close:"Закрыть меню", _skip:"Перейти к содержанию"
   },
   en:{
     brand:"Afanasyeva", brandsub:"beauty salon",
@@ -1053,12 +1097,12 @@ const I18N = {
     cta_call:"Call us", cta_write:"Email us",
     foot_explore:"Explore", foot_contact:"Contact", foot_hours:"Hours", foot_review:"Leave a review",
     foot_directions:"Get directions", foot_social:"Follow us",
-    con_addrval:"31 August 1989 St, Chișinău · Writers' Union (room 100)",
+    con_addrval:"31 August 1989 St, Chișinău<span class=\"addr-sep\"> · </span><br class=\"m-only\">Writers' Union (room 100)",
     con_days:"Tuesday – Saturday · 09:00–20:00", con_closed:"Sunday and Monday: closed",
-    footer:"© 2026 Afanasyeva · beauty salon · Chișinău", foot_join:"Want to join our team? Get in touch.",
+    footer:"© 2026 Afanasyeva · beauty salon · Chișinău", foot_join:"Want to join our team? <span class=\"foot-join-action\">Get in touch.</span>",
     _title:"Afanasyeva Beauty Salon", _tag:"photo",
     _desc:"Afanasyeva beauty salon in Chișinău. Book by phone or email.",
-    _menu:"Menu", _menu_close:"Close menu"
+    _menu:"Menu", _menu_close:"Close menu", _skip:"Skip to content"
   },
   ro:{
     brand:"Afanasyeva", brandsub:"salon de înfrumusețare",
@@ -1103,12 +1147,12 @@ const I18N = {
     cta_call:"Sunați", cta_write:"Scrieți-ne",
     foot_explore:"Secțiuni", foot_contact:"Contact", foot_hours:"Program", foot_review:"Lăsați o recenzie",
     foot_directions:"Indicații", foot_social:"Urmăriți-ne",
-    con_addrval:"str. 31 August 1989, Chișinău · Uniunea Scriitorilor (cab. 100)",
+    con_addrval:"str. 31 August 1989, Chișinău<span class=\"addr-sep\"> · </span><br class=\"m-only\">Uniunea Scriitorilor (cab. 100)",
     con_days:"Marți – sâmbătă · 09:00–20:00", con_closed:"Duminică și luni: închis",
-    footer:"© 2026 Afanasyeva · salon de înfrumusețare · Chișinău", foot_join:"Vrei să te alături echipei? Scrie-ne.",
+    footer:"© 2026 Afanasyeva · salon de înfrumusețare · Chișinău", foot_join:"Vrei să te alături echipei? <span class=\"foot-join-action\">Scrie-ne.</span>",
     _title:"Afanasyeva Salon de Înfrumusețare", _tag:"foto",
     _desc:"Salon de înfrumusețare Afanasyeva în Chișinău. Programare la telefon sau email.",
-    _menu:"Meniu", _menu_close:"Închide meniul"
+    _menu:"Meniu", _menu_close:"Închide meniul", _skip:"Sari la conținut"
   }
 };
 
@@ -1143,7 +1187,7 @@ function initSiteLinks(){
 
 function initSiteMeta(){
   const pageUrl = absUrl('./');
-  const imageUrl = absUrl('Photos/hero.png');
+  const imageUrl = absUrl('Photos/hero.jpg');
   const canonical = document.getElementById('canonical');
   if(canonical) canonical.setAttribute('href', pageUrl);
   setMeta('og-url', pageUrl);
@@ -1154,6 +1198,7 @@ function initSiteMeta(){
     const data = JSON.parse(schema.textContent);
     data.url = pageUrl;
     data.image = imageUrl;
+    data.hasMap = SITE.googleMaps || data.hasMap;
     const sameAs=[SITE.instagram,SITE.facebook,SITE.tiktok].filter(Boolean);
     if(sameAs.length) data.sameAs=sameAs;
     schema.textContent = JSON.stringify(data);
@@ -1298,6 +1343,12 @@ function setMenuOpen(open){
   mb.setAttribute('aria-expanded', open?'true':'false');
   updateMenuAriaLabel(open);
   document.body.classList.toggle('menu-open', open);
+  if(open){
+    const first=panel.querySelector('.panel-nav a');
+    if(first) first.focus();
+  }else{
+    mb.focus();
+  }
 }
 mb.addEventListener('click', ()=> setMenuOpen(!panel.classList.contains('open')));
 panel.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> setMenuOpen(false)));
@@ -1307,8 +1358,33 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape' && panel.classList
 const io=new IntersectionObserver((es)=>{ es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
 
+function initThemeColor(){
+  const meta=document.getElementById('theme-color');
+  if(!meta) return;
+  const defaultColor='#F8F7F3';
+  const zones=[
+    {el:document.getElementById('about'), color:'#ECE7DD'},
+    {el:document.getElementById('team'), color:'#FFFFFF'},
+    {el:document.getElementById('reviews'), color:'#EFE7D7'},
+    {el:document.getElementById('faq'), color:'#FFFFFF'},
+    {el:document.querySelector('footer'), color:'#FFFFFF'}
+  ].filter(z=>z.el);
+  function update(){
+    const mid=window.innerHeight*.5;
+    let color=defaultColor;
+    for(const z of zones){
+      const r=z.el.getBoundingClientRect();
+      if(r.top<=mid && r.bottom>=mid){ color=z.color; break; }
+    }
+    meta.setAttribute('content', color);
+  }
+  update();
+  window.addEventListener('scroll', update, {passive:true});
+}
+
 setLang(detectLang());
 initSiteMeta();
+initThemeColor();
 </script>
 </body>
 </html>
