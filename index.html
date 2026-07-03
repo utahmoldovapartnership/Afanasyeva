@@ -364,7 +364,7 @@
   .price-cta{margin-top:clamp(20px,3vw,28px);}
 
   /* team */
-  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,24px);width:100%;}
+  .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px);width:100%;}
   .member{transition:transform .35s ease;}
   @media(hover:hover){.member:hover{transform:translateY(-6px);}}
   .member .ph{aspect-ratio:3/4;margin-bottom:.85rem;}
@@ -723,7 +723,6 @@
       <button class="tab" role="tab" aria-selected="false" data-cat="mani"    data-i18n="cat_mani">Маникюр</button>
       <button class="tab" role="tab" aria-selected="false" data-cat="pedi"    data-i18n="cat_pedi">Педикюр</button>
       <button class="tab" role="tab" aria-selected="false" data-cat="makeup"  data-i18n="cat_makeup">Макияж</button>
-      <button class="tab" role="tab" aria-selected="false" data-cat="massage" data-i18n="cat_massage">Массаж</button>
     </div>
 
     <div class="pricewrap">
@@ -778,11 +777,6 @@
       <div class="pricegroup" data-group="makeup" hidden>
         <div class="prow"><span class="nm" data-i18n="s_makeup">Вечерний макияж</span><span class="pr">750 MDL</span></div>
       </div>
-
-      <div class="pricegroup" data-group="massage" hidden>
-        <div class="prow"><span class="nm" data-i18n="s_lymph">Лимфодренажный массаж</span><span class="pr">500–600 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_paraffin">Парафинотерапия</span><span class="pr">200–300 MDL</span></div>
-      </div>
     </div>
     <p class="price-note" data-i18n="price_note">Указана минимальная стоимость. Точная цена зависит от длины волос и материалов. Уточняйте при записи.</p>
     <div class="cta-actions price-cta">
@@ -800,9 +794,8 @@
     </div>
     <div class="team-grid">
       <div class="member"><div class="ph arch-tall"><img src="Photos/Татьяна.jpg" alt="Татьяна, стилист, трихолог" width="1021" height="1025" loading="lazy" decoding="async"></div><h3 data-i18n="m1_name">Татьяна</h3><p class="role" data-i18n="m1_role">Стилист, трихолог</p></div>
-      <div class="member"><div class="ph arch-tall"><img src="Photos/Елена.jpg" alt="Елена, лимфодренажный массаж" width="993" height="996" loading="lazy" decoding="async"></div><h3 data-i18n="m2_name">Елена</h3><p class="role" data-i18n="m2_role">Лимфодренажный массаж</p></div>
-      <div class="member"><div class="ph arch-tall"><img src="Photos/Кристина.jpg" alt="Кристина, нейл-мастер" width="955" height="955" loading="lazy" decoding="async"></div><h3 data-i18n="m3_name">Кристина</h3><p class="role" data-i18n="m3_role">Нейл-мастер</p></div>
-      <div class="member"><div class="ph arch-tall"><img src="Photos/Инна.jpg" alt="Инна, мастер маникюра" width="1102" height="1147" loading="lazy" decoding="async"></div><h3 data-i18n="m4_name">Инна</h3><p class="role" data-i18n="m4_role">Мастер маникюра</p></div>
+      <div class="member"><div class="ph arch-tall"><img src="Photos/Кристина.jpg" alt="Кристина, нейл-мастер" width="955" height="955" loading="lazy" decoding="async"></div><h3 data-i18n="m2_name">Кристина</h3><p class="role" data-i18n="m2_role">Нейл-мастер</p></div>
+      <div class="member"><div class="ph arch-tall"><img src="Photos/Инна.jpg" alt="Инна, мастер маникюра" width="1102" height="1147" loading="lazy" decoding="async"></div><h3 data-i18n="m3_name">Инна</h3><p class="role" data-i18n="m3_role">Мастер маникюра</p></div>
     </div>
   </div>
 </section>
@@ -830,7 +823,7 @@
         <figure class="gallery-item gallery-item--arch"><div class="ph"><img src="Photos/hair-coloring.jpg" alt="Окрашивание и тонирование" width="1204" height="1067" loading="lazy" decoding="async"></div></figure>
       </div>
       <div class="gallery-row gallery-row--center">
-        <figure class="gallery-item"><div class="ph"><img src="Photos/massage.jpg" alt="Лимфодренажный массаж" width="698" height="619" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img src="Photos/makeup.jpg" alt="Макияж" width="571" height="506" loading="lazy" decoding="async"></div></figure>
         <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g2.jpg" alt="Мелирование и завивка" width="1135" height="736" loading="lazy" decoding="async"></div></figure>
         <figure class="gallery-item"><div class="ph"><img src="Photos/face-paint.jpg" alt="Макияж" width="946" height="839" loading="lazy" decoding="async"></div></figure>
       </div>
@@ -1029,16 +1022,16 @@ const I18N = {
     about_cap:"Татьяна Афанасьева, основательница, мастер высшей категории",
     price_eyebrow:"Прайс", price_title:"Услуги и Цены",
     price_note:"Указана минимальная стоимость. Точная цена зависит от длины волос и материалов. Уточняйте при записи.",
-    cat_hair:"Стрижки", cat_style:"Укладка", cat_color:"Окрашивание", cat_brows:"Брови", cat_mani:"Маникюр", cat_pedi:"Педикюр", cat_makeup:"Макияж", cat_massage:"Массаж",
+    cat_hair:"Стрижки", cat_style:"Укладка", cat_color:"Окрашивание", cat_brows:"Брови", cat_mani:"Маникюр", cat_pedi:"Педикюр", cat_makeup:"Макияж",
     s_kids:"Детская стрижка", s_women:"Женская стрижка", s_men:"Мужская стрижка",
     s_bioperm:"Биозавивка (любая длина)", s_long:"Укладка на длинные волосы", s_mid:"Укладка на среднюю длину",
     s_curls:"Локоны", s_updo:"Вечерняя / свадебная причёска", s_lighttone:"Осветление + тонирование", s_lightroots:"Осветление корней", s_hidden:"Скрытое окрашивание", s_ombre:"Омбре", s_highlights:"Мелирование", s_labor:"Работа (без материалов)",
     s_browshape:"Оформление бровей", s_browtint:"Окрашивание бровей",
     s_manigel:"Маникюр + гель-лак", s_manicombo:"Комбинированный / аппаратный", s_strength:"Укрепление гелем / базой", s_french:"Френч / лунный", s_design:"Дизайн (за ноготь)", s_repair:"Ремонт ногтя", s_removal:"Снятие",
     s_pedigel:"Педикюр + гель-лак", s_pediclassic:"Классический / комбинированный", s_pediapp:"Аппаратный", s_pediedge:"Обрезной",
-    s_makeup:"Вечерний макияж", s_lymph:"Лимфодренажный массаж", s_paraffin:"Парафинотерапия",
+    s_makeup:"Вечерний макияж",
     team_eyebrow:"Команда", team_title:"Мастера Студии",
-    m1_name:"Татьяна", m1_role:"Стилист, трихолог", m2_name:"Елена", m2_role:"Лимфодренажный массаж", m3_name:"Кристина", m3_role:"Нейл-мастер", m4_name:"Инна", m4_role:"Мастер маникюра",
+    m1_name:"Татьяна", m1_role:"Стилист, трихолог", m2_name:"Кристина", m2_role:"Нейл-мастер", m3_name:"Инна", m3_role:"Мастер маникюра",
     gal_eyebrow:"Работы", gal_title:"Галерея", hint:"листайте в сторону →",
     rev_eyebrow:"Отзывы", rev_title:"От Наших Гостей",
     rev1_text:"«Татьяна и Елена были восхитительны. Я посещаю Молдову и услышала о салоне Татьяны, поэтому захотела попробовать: мне понравилась их семейная, дружелюбная атмосфера…»",
@@ -1079,16 +1072,16 @@ const I18N = {
     about_cap:"Tatiana Afanasyeva, founder, top-category master",
     price_eyebrow:"Pricing", price_title:"Services & Prices",
     price_note:"Prices shown are starting points. The final cost depends on hair length and materials. Confirm when you book.",
-    cat_hair:"Haircuts", cat_style:"Styling", cat_color:"Colour", cat_brows:"Brows", cat_mani:"Manicure", cat_pedi:"Pedicure", cat_makeup:"Makeup", cat_massage:"Massage",
+    cat_hair:"Haircuts", cat_style:"Styling", cat_color:"Colour", cat_brows:"Brows", cat_mani:"Manicure", cat_pedi:"Pedicure", cat_makeup:"Makeup",
     s_kids:"Kids' haircut", s_women:"Women's haircut", s_men:"Men's haircut",
     s_bioperm:"Bio-perm (any length)", s_long:"Styling, long hair", s_mid:"Styling, medium hair",
     s_curls:"Curls", s_updo:"Evening / bridal updo", s_lighttone:"Lightening + toning", s_lightroots:"Root lightening", s_hidden:"Hidden colour", s_ombre:"Ombré", s_highlights:"Highlights", s_labor:"Labour (excl. materials)",
     s_browshape:"Brow shaping", s_browtint:"Brow tinting",
     s_manigel:"Manicure + gel polish", s_manicombo:"Combined / e-file", s_strength:"Gel / base strengthening", s_french:"French / moon", s_design:"Design (per nail)", s_repair:"Nail repair", s_removal:"Removal",
     s_pedigel:"Pedicure + gel polish", s_pediclassic:"Classic / combined", s_pediapp:"E-file", s_pediedge:"Trimmed",
-    s_makeup:"Evening makeup", s_lymph:"Lymphatic drainage massage", s_paraffin:"Paraffin therapy",
+    s_makeup:"Evening makeup",
     team_eyebrow:"The team", team_title:"Our Masters",
-    m1_name:"Tatiana", m1_role:"Stylist & trichologist", m2_name:"Elena", m2_role:"Lymphatic massage", m3_name:"Kristina", m3_role:"Nail artist", m4_name:"Inna", m4_role:"Manicurist",
+    m1_name:"Tatiana", m1_role:"Stylist & trichologist", m2_name:"Kristina", m2_role:"Nail artist", m3_name:"Inna", m3_role:"Manicurist",
     gal_eyebrow:"Our work", gal_title:"Gallery", hint:"scroll sideways →",
     rev_eyebrow:"Reviews", rev_title:"From Our Guests",
     rev1_text:"“Tatiana and Elena were wonderful. I was visiting Moldova and heard about Tatiana's salon. I wanted to try it because I loved their warm, family atmosphere…”",
@@ -1129,16 +1122,16 @@ const I18N = {
     about_cap:"Tatiana Afanasyeva, fondatoare, maestru de categorie superioară",
     price_eyebrow:"Prețuri", price_title:"Servicii și Prețuri",
     price_note:"Prețurile afișate sunt minime. Costul exact depinde de lungimea părului și materiale. Confirmați la programare.",
-    cat_hair:"Tunsori", cat_style:"Coafură", cat_color:"Vopsire", cat_brows:"Sprâncene", cat_mani:"Manichiură", cat_pedi:"Pedichiură", cat_makeup:"Machiaj", cat_massage:"Masaj",
+    cat_hair:"Tunsori", cat_style:"Coafură", cat_color:"Vopsire", cat_brows:"Sprâncene", cat_mani:"Manichiură", cat_pedi:"Pedichiură", cat_makeup:"Machiaj",
     s_kids:"Tuns pentru copii", s_women:"Tuns damă", s_men:"Tuns bărbați",
     s_bioperm:"Biopermanent (orice lungime)", s_long:"Coafură, păr lung", s_mid:"Coafură, păr mediu",
     s_curls:"Bucle", s_updo:"Coafură de seară / mireasă", s_lighttone:"Decolorare + tonifiere", s_lightroots:"Decolorarea rădăcinilor", s_hidden:"Vopsire ascunsă", s_ombre:"Ombré", s_highlights:"Șuvițe", s_labor:"Manoperă (fără materiale)",
     s_browshape:"Modelarea sprâncenelor", s_browtint:"Vopsirea sprâncenelor",
     s_manigel:"Manichiură + ojă semipermanentă", s_manicombo:"Combinată / cu aparat", s_strength:"Întărire cu gel / bază", s_french:"Franceză / lună", s_design:"Design (per unghie)", s_repair:"Reparația unghiei", s_removal:"Înlăturare",
     s_pedigel:"Pedichiură + ojă semipermanentă", s_pediclassic:"Clasică / combinată", s_pediapp:"Cu aparat", s_pediedge:"Cu tăiere",
-    s_makeup:"Machiaj de seară", s_lymph:"Masaj de drenaj limfatic", s_paraffin:"Terapie cu parafină",
+    s_makeup:"Machiaj de seară",
     team_eyebrow:"Echipa", team_title:"Maeștrii Noștri",
-    m1_name:"Tatiana", m1_role:"Stilistă, tricholog", m2_name:"Elena", m2_role:"Masaj limfatic", m3_name:"Kristina", m3_role:"Tehnician unghii", m4_name:"Inna", m4_role:"Manichiuristă",
+    m1_name:"Tatiana", m1_role:"Stilistă, tricholog", m2_name:"Kristina", m2_role:"Tehnician unghii", m3_name:"Inna", m3_role:"Manichiuristă",
     gal_eyebrow:"Lucrări", gal_title:"Galerie", hint:"derulați lateral →",
     rev_eyebrow:"Recenzii", rev_title:"De la Oaspeții Noștri",
     rev1_text:"„Tatiana și Elena au fost minunate. Vizitam Moldova și am auzit de salonul Tatianei. Am vrut să încerc pentru că mi-a plăcut atmosfera caldă, de familie…”",
