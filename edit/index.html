@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f1115">
+<title>Afanasyeva · Редактор сайта</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+<div class="app" id="app">
+
+  <!-- Mobile backdrop for drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar" aria-label="Разделы">
+    <div class="sidebar__head">
+      <div class="sidebar__title">
+        <span class="sidebar__logo">A</span>
+        <span>
+          <strong>Afanasyeva</strong>
+          <small>Редактор сайта</small>
+        </span>
+      </div>
+      <span class="branch-badge" id="branch-badge" title="Ветка">main</span>
+    </div>
+
+    <nav class="sidebar__nav" id="section-nav" aria-label="Навигация по разделам"></nav>
+
+    <div class="sidebar__foot">
+      <button type="button" class="conn" id="conn-status" aria-live="polite">
+        <span class="conn__dot" id="conn-dot"></span>
+        <span class="conn__text" id="conn-text">Не подключено</span>
+        <span class="conn__gear" id="open-settings" title="Настройки">⚙️</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+    <!-- TOP ACTION BAR -->
+    <header class="topbar">
+      <button type="button" class="icon-btn hamburger" id="hamburger" aria-label="Меню разделов" aria-controls="sidebar" aria-expanded="false">☰</button>
+      <nav class="crumbs" aria-label="Хлебные крошки">
+        <span class="crumbs__root">Afanasyeva</span>
+        <span class="crumbs__sep">/</span>
+        <span class="crumbs__cur" id="crumb-current">Контакты</span>
+      </nav>
+      <div class="topbar__actions">
+        <a class="btn btn-ghost btn-sm" id="view-site" href="../index.html" target="_blank" rel="noopener">Открыть сайт</a>
+        <button type="button" class="btn btn-ghost btn-sm" id="reset-btn">Сбросить</button>
+        <button type="button" class="btn btn-save" id="save-btn">
+          <span class="btn-save__spin" aria-hidden="true"></span>
+          <span class="btn-save__label">Сохранить</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Horizontal tab strip (fast one-thumb section switching) -->
+    <div class="tabstrip" id="tabstrip" role="tablist" aria-label="Быстрый выбор раздела"></div>
+
+    <!-- CONTENT -->
+    <main class="content" id="content">
+      <div class="lang-row" id="lang-row">
+        <span class="lang-row__label">Язык текста:</span>
+        <div class="segmented" id="lang-seg" role="tablist" aria-label="Язык текста">
+          <button type="button" role="tab" data-lang="ru" aria-selected="true">RU</button>
+          <button type="button" role="tab" data-lang="en" aria-selected="false">EN</button>
+          <button type="button" role="tab" data-lang="ro" aria-selected="false">RO</button>
+        </div>
+      </div>
+      <div id="fields"></div>
+
+      <div class="content__foot">
+        <button type="button" class="btn btn-ghost" id="download-btn">⬇︎ Скачать резервную копию (content.json)</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- SETTINGS MODAL -->
+  <div class="modal" id="settings-modal" hidden>
+    <div class="modal__overlay" data-close-settings></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <div class="modal__head">
+        <h2 id="settings-title">Настройки подключения</h2>
+        <button type="button" class="icon-btn" data-close-settings aria-label="Закрыть">✕</button>
+      </div>
+      <div class="modal__body">
+        <label class="fld">
+          <span class="fld__label">GitHub токен (Personal Access Token)</span>
+          <input type="password" id="set-token" autocomplete="off" placeholder="ghp_… или github_pat_…">
+          <span class="fld__hint">Хранится только в этом браузере (localStorage). Нужен доступ «Contents: Read and write».</span>
+        </label>
+        <div class="grid-2">
+          <label class="fld"><span class="fld__label">Владелец (owner)</span><input type="text" id="set-owner" autocomplete="off"></label>
+          <label class="fld"><span class="fld__label">Репозиторий</span><input type="text" id="set-repo" autocomplete="off"></label>
+        </div>
+        <label class="fld"><span class="fld__label">Ветка</span><input type="text" id="set-branch" autocomplete="off"></label>
+        <div id="set-feedback" class="set-feedback" aria-live="polite"></div>
+      </div>
+      <div class="modal__foot">
+        <button type="button" class="btn btn-ghost" id="set-disconnect">Отключить</button>
+        <div class="modal__foot-right">
+          <button type="button" class="btn btn-ghost" id="set-test">Проверить</button>
+          <button type="button" class="btn btn-save" id="set-save">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</div>
+
+<script src="editor.js"></script>
+</body>
+</html>

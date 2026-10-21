@@ -1,0 +1,757 @@
+{
+  "version": 1,
+  "updated": "",
+  "site": {
+    "phone": "+37369177796",
+    "phoneDisplay": "+373 691 77 796",
+    "email": "afanasyevabeautysalon@gmail.com",
+    "instagram": "",
+    "facebook": "",
+    "tiktok": "",
+    "googleReview": "https://g.page/r/CXGWeK6UMR_PEBM/review",
+    "googleMaps": "https://maps.app.goo.gl/gVwxx37gpCNpFZhd9"
+  },
+  "text": {
+    "brand": {
+      "ru": "Afanasyeva",
+      "en": "Afanasyeva",
+      "ro": "Afanasyeva"
+    },
+    "brandsub": {
+      "ru": "салон красоты",
+      "en": "beauty salon",
+      "ro": "salon de înfrumusețare"
+    },
+    "hero_eyebrow": {
+      "ru": "Салон красоты · Кишинёв",
+      "en": "Beauty salon · Chișinău",
+      "ro": "Salon de înfrumusețare · Chișinău"
+    },
+    "hero_title": {
+      "ru": "Почувствуйте себя собой снова",
+      "en": "Feel like yourself again",
+      "ro": "Simte-te din nou ca tine"
+    },
+    "hero_lead": {
+      "ru": "Место, где можно выдохнуть и<br>позаботиться о себе.",
+      "en": "A place to breathe and take care of yourself.",
+      "ro": "Un loc unde poți respira și avea grijă de tine."
+    },
+    "hero_cta1": {
+      "ru": "Записаться",
+      "en": "Book a visit",
+      "ro": "Programează-te"
+    },
+    "hero_cta2": {
+      "ru": "Услуги и цены",
+      "en": "Services & prices",
+      "ro": "Servicii și prețuri"
+    },
+    "about_eyebrow": {
+      "ru": "О студии",
+      "en": "Our studio",
+      "ro": "Studioul nostru"
+    },
+    "about_title": {
+      "ru": "Семейная студия с 2017 года",
+      "en": "A family studio since 2017",
+      "ro": "Un studio de familie din 2017"
+    },
+    "about_body": {
+      "ru": "Салон основала Татьяна Афанасьева, семейная студия с профессиональной командой. Мастер высшей категории и лауреат «Золотые ножницы», она собрала коллектив единомышленников, для которых важны качество, комфорт и индивидуальный подход.",
+      "en": "Tatiana Afanasyeva founded the salon, a family studio with a professional team. A top-category master and Golden Scissors award winner, she brought together like-minded masters focused on quality, comfort, and individual care.",
+      "ro": "Salonul a fost fondat de Tatiana Afanasyeva, un studio de familie cu o echipă profesionistă. Maestru de categorie superioară și laureată a premiului «Foarfecele de Aur», a adunat o echipă de maeștri orientați spre calitate, confort și abordare individuală."
+    },
+    "about_body2": {
+      "ru": "Мы предоставляем полный спектр услуг по уходу за волосами и руками для гостей любого возраста, в атмосфере уюта, доверия и эстетики.",
+      "en": "We offer a full range of hair and hand care for guests of every age, in an atmosphere of warmth, trust, and aesthetics.",
+      "ro": "Oferim un spectru complet de servicii pentru păr și mâini, pentru oaspeți de toate vârstele, într-o atmosferă de confort, încredere și estetică."
+    },
+    "about_cap": {
+      "ru": "Татьяна Афанасьева, основательница, мастер высшей категории",
+      "en": "Tatiana Afanasyeva, founder, top-category master",
+      "ro": "Tatiana Afanasyeva, fondatoare, maestru de categorie superioară"
+    },
+    "price_eyebrow": {
+      "ru": "Прайс",
+      "en": "Pricing",
+      "ro": "Prețuri"
+    },
+    "price_title": {
+      "ru": "Услуги и Цены",
+      "en": "Services & Prices",
+      "ro": "Servicii și Prețuri"
+    },
+    "price_note": {
+      "ru": "Указана минимальная стоимость. Точная цена зависит от длины волос и материалов. Уточняйте при записи.",
+      "en": "Prices shown are starting points. The final cost depends on hair length and materials. Confirm when you book.",
+      "ro": "Prețurile afișate sunt minime. Costul exact depinde de lungimea părului și materiale. Confirmați la programare."
+    },
+    "cat_hair": {
+      "ru": "Стрижки",
+      "en": "Haircuts",
+      "ro": "Tunsori"
+    },
+    "cat_style": {
+      "ru": "Укладка",
+      "en": "Styling",
+      "ro": "Coafură"
+    },
+    "cat_color": {
+      "ru": "Окрашивание",
+      "en": "Colour",
+      "ro": "Vopsire"
+    },
+    "cat_brows": {
+      "ru": "Брови",
+      "en": "Brows",
+      "ro": "Sprâncene"
+    },
+    "cat_mani": {
+      "ru": "Маникюр",
+      "en": "Manicure",
+      "ro": "Manichiură"
+    },
+    "cat_pedi": {
+      "ru": "Педикюр",
+      "en": "Pedicure",
+      "ro": "Pedichiură"
+    },
+    "cat_makeup": {
+      "ru": "Макияж",
+      "en": "Makeup",
+      "ro": "Machiaj"
+    },
+    "s_kids": {
+      "ru": "Детская стрижка",
+      "en": "Kids' haircut",
+      "ro": "Tuns pentru copii"
+    },
+    "s_women": {
+      "ru": "Женская стрижка",
+      "en": "Women's haircut",
+      "ro": "Tuns damă"
+    },
+    "s_men": {
+      "ru": "Мужская стрижка",
+      "en": "Men's haircut",
+      "ro": "Tuns bărbați"
+    },
+    "s_bioperm": {
+      "ru": "Биозавивка (любая длина)",
+      "en": "Bio-perm (any length)",
+      "ro": "Biopermanent (orice lungime)"
+    },
+    "s_long": {
+      "ru": "Укладка на длинные волосы",
+      "en": "Styling, long hair",
+      "ro": "Coafură, păr lung"
+    },
+    "s_mid": {
+      "ru": "Укладка на среднюю длину",
+      "en": "Styling, medium hair",
+      "ro": "Coafură, păr mediu"
+    },
+    "s_curls": {
+      "ru": "Локоны",
+      "en": "Curls",
+      "ro": "Bucle"
+    },
+    "s_updo": {
+      "ru": "Вечерняя / свадебная причёска",
+      "en": "Evening / bridal updo",
+      "ro": "Coafură de seară / mireasă"
+    },
+    "s_lighttone": {
+      "ru": "Осветление + тонирование",
+      "en": "Lightening + toning",
+      "ro": "Decolorare + tonifiere"
+    },
+    "s_lightroots": {
+      "ru": "Осветление корней",
+      "en": "Root lightening",
+      "ro": "Decolorarea rădăcinilor"
+    },
+    "s_hidden": {
+      "ru": "Скрытое окрашивание",
+      "en": "Hidden colour",
+      "ro": "Vopsire ascunsă"
+    },
+    "s_ombre": {
+      "ru": "Омбре",
+      "en": "Ombré",
+      "ro": "Ombré"
+    },
+    "s_highlights": {
+      "ru": "Мелирование",
+      "en": "Highlights",
+      "ro": "Șuvițe"
+    },
+    "s_labor": {
+      "ru": "Работа (без материалов)",
+      "en": "Labour (excl. materials)",
+      "ro": "Manoperă (fără materiale)"
+    },
+    "s_browshape": {
+      "ru": "Оформление бровей",
+      "en": "Brow shaping",
+      "ro": "Modelarea sprâncenelor"
+    },
+    "s_browtint": {
+      "ru": "Окрашивание бровей",
+      "en": "Brow tinting",
+      "ro": "Vopsirea sprâncenelor"
+    },
+    "s_manigel": {
+      "ru": "Маникюр + гель-лак",
+      "en": "Manicure + gel polish",
+      "ro": "Manichiură + ojă semipermanentă"
+    },
+    "s_manicombo": {
+      "ru": "Комбинированный / аппаратный",
+      "en": "Combined / e-file",
+      "ro": "Combinată / cu aparat"
+    },
+    "s_strength": {
+      "ru": "Укрепление гелем / базой",
+      "en": "Gel / base strengthening",
+      "ro": "Întărire cu gel / bază"
+    },
+    "s_french": {
+      "ru": "Френч / лунный",
+      "en": "French / moon",
+      "ro": "Franceză / lună"
+    },
+    "s_design": {
+      "ru": "Дизайн (за ноготь)",
+      "en": "Design (per nail)",
+      "ro": "Design (per unghie)"
+    },
+    "s_repair": {
+      "ru": "Ремонт ногтя",
+      "en": "Nail repair",
+      "ro": "Reparația unghiei"
+    },
+    "s_removal": {
+      "ru": "Снятие",
+      "en": "Removal",
+      "ro": "Înlăturare"
+    },
+    "s_pedigel": {
+      "ru": "Педикюр + гель-лак",
+      "en": "Pedicure + gel polish",
+      "ro": "Pedichiură + ojă semipermanentă"
+    },
+    "s_pediclassic": {
+      "ru": "Классический / комбинированный",
+      "en": "Classic / combined",
+      "ro": "Clasică / combinată"
+    },
+    "s_pediapp": {
+      "ru": "Аппаратный",
+      "en": "E-file",
+      "ro": "Cu aparat"
+    },
+    "s_pediedge": {
+      "ru": "Обрезной",
+      "en": "Trimmed",
+      "ro": "Cu tăiere"
+    },
+    "s_makeup": {
+      "ru": "Вечерний макияж",
+      "en": "Evening makeup",
+      "ro": "Machiaj de seară"
+    },
+    "team_eyebrow": {
+      "ru": "Команда",
+      "en": "The team",
+      "ro": "Echipa"
+    },
+    "team_title": {
+      "ru": "Мастера Студии",
+      "en": "Our Masters",
+      "ro": "Maeștrii Noștri"
+    },
+    "m1_name": {
+      "ru": "Татьяна",
+      "en": "Tatiana",
+      "ro": "Tatiana"
+    },
+    "m1_role": {
+      "ru": "Стилист, трихолог",
+      "en": "Stylist & trichologist",
+      "ro": "Stilistă, tricholog"
+    },
+    "m2_name": {
+      "ru": "Кристина",
+      "en": "Kristina",
+      "ro": "Kristina"
+    },
+    "m2_role": {
+      "ru": "Нейл-мастер",
+      "en": "Nail artist",
+      "ro": "Tehnician unghii"
+    },
+    "m3_name": {
+      "ru": "Инна",
+      "en": "Inna",
+      "ro": "Inna"
+    },
+    "m3_role": {
+      "ru": "Мастер маникюра",
+      "en": "Manicurist",
+      "ro": "Manichiuristă"
+    },
+    "gal_eyebrow": {
+      "ru": "Работы",
+      "en": "Our work",
+      "ro": "Lucrări"
+    },
+    "gal_title": {
+      "ru": "Галерея",
+      "en": "Gallery",
+      "ro": "Galerie"
+    },
+    "gal_more": {
+      "ru": "Смотреть все работы",
+      "en": "View all work",
+      "ro": "Vedeți toate lucrările"
+    },
+    "gal_all_title": {
+      "ru": "Все работы",
+      "en": "All work",
+      "ro": "Toate lucrările"
+    },
+    "ba_eyebrow": {
+      "ru": "До и после",
+      "en": "Before & after",
+      "ro": "Înainte și după"
+    },
+    "ba_title": {
+      "ru": "Преображения",
+      "en": "Transformations",
+      "ro": "Transformări"
+    },
+    "ba1_cap": {
+      "ru": "Окрашивание в шатен",
+      "en": "Colour to brunette",
+      "ro": "Vopsire în șaten"
+    },
+    "ba2_cap": {
+      "ru": "Осветление и балаяж",
+      "en": "Lightening & balayage",
+      "ro": "Decolorare și balayage"
+    },
+    "ba3_cap": {
+      "ru": "Стрижка и медное окрашивание",
+      "en": "Cut & copper colour",
+      "ro": "Tuns și vopsire aramie"
+    },
+    "rev_eyebrow": {
+      "ru": "Отзывы",
+      "en": "Reviews",
+      "ro": "Recenzii"
+    },
+    "rev_title": {
+      "ru": "От Наших Гостей",
+      "en": "From Our Guests",
+      "ro": "De la Oaspeții Noștri"
+    },
+    "rev1_text": {
+      "ru": "«Татьяна и Елена были восхитительны. Я посещаю Молдову и услышала о салоне Татьяны, поэтому захотела попробовать: мне понравилась их семейная, дружелюбная атмосфера…»",
+      "en": "“Tatiana and Elena were wonderful. I was visiting Moldova and heard about Tatiana's salon. I wanted to try it because I loved their warm, family atmosphere…”",
+      "ro": "„Tatiana și Elena au fost minunate. Vizitam Moldova și am auzit de salonul Tatianei. Am vrut să încerc pentru că mi-a plăcut atmosfera caldă, de familie…”"
+    },
+    "rev1_author": {
+      "ru": "Алекс",
+      "en": "Alex",
+      "ro": "Alex"
+    },
+    "rev2_text": {
+      "ru": "«Мастера студии знают, как стричь мужчин. Я пришёл домой к жене, и она была очень рада увидеть такую хорошую стрижку. Большое спасибо!»",
+      "en": "“The masters here know how to cut men’s hair. I came home to my wife and she was so happy to see such a great haircut. Thank you!”",
+      "ro": "„Maeștrii de aici știu cum se taie părul bărbaților. Am venit acasă la soție și ea a fost foarte bucuroasă să vadă o tunsoare atât de bună. Mulțumim!”"
+    },
+    "rev2_author": {
+      "ru": "Картер",
+      "en": "Carter",
+      "ro": "Carter"
+    },
+    "rev3_text": {
+      "ru": "«Настоящий рай для тех, кто хочет расслабиться и почувствовать заботу. Приятная атмосфера, внимательные мастера и высокий уровень сервиса. После массажа и ухода чувствую себя обновлённой. Обязательно вернусь снова!»",
+      "en": "“A true paradise for anyone who wants to relax and feel cared for. A lovely atmosphere, attentive masters and excellent service. After my massage and treatment I feel renewed. I’ll definitely be back!”",
+      "ro": "„Un adevărat paradis pentru cei care vor să se relaxeze și să simtă grijă. Atmosferă plăcută, maeștri atenți și servicii de înaltă calitate. După masaj și îngrijire mă simt reînnoită. Cu siguranță voi reveni!”"
+    },
+    "rev3_author": {
+      "ru": "Ольга",
+      "en": "Olga",
+      "ro": "Olga"
+    },
+    "faq_eyebrow": {
+      "ru": "Вопросы",
+      "en": "FAQ",
+      "ro": "Întrebări"
+    },
+    "faq_title": {
+      "ru": "Частые Вопросы",
+      "en": "Frequently Asked Questions",
+      "ro": "Întrebări Frecvente"
+    },
+    "q1": {
+      "ru": "Как нас найти?",
+      "en": "How do I find you?",
+      "ro": "Cum ne găsiți?"
+    },
+    "a1": {
+      "ru": "Студия в здании Союза писателей на ул. 31 августа 1989, кабинет 100. Карта и маршрут указаны внизу страницы.",
+      "en": "We are in the Writers' Union building at 31 August 1989 St, room 100. See the map and directions at the bottom of the page.",
+      "ro": "Studioul se află în clădirea Uniunii Scriitorilor, str. 31 August 1989, cabinetul 100. Harta și indicațiile sunt la finalul paginii."
+    },
+    "q2": {
+      "ru": "Можно ли прийти с детьми?",
+      "en": "Can I bring children?",
+      "ro": "Pot veni cu copiii?"
+    },
+    "a2": {
+      "ru": "Да. Проводим детские стрижки и подстраиваемся под темп ребёнка, чтобы визит был спокойным.",
+      "en": "Yes. We offer kids' haircuts and work at your child's pace so the visit stays calm.",
+      "ro": "Da. Oferim tuns pentru copii și ne adaptăm ritmului copilului, ca vizita să fie liniștită."
+    },
+    "q3": {
+      "ru": "Сколько длится окрашивание?",
+      "en": "How long does colouring take?",
+      "ro": "Cât durează vopsirea?"
+    },
+    "a3": {
+      "ru": "В среднем от 2 до 4 часов, в зависимости от техники и длины волос. Точное время мастер назовёт на консультации.",
+      "en": "Usually 2 to 4 hours, depending on the technique and hair length. Your master will confirm at the consultation.",
+      "ro": "De obicei 2 până la 4 ore, în funcție de tehnică și lungimea părului. Maestrul confirmă la consultație."
+    },
+    "q4": {
+      "ru": "Нужна ли консультация перед окрашиванием?",
+      "en": "Do I need a consultation before colouring?",
+      "ro": "Am nevoie de consultație înainte de vopsire?"
+    },
+    "a4": {
+      "ru": "Да, для сложных техник. Консультация бесплатна и помогает подобрать лучший вариант для ваших волос.",
+      "en": "For complex techniques, yes. The consultation is free and helps us choose the best option for your hair.",
+      "ro": "Pentru tehnicile complexe, da. Consultația este gratuită și ne ajută să alegem cea mai bună variantă."
+    },
+    "q5": {
+      "ru": "Какие способы оплаты?",
+      "en": "What payment methods do you accept?",
+      "ro": "Ce metode de plată acceptați?"
+    },
+    "a5": {
+      "ru": "Принимаем наличные и карты.",
+      "en": "We accept cash and cards.",
+      "ro": "Acceptăm numerar și card."
+    },
+    "q6": {
+      "ru": "Что если нужно перенести визит?",
+      "en": "What if I need to reschedule?",
+      "ro": "Ce fac dacă trebuie să reprogramez?"
+    },
+    "a6": {
+      "ru": "Просто предупредите заранее, и мы с радостью подберём новое время.",
+      "en": "Just let us know in advance, and we will gladly find a new time.",
+      "ro": "Anunțați-ne din timp, și vom găsi cu plăcere o altă oră."
+    },
+    "cta_eyebrow": {
+      "ru": "Запись",
+      "en": "Booking",
+      "ro": "Programare"
+    },
+    "cta_title": {
+      "ru": "Запишитесь на визит",
+      "en": "Book your visit",
+      "ro": "Rezervați-vă vizita"
+    },
+    "cta_lead": {
+      "ru": "Будем рады вашему звонку или письму. Подберём удобное время, поможем выбрать мастера и ответим на вопросы до визита.",
+      "en": "We are happy to hear from you. Call or email and we will help you pick a time, choose the right master, and answer any questions before your visit.",
+      "ro": "Ne bucurăm să auzim de la dumneavoastră. Sunați sau scrieți-ne și vă ajutăm să alegeți ora, maestrul potrivit, și răspundem la întrebări înainte de vizită."
+    },
+    "cta_call": {
+      "ru": "Позвонить",
+      "en": "Call us",
+      "ro": "Sunați"
+    },
+    "cta_write": {
+      "ru": "Написать",
+      "en": "Email us",
+      "ro": "Scrieți-ne"
+    },
+    "foot_contact": {
+      "ru": "Контакты",
+      "en": "Contact",
+      "ro": "Contact"
+    },
+    "foot_hours": {
+      "ru": "Часы работы",
+      "en": "Hours",
+      "ro": "Program"
+    },
+    "foot_social": {
+      "ru": "Мы в соцсетях",
+      "en": "Follow us",
+      "ro": "Urmăriți-ne"
+    },
+    "foot_review": {
+      "ru": "Оставьте отзыв",
+      "en": "Leave a review",
+      "ro": "Lăsați o recenzie"
+    },
+    "con_addrval": {
+      "ru": "ул. 31 августа 1989, Кишинёв<span class=\"addr-sep\"> · </span><br class=\"m-only\">Союз писателей (каб. 100)",
+      "en": "31 August 1989 St, Chișinău<span class=\"addr-sep\"> · </span><br class=\"m-only\">Writers' Union (room 100)",
+      "ro": "str. 31 August 1989, Chișinău<span class=\"addr-sep\"> · </span><br class=\"m-only\">Uniunea Scriitorilor (cab. 100)"
+    },
+    "con_days": {
+      "ru": "Вторник – суббота · 09:00–19:00",
+      "en": "Tuesday – Saturday · 09:00–19:00",
+      "ro": "Marți – sâmbătă · 09:00–19:00"
+    },
+    "con_closed": {
+      "ru": "Воскресенье и понедельник: выходной",
+      "en": "Sunday and Monday: closed",
+      "ro": "Duminică și luni: închis"
+    },
+    "footer": {
+      "ru": "© 2026 Afanasyeva · салон красоты · Кишинёв",
+      "en": "© 2026 Afanasyeva · beauty salon · Chișinău",
+      "ro": "© 2026 Afanasyeva · salon de înfrumusețare · Chișinău"
+    },
+    "foot_join": {
+      "ru": "Хотите в команду? <span class=\"foot-join-action\">Напишите нам.</span>",
+      "en": "Want to join our team? <span class=\"foot-join-action\">Get in touch.</span>",
+      "ro": "Vrei să te alături echipei? <span class=\"foot-join-action\">Scrie-ne.</span>"
+    },
+    "_title": {
+      "ru": "Afanasyeva Салон красоты",
+      "en": "Afanasyeva Beauty Salon",
+      "ro": "Afanasyeva Salon de Înfrumusețare"
+    },
+    "_desc": {
+      "ru": "Afanasyeva — салон красоты в Кишинёве. Стрижки, окрашивание, маникюр и педикюр. Запись по телефону или email.",
+      "en": "Afanasyeva Beauty Salon in Chișinău, Moldova. Haircuts, colour, manicure and pedicure. Book by phone or email.",
+      "ro": "Salon de înfrumusețare Afanasyeva în Chișinău. Tuns, vopsire, manichiură și pedichiură. Programare la telefon sau email."
+    }
+  },
+  "images": {
+    "hero": "Photos/hero.jpg",
+    "about_portrait": "Photos/Татьяна.jpg",
+    "tatiana": "Photos/Татьяна.jpg",
+    "kristina": "Photos/Кристина.jpg",
+    "inna": "Photos/Инна.jpg",
+    "g1": "Photos/g1.jpg",
+    "g2": "Photos/g2.jpg",
+    "g3": "Photos/g3.jpg",
+    "g4": "Photos/g4.jpg",
+    "g5": "Photos/g5.jpg",
+    "g6": "Photos/g6.jpg",
+    "g7": "Photos/g7.jpg",
+    "g8": "Photos/g8.jpg",
+    "g9": "Photos/g9.jpg",
+    "g10": "Photos/g10.jpg",
+    "g11": "Photos/g11.jpg",
+    "g12": "Photos/g12.jpg",
+    "g13": "Photos/g13.jpg",
+    "nails": "Photos/nails.jpg",
+    "toes": "Photos/toes.jpg",
+    "makeup": "Photos/makeup.jpg",
+    "face_paint": "Photos/face-paint.jpg",
+    "hair_coloring": "Photos/hair-coloring.jpg",
+    "work01": "Photos/work01.jpg",
+    "work02": "Photos/work02.jpg",
+    "work03": "Photos/work03.jpg",
+    "work04": "Photos/work04.jpg",
+    "work05": "Photos/work05.jpg",
+    "work06": "Photos/work06.jpg",
+    "work07": "Photos/work07.jpg",
+    "work08": "Photos/work08.jpg",
+    "work09": "Photos/work09.jpg",
+    "work10": "Photos/work10.jpg",
+    "work11": "Photos/work11.jpg",
+    "work12": "Photos/work12.jpg",
+    "work13": "Photos/work13.jpg",
+    "work14": "Photos/work14.jpg",
+    "work15": "Photos/work15.jpg",
+    "work16": "Photos/work16.jpg",
+    "work17": "Photos/work17.jpg",
+    "work18": "Photos/work18.jpg",
+    "work19": "Photos/work19.jpg",
+    "work20": "Photos/work20.jpg",
+    "work21": "Photos/work21.jpg",
+    "work22": "Photos/work22.jpg",
+    "work23": "Photos/work23.jpg",
+    "work24": "Photos/work24.jpg",
+    "work25": "Photos/work25.jpg",
+    "work26": "Photos/work26.jpg",
+    "work27": "Photos/work27.jpg",
+    "work28": "Photos/work28.jpg",
+    "ba1_before": "Photos/ba1-before.jpg",
+    "ba1_after": "Photos/ba1-after.jpg",
+    "ba2_before": "Photos/ba2-before.jpg",
+    "ba2_after": "Photos/ba2-after.jpg",
+    "ba3_before": "Photos/ba3-before.jpg",
+    "ba3_after": "Photos/ba3-after.jpg"
+  },
+  "prices": {
+    "hair_kids": {
+      "num": "200",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "hair_women": {
+      "num": "350",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "hair_men": {
+      "num": "250",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "style_bioperm": {
+      "num": "500",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "style_long": {
+      "num": "500",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "style_mid": {
+      "num": "400",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "color_curls": {
+      "num": "400",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_updo": {
+      "num": "800",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_lighttone": {
+      "num": "800",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_lightroots": {
+      "num": "350",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_hidden": {
+      "num": "500",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_airtouch": {
+      "num": "1200",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_ombre": {
+      "num": "800",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_highlights": {
+      "num": "1000",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "color_balayage": {
+      "num": "800",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_labor": {
+      "num": "200",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "brows_shape": {
+      "num": "150",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "brows_tint": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_gel": {
+      "num": "700",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_combo": {
+      "num": "300",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_strength": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_french": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_design": {
+      "num": "10",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "mani_repair": {
+      "num": "50",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_removal": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_gel": {
+      "num": "1000",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_classic": {
+      "num": "700",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_app": {
+      "num": "500",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_edge": {
+      "num": "450",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_removal": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "makeup_evening": {
+      "num": "750",
+      "plus": false,
+      "cur": "MDL"
+    }
+  }
+}

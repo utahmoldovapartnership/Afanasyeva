@@ -700,6 +700,7 @@
   document.documentElement.lang=l;
 })();
 </script>
+<script src="js/content-loader.js" defer></script>
 </head>
 <body>
 
@@ -775,7 +776,7 @@
       </div>
     </div>
     <div class="ph arch-wide hero-img">
-      <img src="Photos/hero.jpg" alt="Детская стрижка в салоне Afanasyeva" width="1024" height="827" loading="eager" fetchpriority="high" decoding="async">
+      <img data-img="hero" src="Photos/hero.jpg" alt="Детская стрижка в салоне Afanasyeva" width="1024" height="827" loading="eager" fetchpriority="high" decoding="async">
     </div>
   </div>
 </section>
@@ -785,7 +786,7 @@
   <div class="wrap about-grid reveal">
     <div class="about-media">
       <div class="ph arch-tall about-portrait">
-        <img src="Photos/Татьяна.jpg" alt="Татьяна Афанасьева, основательница салона" width="1021" height="1025" loading="lazy" decoding="async">
+        <img data-img="about_portrait" src="Photos/Татьяна.jpg" alt="Татьяна Афанасьева, основательница салона" width="1021" height="1025" loading="lazy" decoding="async">
       </div>
       <p class="cap" data-i18n="about_cap">Татьяна Афанасьева, основательница, мастер высшей категории</p>
     </div>
@@ -816,55 +817,55 @@
 
     <div class="pricewrap">
       <div class="pricegroup" data-group="hair">
-        <div class="prow"><span class="nm" data-i18n="s_kids">Детская стрижка</span><span class="pr">200<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_women">Женская стрижка</span><span class="pr">350<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_men">Мужская стрижка</span><span class="pr">250<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_kids">Детская стрижка</span><span class="pr" data-price="hair_kids">200<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_women">Женская стрижка</span><span class="pr" data-price="hair_women">350<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_men">Мужская стрижка</span><span class="pr" data-price="hair_men">250<span class="pl">+</span> MDL</span></div>
       </div>
 
       <div class="pricegroup" data-group="style" hidden>
-        <div class="prow"><span class="nm" data-i18n="s_bioperm">Биозавивка (любая длина)</span><span class="pr">500<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_long">Укладка на длинные волосы</span><span class="pr">500<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_mid">Укладка на среднюю длину</span><span class="pr">400 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_bioperm">Биозавивка (любая длина)</span><span class="pr" data-price="style_bioperm">500<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_long">Укладка на длинные волосы</span><span class="pr" data-price="style_long">500<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_mid">Укладка на среднюю длину</span><span class="pr" data-price="style_mid">400 MDL</span></div>
       </div>
 
       <div class="pricegroup" data-group="color" hidden>
-        <div class="prow"><span class="nm" data-i18n="s_curls">Локоны</span><span class="pr">400<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_updo">Вечерняя / свадебная причёска</span><span class="pr">800<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_lighttone">Осветление + тонирование</span><span class="pr">800<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_lightroots">Осветление корней</span><span class="pr">350<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_hidden">Скрытое окрашивание</span><span class="pr">500<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm">Air Touch</span><span class="pr">1200<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_ombre">Омбре</span><span class="pr">800<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_highlights">Мелирование</span><span class="pr">1000 MDL</span></div>
-        <div class="prow"><span class="nm">Балаяж</span><span class="pr">800<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_labor">Работа (без материалов)</span><span class="pr">200<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_curls">Локоны</span><span class="pr" data-price="color_curls">400<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_updo">Вечерняя / свадебная причёска</span><span class="pr" data-price="color_updo">800<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_lighttone">Осветление + тонирование</span><span class="pr" data-price="color_lighttone">800<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_lightroots">Осветление корней</span><span class="pr" data-price="color_lightroots">350<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_hidden">Скрытое окрашивание</span><span class="pr" data-price="color_hidden">500<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm">Air Touch</span><span class="pr" data-price="color_airtouch">1200<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_ombre">Омбре</span><span class="pr" data-price="color_ombre">800<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_highlights">Мелирование</span><span class="pr" data-price="color_highlights">1000 MDL</span></div>
+        <div class="prow"><span class="nm">Балаяж</span><span class="pr" data-price="color_balayage">800<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_labor">Работа (без материалов)</span><span class="pr" data-price="color_labor">200<span class="pl">+</span> MDL</span></div>
       </div>
 
       <div class="pricegroup" data-group="brows" hidden>
-        <div class="prow"><span class="nm" data-i18n="s_browshape">Оформление бровей</span><span class="pr">150<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_browtint">Окрашивание бровей</span><span class="pr">100 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_browshape">Оформление бровей</span><span class="pr" data-price="brows_shape">150<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_browtint">Окрашивание бровей</span><span class="pr" data-price="brows_tint">100 MDL</span></div>
       </div>
 
       <div class="pricegroup" data-group="mani" hidden>
-        <div class="prow"><span class="nm" data-i18n="s_manigel">Маникюр + гель-лак</span><span class="pr">700 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_manicombo">Комбинированный / аппаратный</span><span class="pr">300 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_strength">Укрепление гелем / базой</span><span class="pr">100 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_french">Френч / лунный</span><span class="pr">100 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_design">Дизайн (за ноготь)</span><span class="pr">10<span class="pl">+</span> MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_repair">Ремонт ногтя</span><span class="pr">50 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_removal">Снятие</span><span class="pr">100 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_manigel">Маникюр + гель-лак</span><span class="pr" data-price="mani_gel">700 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_manicombo">Комбинированный / аппаратный</span><span class="pr" data-price="mani_combo">300 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_strength">Укрепление гелем / базой</span><span class="pr" data-price="mani_strength">100 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_french">Френч / лунный</span><span class="pr" data-price="mani_french">100 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_design">Дизайн (за ноготь)</span><span class="pr" data-price="mani_design">10<span class="pl">+</span> MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_repair">Ремонт ногтя</span><span class="pr" data-price="mani_repair">50 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_removal">Снятие</span><span class="pr" data-price="mani_removal">100 MDL</span></div>
       </div>
 
       <div class="pricegroup" data-group="pedi" hidden>
-        <div class="prow"><span class="nm" data-i18n="s_pedigel">Педикюр + гель-лак</span><span class="pr">1000 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_pediclassic">Классический / комбинированный</span><span class="pr">700 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_pediapp">Аппаратный</span><span class="pr">500 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_pediedge">Обрезной</span><span class="pr">450 MDL</span></div>
-        <div class="prow"><span class="nm" data-i18n="s_removal">Снятие</span><span class="pr">100 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_pedigel">Педикюр + гель-лак</span><span class="pr" data-price="pedi_gel">1000 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_pediclassic">Классический / комбинированный</span><span class="pr" data-price="pedi_classic">700 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_pediapp">Аппаратный</span><span class="pr" data-price="pedi_app">500 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_pediedge">Обрезной</span><span class="pr" data-price="pedi_edge">450 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_removal">Снятие</span><span class="pr" data-price="pedi_removal">100 MDL</span></div>
       </div>
 
       <div class="pricegroup" data-group="makeup" hidden>
-        <div class="prow"><span class="nm" data-i18n="s_makeup">Вечерний макияж</span><span class="pr">750 MDL</span></div>
+        <div class="prow"><span class="nm" data-i18n="s_makeup">Вечерний макияж</span><span class="pr" data-price="makeup_evening">750 MDL</span></div>
       </div>
     </div>
     <p class="price-note" data-i18n="price_note">Указана минимальная стоимость. Точная цена зависит от длины волос и материалов. Уточняйте при записи.</p>
@@ -882,9 +883,9 @@
       <h2 data-i18n="team_title">Мастера Студии</h2>
     </div>
     <div class="team-grid">
-      <div class="member"><div class="ph arch-tall"><img src="Photos/Татьяна.jpg" alt="Татьяна, стилист, трихолог" width="1021" height="1025" loading="lazy" decoding="async"></div><h3 data-i18n="m1_name">Татьяна</h3><p class="role" data-i18n="m1_role">Стилист, трихолог</p></div>
-      <div class="member"><div class="ph arch-tall"><img src="Photos/Кристина.jpg" alt="Кристина, нейл-мастер" width="955" height="955" loading="lazy" decoding="async"></div><h3 data-i18n="m2_name">Кристина</h3><p class="role" data-i18n="m2_role">Нейл-мастер</p></div>
-      <div class="member"><div class="ph arch-tall"><img src="Photos/Инна.jpg" alt="Инна, мастер маникюра" width="1102" height="1147" loading="lazy" decoding="async"></div><h3 data-i18n="m3_name">Инна</h3><p class="role" data-i18n="m3_role">Мастер маникюра</p></div>
+      <div class="member"><div class="ph arch-tall"><img data-img="tatiana" src="Photos/Татьяна.jpg" alt="Татьяна, стилист, трихолог" width="1021" height="1025" loading="lazy" decoding="async"></div><h3 data-i18n="m1_name">Татьяна</h3><p class="role" data-i18n="m1_role">Стилист, трихолог</p></div>
+      <div class="member"><div class="ph arch-tall"><img data-img="kristina" src="Photos/Кристина.jpg" alt="Кристина, нейл-мастер" width="955" height="955" loading="lazy" decoding="async"></div><h3 data-i18n="m2_name">Кристина</h3><p class="role" data-i18n="m2_role">Нейл-мастер</p></div>
+      <div class="member"><div class="ph arch-tall"><img data-img="inna" src="Photos/Инна.jpg" alt="Инна, мастер маникюра" width="1102" height="1147" loading="lazy" decoding="async"></div><h3 data-i18n="m3_name">Инна</h3><p class="role" data-i18n="m3_role">Мастер маникюра</p></div>
     </div>
   </div>
 </section>
@@ -897,34 +898,34 @@
     </div>
     <div class="gallery-grid" aria-label="Галерея работ">
       <div class="gallery-row gallery-row--center">
-        <figure class="gallery-item gallery-item--arch"><div class="ph"><img src="Photos/g6.jpg" alt="Окрашивание волос" width="1280" height="741" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g3.jpg" alt="Семейная атмосфера салона" width="1280" height="655" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item"><div class="ph"><img src="Photos/g4.jpg" alt="Окрашивание, винные локоны" width="1280" height="1366" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--arch"><div class="ph"><img data-img="g6" src="Photos/g6.jpg" alt="Окрашивание волос" width="1280" height="741" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img data-img="g3" src="Photos/g3.jpg" alt="Семейная атмосфера салона" width="1280" height="655" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img data-img="g4" src="Photos/g4.jpg" alt="Окрашивание, винные локоны" width="1280" height="1366" loading="lazy" decoding="async"></div></figure>
       </div>
       <div class="gallery-row gallery-row--flip">
-        <figure class="gallery-item"><div class="ph"><img src="Photos/g8.jpg" alt="Мытьё и уход за волосами" width="1280" height="1252" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item"><div class="ph"><img src="Photos/g13.jpg" alt="Мужская стрижка с кудрями" width="963" height="988" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g7.jpg" alt="Работа мастера в студии" width="1280" height="601" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img data-img="g8" src="Photos/g8.jpg" alt="Мытьё и уход за волосами" width="1280" height="1252" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img data-img="g13" src="Photos/g13.jpg" alt="Мужская стрижка с кудрями" width="963" height="988" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img data-img="g7" src="Photos/g7.jpg" alt="Работа мастера в студии" width="1280" height="601" loading="lazy" decoding="async"></div></figure>
       </div>
       <div class="gallery-row">
-        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g12.jpg" alt="Татьяна и Елена, мастера студии" width="1280" height="630" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item"><div class="ph"><img src="Photos/nails.jpg" alt="Маникюр, французский омбре" width="1280" height="1135" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item gallery-item--arch"><div class="ph"><img src="Photos/hair-coloring.jpg" alt="Окрашивание и тонирование" width="1204" height="1067" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img data-img="g12" src="Photos/g12.jpg" alt="Татьяна и Елена, мастера студии" width="1280" height="630" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img data-img="nails" src="Photos/nails.jpg" alt="Маникюр, французский омбре" width="1280" height="1135" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--arch"><div class="ph"><img data-img="hair_coloring" src="Photos/hair-coloring.jpg" alt="Окрашивание и тонирование" width="1204" height="1067" loading="lazy" decoding="async"></div></figure>
       </div>
       <div class="gallery-row gallery-row--center">
-        <figure class="gallery-item"><div class="ph"><img src="Photos/makeup.jpg" alt="Макияж" width="571" height="506" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g2.jpg" alt="Мелирование и завивка" width="1135" height="736" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item"><div class="ph"><img src="Photos/face-paint.jpg" alt="Макияж" width="946" height="839" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img data-img="makeup" src="Photos/makeup.jpg" alt="Макияж" width="571" height="506" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img data-img="g2" src="Photos/g2.jpg" alt="Мелирование и завивка" width="1135" height="736" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img data-img="face_paint" src="Photos/face-paint.jpg" alt="Макияж" width="946" height="839" loading="lazy" decoding="async"></div></figure>
       </div>
       <div class="gallery-row gallery-row--flip">
-        <figure class="gallery-item"><div class="ph"><img src="Photos/g5.jpg" alt="Укладка и уход за волосами" width="1280" height="741" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item"><div class="ph"><img src="Photos/g10.jpg" alt="Окрашивание и укладка, платиновый блонд" width="853" height="961" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g9.jpg" alt="Маникюр в студии" width="1280" height="697" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img data-img="g5" src="Photos/g5.jpg" alt="Укладка и уход за волосами" width="1280" height="741" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img data-img="g10" src="Photos/g10.jpg" alt="Окрашивание и укладка, платиновый блонд" width="853" height="961" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img data-img="g9" src="Photos/g9.jpg" alt="Маникюр в студии" width="1280" height="697" loading="lazy" decoding="async"></div></figure>
       </div>
       <div class="gallery-row">
-        <figure class="gallery-item gallery-item--wide"><div class="ph"><img src="Photos/g1.jpg" alt="Стрижка в салоне Afanasyeva" width="1280" height="830" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item gallery-item--arch"><div class="ph"><img src="Photos/g11.jpg" alt="Стрижка и стайлинг" width="1280" height="693" loading="lazy" decoding="async"></div></figure>
-        <figure class="gallery-item"><div class="ph"><img src="Photos/toes.jpg" alt="Педикюр, французский маникюр" width="870" height="774" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--wide"><div class="ph"><img data-img="g1" src="Photos/g1.jpg" alt="Стрижка в салоне Afanasyeva" width="1280" height="830" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item gallery-item--arch"><div class="ph"><img data-img="g11" src="Photos/g11.jpg" alt="Стрижка и стайлинг" width="1280" height="693" loading="lazy" decoding="async"></div></figure>
+        <figure class="gallery-item"><div class="ph"><img data-img="toes" src="Photos/toes.jpg" alt="Педикюр, французский маникюр" width="870" height="774" loading="lazy" decoding="async"></div></figure>
       </div>
     </div>
     <div class="gallery-more">
@@ -949,8 +950,8 @@
 
           <div class="ba-slide" role="group" aria-roledescription="slide">
             <figure class="ba-figure" style="--pos:50%">
-              <img src="Photos/ba1-after.jpg" alt="После: окрашивание в насыщенный шатен" width="1200" height="1596" loading="lazy" decoding="async">
-              <img class="ba-clip" src="Photos/ba1-before.jpg" alt="До: седина и отросшие корни" width="1200" height="1596" loading="lazy" decoding="async">
+              <img data-img="ba1_after" src="Photos/ba1-after.jpg" alt="После: окрашивание в насыщенный шатен" width="1200" height="1596" loading="lazy" decoding="async">
+              <img data-img="ba1_before" class="ba-clip" src="Photos/ba1-before.jpg" alt="До: седина и отросшие корни" width="1200" height="1596" loading="lazy" decoding="async">
               <span class="ba-tag ba-tag--before" data-i18n="ba_before">До</span>
               <span class="ba-tag ba-tag--after" data-i18n="ba_after">После</span>
               <span class="ba-handle" aria-hidden="true"><span class="ba-knob">⟷</span></span>
@@ -961,8 +962,8 @@
 
           <div class="ba-slide" role="group" aria-roledescription="slide">
             <figure class="ba-figure" style="--pos:50%">
-              <img src="Photos/ba2-after.jpg" alt="После: блонд-балаяж с мягкими локонами" width="1200" height="1596" loading="lazy" decoding="async">
-              <img class="ba-clip" src="Photos/ba2-before.jpg" alt="До: отросшее окрашивание и седина" width="1200" height="1596" loading="lazy" decoding="async">
+              <img data-img="ba2_after" src="Photos/ba2-after.jpg" alt="После: блонд-балаяж с мягкими локонами" width="1200" height="1596" loading="lazy" decoding="async">
+              <img data-img="ba2_before" class="ba-clip" src="Photos/ba2-before.jpg" alt="До: отросшее окрашивание и седина" width="1200" height="1596" loading="lazy" decoding="async">
               <span class="ba-tag ba-tag--before" data-i18n="ba_before">До</span>
               <span class="ba-tag ba-tag--after" data-i18n="ba_after">После</span>
               <span class="ba-handle" aria-hidden="true"><span class="ba-knob">⟷</span></span>
@@ -973,8 +974,8 @@
 
           <div class="ba-slide" role="group" aria-roledescription="slide">
             <figure class="ba-figure" style="--pos:50%">
-              <img src="Photos/ba3-after.jpg" alt="После: стрижка и медное каре" width="1200" height="1596" loading="lazy" decoding="async">
-              <img class="ba-clip" src="Photos/ba3-before.jpg" alt="До: длинные волосы, тусклый блонд" width="1200" height="1596" loading="lazy" decoding="async">
+              <img data-img="ba3_after" src="Photos/ba3-after.jpg" alt="После: стрижка и медное каре" width="1200" height="1596" loading="lazy" decoding="async">
+              <img data-img="ba3_before" class="ba-clip" src="Photos/ba3-before.jpg" alt="До: длинные волосы, тусклый блонд" width="1200" height="1596" loading="lazy" decoding="async">
               <span class="ba-tag ba-tag--before" data-i18n="ba_before">До</span>
               <span class="ba-tag ba-tag--after" data-i18n="ba_after">После</span>
               <span class="ba-handle" aria-hidden="true"><span class="ba-knob">⟷</span></span>
@@ -1092,7 +1093,7 @@
               <span class="foot-ico" aria-hidden="true">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.56 1 1 0 0 1-.25 1.01l-2.2 2.22z"/></svg>
               </span>
-              <a href="tel:+37369177796">+373 691 77 796</a>
+              <a href="tel:+37369177796" data-phone-text>+373 691 77 796</a>
             </li>
             <li>
               <span class="foot-ico" aria-hidden="true">
@@ -1157,34 +1158,34 @@
     </div>
     <div class="cat-modal__scroll">
       <div class="cat-grid" id="cat-grid">
-      <button type="button" class="cat-thumb" data-full="Photos/work01.jpg" data-alt="Укладка и окрашивание, стрижка пикси"><img src="Photos/work01.jpg" alt="Укладка и окрашивание, стрижка пикси" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work02.jpg" data-alt="Стрижка каре, холодный блонд"><img src="Photos/work02.jpg" alt="Стрижка каре, холодный блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work03.jpg" data-alt="Каре, тёплый шатен"><img src="Photos/work03.jpg" alt="Каре, тёплый шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work04.jpg" data-alt="Стрижка пикси, блонд"><img src="Photos/work04.jpg" alt="Стрижка пикси, блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work05.jpg" data-alt="Окрашивание и мягкие локоны"><img src="Photos/work05.jpg" alt="Окрашивание и мягкие локоны" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work06.jpg" data-alt="Короткая стрижка, платиновый блонд"><img src="Photos/work06.jpg" alt="Короткая стрижка, платиновый блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work07.jpg" data-alt="Яркое окрашивание, медный пикси"><img src="Photos/work07.jpg" alt="Яркое окрашивание, медный пикси" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work08.jpg" data-alt="Каре, пепельный блонд"><img src="Photos/work08.jpg" alt="Каре, пепельный блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work09.jpg" data-alt="Каре, глянцевый шатен"><img src="Photos/work09.jpg" alt="Каре, глянцевый шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work10.jpg" data-alt="Окрашивание в медь, длинные волосы"><img src="Photos/work10.jpg" alt="Окрашивание в медь, длинные волосы" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work11.jpg" data-alt="Каре, блеск и уход"><img src="Photos/work11.jpg" alt="Каре, блеск и уход" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work12.jpg" data-alt="Объёмная укладка, медный блонд"><img src="Photos/work12.jpg" alt="Объёмная укладка, медный блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work13.jpg" data-alt="Стрижка пикси, медь"><img src="Photos/work13.jpg" alt="Стрижка пикси, медь" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work14.jpg" data-alt="Асимметричное каре, шатен"><img src="Photos/work14.jpg" alt="Асимметричное каре, шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work15.jpg" data-alt="Короткая стрижка, тёмный шатен"><img src="Photos/work15.jpg" alt="Короткая стрижка, тёмный шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work16.jpg" data-alt="Пикси, тёплый блонд"><img src="Photos/work16.jpg" alt="Пикси, тёплый блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work17.jpg" data-alt="Пикси, клубничный блонд"><img src="Photos/work17.jpg" alt="Пикси, клубничный блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work18.jpg" data-alt="Стрижка пикси, блонд"><img src="Photos/work18.jpg" alt="Стрижка пикси, блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work19.jpg" data-alt="Короткая стрижка, платина"><img src="Photos/work19.jpg" alt="Короткая стрижка, платина" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work20.jpg" data-alt="Медный пикси, вид сзади"><img src="Photos/work20.jpg" alt="Медный пикси, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work21.jpg" data-alt="Длинные волосы, шатен"><img src="Photos/work21.jpg" alt="Длинные волосы, шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work22.jpg" data-alt="Каре, шатен, вид сзади"><img src="Photos/work22.jpg" alt="Каре, шатен, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work23.jpg" data-alt="Каре, медь, вид сзади"><img src="Photos/work23.jpg" alt="Каре, медь, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work24.jpg" data-alt="Каре, блонд, вид сзади"><img src="Photos/work24.jpg" alt="Каре, блонд, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work25.jpg" data-alt="Каре, блонд, вид сзади"><img src="Photos/work25.jpg" alt="Каре, блонд, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work26.jpg" data-alt="Балаяж, блонд, локоны"><img src="Photos/work26.jpg" alt="Балаяж, блонд, локоны" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work27.jpg" data-alt="Каре с объёмом, блонд"><img src="Photos/work27.jpg" alt="Каре с объёмом, блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
-      <button type="button" class="cat-thumb" data-full="Photos/work28.jpg" data-alt="Объёмная укладка, короткая стрижка"><img src="Photos/work28.jpg" alt="Объёмная укладка, короткая стрижка" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work01.jpg" data-alt="Укладка и окрашивание, стрижка пикси"><img data-img="work01" src="Photos/work01.jpg" alt="Укладка и окрашивание, стрижка пикси" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work02.jpg" data-alt="Стрижка каре, холодный блонд"><img data-img="work02" src="Photos/work02.jpg" alt="Стрижка каре, холодный блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work03.jpg" data-alt="Каре, тёплый шатен"><img data-img="work03" src="Photos/work03.jpg" alt="Каре, тёплый шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work04.jpg" data-alt="Стрижка пикси, блонд"><img data-img="work04" src="Photos/work04.jpg" alt="Стрижка пикси, блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work05.jpg" data-alt="Окрашивание и мягкие локоны"><img data-img="work05" src="Photos/work05.jpg" alt="Окрашивание и мягкие локоны" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work06.jpg" data-alt="Короткая стрижка, платиновый блонд"><img data-img="work06" src="Photos/work06.jpg" alt="Короткая стрижка, платиновый блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work07.jpg" data-alt="Яркое окрашивание, медный пикси"><img data-img="work07" src="Photos/work07.jpg" alt="Яркое окрашивание, медный пикси" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work08.jpg" data-alt="Каре, пепельный блонд"><img data-img="work08" src="Photos/work08.jpg" alt="Каре, пепельный блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work09.jpg" data-alt="Каре, глянцевый шатен"><img data-img="work09" src="Photos/work09.jpg" alt="Каре, глянцевый шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work10.jpg" data-alt="Окрашивание в медь, длинные волосы"><img data-img="work10" src="Photos/work10.jpg" alt="Окрашивание в медь, длинные волосы" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work11.jpg" data-alt="Каре, блеск и уход"><img data-img="work11" src="Photos/work11.jpg" alt="Каре, блеск и уход" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work12.jpg" data-alt="Объёмная укладка, медный блонд"><img data-img="work12" src="Photos/work12.jpg" alt="Объёмная укладка, медный блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work13.jpg" data-alt="Стрижка пикси, медь"><img data-img="work13" src="Photos/work13.jpg" alt="Стрижка пикси, медь" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work14.jpg" data-alt="Асимметричное каре, шатен"><img data-img="work14" src="Photos/work14.jpg" alt="Асимметричное каре, шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work15.jpg" data-alt="Короткая стрижка, тёмный шатен"><img data-img="work15" src="Photos/work15.jpg" alt="Короткая стрижка, тёмный шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work16.jpg" data-alt="Пикси, тёплый блонд"><img data-img="work16" src="Photos/work16.jpg" alt="Пикси, тёплый блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work17.jpg" data-alt="Пикси, клубничный блонд"><img data-img="work17" src="Photos/work17.jpg" alt="Пикси, клубничный блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work18.jpg" data-alt="Стрижка пикси, блонд"><img data-img="work18" src="Photos/work18.jpg" alt="Стрижка пикси, блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work19.jpg" data-alt="Короткая стрижка, платина"><img data-img="work19" src="Photos/work19.jpg" alt="Короткая стрижка, платина" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work20.jpg" data-alt="Медный пикси, вид сзади"><img data-img="work20" src="Photos/work20.jpg" alt="Медный пикси, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work21.jpg" data-alt="Длинные волосы, шатен"><img data-img="work21" src="Photos/work21.jpg" alt="Длинные волосы, шатен" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work22.jpg" data-alt="Каре, шатен, вид сзади"><img data-img="work22" src="Photos/work22.jpg" alt="Каре, шатен, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work23.jpg" data-alt="Каре, медь, вид сзади"><img data-img="work23" src="Photos/work23.jpg" alt="Каре, медь, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work24.jpg" data-alt="Каре, блонд, вид сзади"><img data-img="work24" src="Photos/work24.jpg" alt="Каре, блонд, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work25.jpg" data-alt="Каре, блонд, вид сзади"><img data-img="work25" src="Photos/work25.jpg" alt="Каре, блонд, вид сзади" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work26.jpg" data-alt="Балаяж, блонд, локоны"><img data-img="work26" src="Photos/work26.jpg" alt="Балаяж, блонд, локоны" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work27.jpg" data-alt="Каре с объёмом, блонд"><img data-img="work27" src="Photos/work27.jpg" alt="Каре с объёмом, блонд" width="1100" height="1462" loading="lazy" decoding="async"></button>
+      <button type="button" class="cat-thumb" data-full="Photos/work28.jpg" data-alt="Объёмная укладка, короткая стрижка"><img data-img="work28" src="Photos/work28.jpg" alt="Объёмная укладка, короткая стрижка" width="1100" height="1462" loading="lazy" decoding="async"></button>
       </div>
     </div>
     <div class="cat-lb" id="cat-lb" aria-hidden="true">
@@ -1713,6 +1714,14 @@ function initThemeColor(){
 setLang(detectLang());
 initSiteMeta();
 initThemeColor();
+
+/* ---- Client Edit Portal: hydration hooks (additive, non-breaking) ---- */
+window.AfanasyevaSite = {
+  I18N: I18N,
+  SITE: SITE,
+  getLang: function(){ return currentLang; },
+  rerender: function(){ try{ setLang(currentLang); initSiteMeta(); }catch(e){} }
+};
 </script>
 
 </body>
