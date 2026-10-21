@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-21T10:52:53.189Z",
+  "updated": "2026-10-21T10:53:05.486Z",
   "site": {
     "phone": "+37369177796",
     "phoneDisplay": "+373 691 77 796",
@@ -408,7 +408,7 @@
             "id": "hair_kids",
             "name": {
               "ru": "Детская стрижка",
-              "en": "Kids' haircut Ju",
+              "en": "Kids' haircut",
               "ro": "Tuns pentru copii"
             },
             "num": "200",
