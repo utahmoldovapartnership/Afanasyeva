@@ -45,6 +45,19 @@
    * ------------------------------------------------------------------ */
   function svc(keys) { return keys.map(function (k) { return { t: 'text', key: k }; }); }
 
+  var PRICE_FIELDS = [
+    ['hair_kids', 'Детская стрижка'], ['hair_women', 'Женская стрижка'], ['hair_men', 'Мужская стрижка'],
+    ['style_bioperm', 'Биозавивка'], ['style_long', 'Укладка (длинные)'], ['style_mid', 'Укладка (средние)'],
+    ['color_curls', 'Локоны'], ['color_updo', 'Вечерняя / свадебная причёска'], ['color_lighttone', 'Осветление + тонирование'],
+    ['color_lightroots', 'Осветление корней'], ['color_hidden', 'Скрытое окрашивание'], ['color_airtouch', 'Air Touch'],
+    ['color_ombre', 'Омбре'], ['color_highlights', 'Мелирование'], ['color_balayage', 'Балаяж'], ['color_labor', 'Работа (без материалов)'],
+    ['brows_shape', 'Оформление бровей'], ['brows_tint', 'Окрашивание бровей'],
+    ['mani_gel', 'Маникюр + гель-лак'], ['mani_combo', 'Комбинированный / аппаратный'], ['mani_strength', 'Укрепление'],
+    ['mani_french', 'Френч / лунный'], ['mani_design', 'Дизайн (за ноготь)'], ['mani_repair', 'Ремонт ногтя'], ['mani_removal', 'Снятие'],
+    ['pedi_gel', 'Педикюр + гель-лак'], ['pedi_classic', 'Классический / комбинированный'], ['pedi_app', 'Аппаратный'],
+    ['pedi_edge', 'Обрезной'], ['pedi_removal', 'Снятие (педикюр)'], ['makeup_evening', 'Вечерний макияж']
+  ].map(function (p) { return { t: 'price', id: p[0], label: p[1] }; });
+
   var SECTIONS = [
     { id: 'contacts', ico: '📞', title: 'Контакты', intro: 'Телефон, email, адрес и часы работы.', fields: [
       { t: 'site', key: 'phone', label: 'Телефон (для кнопки «Позвонить»)', input: 'tel', hint: 'Без пробелов, с кодом страны, напр. +37369177796' },
@@ -85,6 +98,8 @@
         { t: 'text', key: 'price_note', label: 'Примечание под ценами', multiline: true },
         { t: 'note', html: '<strong>Категории</strong>' } ],
       svc(['cat_hair', 'cat_style', 'cat_color', 'cat_brows', 'cat_mani', 'cat_pedi', 'cat_makeup']),
+      [ { t: 'note', html: '<strong>Цены</strong> — число и галочка «от» (цена «от …»). Валюта — MDL.' } ],
+      PRICE_FIELDS,
       [ { t: 'note', html: '<strong>Названия услуг</strong>' } ],
       svc(['s_kids','s_women','s_men','s_bioperm','s_long','s_mid','s_curls','s_updo','s_lighttone','s_lightroots','s_hidden','s_ombre','s_highlights','s_labor','s_browshape','s_browtint','s_manigel','s_manicombo','s_strength','s_french','s_design','s_repair','s_removal','s_pedigel','s_pediclassic','s_pediapp','s_pediedge','s_makeup'])
     )},
@@ -163,7 +178,7 @@
    * State
    * ------------------------------------------------------------------ */
   var state = {
-    content: { version: 1, updated: '', site: {}, text: {}, images: {} },
+    content: { version: 1, updated: '', site: {}, text: {}, images: {}, prices: {} },
     base: null,
     uiLang: 'ru',
     activeSection: SECTIONS[0].id,
@@ -181,8 +196,8 @@
     fetch('../data/content.json?v=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (json) {
-        var c = json || { version: 1, site: {}, text: {}, images: {} };
-        c.site = c.site || {}; c.text = c.text || {}; c.images = c.images || {};
+        var c = json || { version: 1, site: {}, text: {}, images: {}, prices: {} };
+        c.site = c.site || {}; c.text = c.text || {}; c.images = c.images || {}; c.prices = c.prices || {};
         state.base = deepClone(c);
         // overlay local unsaved draft (if present)
         var draft = null;
@@ -202,6 +217,7 @@
     if (over.site) for (var k in over.site) base.site[k] = over.site[k];
     if (over.text) for (var t in over.text) { base.text[t] = Object.assign(base.text[t] || {}, over.text[t]); }
     if (over.images) for (var im in over.images) base.images[im] = over.images[im];
+    if (over.prices) { base.prices = base.prices || {}; for (var pr in over.prices) base.prices[pr] = over.prices[pr]; }
     return base;
   }
 
@@ -256,6 +272,7 @@
     sec.fields.forEach(function (f) {
       if (f.t === 'note') { var n = document.createElement('p'); n.className = 'section-intro'; n.style.marginTop = '8px'; n.innerHTML = f.html; wrap.appendChild(n); return; }
       if (f.t === 'image') { wrap.appendChild(renderImage(f)); return; }
+      if (f.t === 'price') { wrap.appendChild(renderPrice(f)); return; }
       wrap.appendChild(renderText(f));
     });
   }
@@ -283,6 +300,34 @@
 
     if (f.html) { var tn = document.createElement('span'); tn.className = 'type-note'; tn.textContent = 'Можно использовать HTML (напр. <br>).'; box.appendChild(tn); }
     if (f.hint) { var h = document.createElement('span'); h.className = 'fld__hint'; h.textContent = f.hint; box.appendChild(h); }
+    return box;
+  }
+
+  function renderPrice(f) {
+    var id = f.id;
+    var cur = (state.content.prices[id]) || { num: '', plus: false, cur: 'MDL' };
+    var box = document.createElement('div'); box.className = 'fld';
+    var lab = document.createElement('span'); lab.className = 'fld__label'; lab.textContent = f.label; box.appendChild(lab);
+
+    var row = document.createElement('div'); row.className = 'price-row';
+    var inp = document.createElement('input'); inp.type = 'text'; inp.inputMode = 'numeric'; inp.value = cur.num != null ? cur.num : '';
+    var currency = document.createElement('span'); currency.className = 'cur'; currency.textContent = 'MDL';
+
+    var chkWrap = document.createElement('label'); chkWrap.className = 'price-chk';
+    var chk = document.createElement('input'); chk.type = 'checkbox'; chk.checked = !!cur.plus;
+    var chkTxt = document.createElement('span'); chkTxt.textContent = 'цена «от …» (+)';
+    chkWrap.appendChild(chk); chkWrap.appendChild(chkTxt);
+
+    function update() {
+      if (!state.content.prices) state.content.prices = {};
+      state.content.prices[id] = { num: inp.value.replace(/[^0-9]/g, ''), plus: chk.checked, cur: 'MDL' };
+      onEdit();
+    }
+    inp.addEventListener('input', update);
+    chk.addEventListener('change', update);
+
+    row.appendChild(inp); row.appendChild(currency); row.appendChild(chkWrap);
+    box.appendChild(row);
     return box;
   }
 
@@ -355,7 +400,7 @@
   }
   function saveDraft() {
     try {
-      var d = { version: 1, site: state.content.site, text: state.content.text, images: state.content.images };
+      var d = { version: 1, site: state.content.site, text: state.content.text, images: state.content.images, prices: state.content.prices };
       localStorage.setItem(DRAFT_KEY, JSON.stringify(d));
     } catch (e) {}
   }

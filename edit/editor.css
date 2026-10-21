@@ -132,6 +132,13 @@ a{color:inherit;}
 .fld .type-note{font-size:11px;color:var(--muted-2);margin-top:5px;font-style:italic;}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 
+/* Price row */
+.price-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.price-row input[type=text]{max-width:120px;width:120px;}
+.price-row .cur{color:var(--muted);font-weight:600;font-size:13px;}
+.price-chk{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--muted);cursor:pointer;min-height:44px;}
+.price-chk input[type=checkbox]{width:18px;height:18px;accent-color:var(--blue);cursor:pointer;}
+
 /* Image uploader */
 .media{margin-bottom:22px;}
 .media__label{font-size:13px;font-weight:600;margin-bottom:8px;display:block;}

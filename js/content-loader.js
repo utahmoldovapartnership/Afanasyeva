@@ -59,11 +59,26 @@
     });
   }
 
+  function applyPrices(prices) {
+    if (!prices) return;
+    Object.keys(prices).forEach(function (id) {
+      var p = prices[id];
+      if (!p || p.num == null || p.num === '') return;
+      var el = document.querySelector('[data-price="' + id + '"]');
+      if (!el) return;
+      var html = String(p.num).replace(/[<>&]/g, '') +
+        (p.plus ? '<span class="pl">+</span>' : '') +
+        ' ' + String(p.cur || 'MDL').replace(/[<>&]/g, '');
+      el.innerHTML = html;
+    });
+  }
+
   function apply(content) {
     if (!content) return;
     applyText(content.text);
     applySite(content.site);
     applyImages(content.images);
+    applyPrices(content.prices);
     var a = api();
     if (a && a.rerender) a.rerender();
   }

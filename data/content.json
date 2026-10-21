@@ -596,5 +596,162 @@
     "ba2_after": "Photos/ba2-after.jpg",
     "ba3_before": "Photos/ba3-before.jpg",
     "ba3_after": "Photos/ba3-after.jpg"
+  },
+  "prices": {
+    "hair_kids": {
+      "num": "200",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "hair_women": {
+      "num": "350",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "hair_men": {
+      "num": "250",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "style_bioperm": {
+      "num": "500",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "style_long": {
+      "num": "500",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "style_mid": {
+      "num": "400",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "color_curls": {
+      "num": "400",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_updo": {
+      "num": "800",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_lighttone": {
+      "num": "800",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_lightroots": {
+      "num": "350",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_hidden": {
+      "num": "500",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_airtouch": {
+      "num": "1200",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_ombre": {
+      "num": "800",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_highlights": {
+      "num": "1000",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "color_balayage": {
+      "num": "800",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "color_labor": {
+      "num": "200",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "brows_shape": {
+      "num": "150",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "brows_tint": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_gel": {
+      "num": "700",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_combo": {
+      "num": "300",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_strength": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_french": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_design": {
+      "num": "10",
+      "plus": true,
+      "cur": "MDL"
+    },
+    "mani_repair": {
+      "num": "50",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "mani_removal": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_gel": {
+      "num": "1000",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_classic": {
+      "num": "700",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_app": {
+      "num": "500",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_edge": {
+      "num": "450",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "pedi_removal": {
+      "num": "100",
+      "plus": false,
+      "cur": "MDL"
+    },
+    "makeup_evening": {
+      "num": "750",
+      "plus": false,
+      "cur": "MDL"
+    }
   }
 }
