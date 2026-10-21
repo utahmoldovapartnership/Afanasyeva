@@ -87,181 +87,6 @@
       "en": "Prices shown are starting points. The final cost depends on hair length and materials. Confirm when you book.",
       "ro": "Prețurile afișate sunt minime. Costul exact depinde de lungimea părului și materiale. Confirmați la programare."
     },
-    "cat_hair": {
-      "ru": "Стрижки",
-      "en": "Haircuts",
-      "ro": "Tunsori"
-    },
-    "cat_style": {
-      "ru": "Укладка",
-      "en": "Styling",
-      "ro": "Coafură"
-    },
-    "cat_color": {
-      "ru": "Окрашивание",
-      "en": "Colour",
-      "ro": "Vopsire"
-    },
-    "cat_brows": {
-      "ru": "Брови",
-      "en": "Brows",
-      "ro": "Sprâncene"
-    },
-    "cat_mani": {
-      "ru": "Маникюр",
-      "en": "Manicure",
-      "ro": "Manichiură"
-    },
-    "cat_pedi": {
-      "ru": "Педикюр",
-      "en": "Pedicure",
-      "ro": "Pedichiură"
-    },
-    "cat_makeup": {
-      "ru": "Макияж",
-      "en": "Makeup",
-      "ro": "Machiaj"
-    },
-    "s_kids": {
-      "ru": "Детская стрижка",
-      "en": "Kids' haircut",
-      "ro": "Tuns pentru copii"
-    },
-    "s_women": {
-      "ru": "Женская стрижка",
-      "en": "Women's haircut",
-      "ro": "Tuns damă"
-    },
-    "s_men": {
-      "ru": "Мужская стрижка",
-      "en": "Men's haircut",
-      "ro": "Tuns bărbați"
-    },
-    "s_bioperm": {
-      "ru": "Биозавивка (любая длина)",
-      "en": "Bio-perm (any length)",
-      "ro": "Biopermanent (orice lungime)"
-    },
-    "s_long": {
-      "ru": "Укладка на длинные волосы",
-      "en": "Styling, long hair",
-      "ro": "Coafură, păr lung"
-    },
-    "s_mid": {
-      "ru": "Укладка на среднюю длину",
-      "en": "Styling, medium hair",
-      "ro": "Coafură, păr mediu"
-    },
-    "s_curls": {
-      "ru": "Локоны",
-      "en": "Curls",
-      "ro": "Bucle"
-    },
-    "s_updo": {
-      "ru": "Вечерняя / свадебная причёска",
-      "en": "Evening / bridal updo",
-      "ro": "Coafură de seară / mireasă"
-    },
-    "s_lighttone": {
-      "ru": "Осветление + тонирование",
-      "en": "Lightening + toning",
-      "ro": "Decolorare + tonifiere"
-    },
-    "s_lightroots": {
-      "ru": "Осветление корней",
-      "en": "Root lightening",
-      "ro": "Decolorarea rădăcinilor"
-    },
-    "s_hidden": {
-      "ru": "Скрытое окрашивание",
-      "en": "Hidden colour",
-      "ro": "Vopsire ascunsă"
-    },
-    "s_ombre": {
-      "ru": "Омбре",
-      "en": "Ombré",
-      "ro": "Ombré"
-    },
-    "s_highlights": {
-      "ru": "Мелирование",
-      "en": "Highlights",
-      "ro": "Șuvițe"
-    },
-    "s_labor": {
-      "ru": "Работа (без материалов)",
-      "en": "Labour (excl. materials)",
-      "ro": "Manoperă (fără materiale)"
-    },
-    "s_browshape": {
-      "ru": "Оформление бровей",
-      "en": "Brow shaping",
-      "ro": "Modelarea sprâncenelor"
-    },
-    "s_browtint": {
-      "ru": "Окрашивание бровей",
-      "en": "Brow tinting",
-      "ro": "Vopsirea sprâncenelor"
-    },
-    "s_manigel": {
-      "ru": "Маникюр + гель-лак",
-      "en": "Manicure + gel polish",
-      "ro": "Manichiură + ojă semipermanentă"
-    },
-    "s_manicombo": {
-      "ru": "Комбинированный / аппаратный",
-      "en": "Combined / e-file",
-      "ro": "Combinată / cu aparat"
-    },
-    "s_strength": {
-      "ru": "Укрепление гелем / базой",
-      "en": "Gel / base strengthening",
-      "ro": "Întărire cu gel / bază"
-    },
-    "s_french": {
-      "ru": "Френч / лунный",
-      "en": "French / moon",
-      "ro": "Franceză / lună"
-    },
-    "s_design": {
-      "ru": "Дизайн (за ноготь)",
-      "en": "Design (per nail)",
-      "ro": "Design (per unghie)"
-    },
-    "s_repair": {
-      "ru": "Ремонт ногтя",
-      "en": "Nail repair",
-      "ro": "Reparația unghiei"
-    },
-    "s_removal": {
-      "ru": "Снятие",
-      "en": "Removal",
-      "ro": "Înlăturare"
-    },
-    "s_pedigel": {
-      "ru": "Педикюр + гель-лак",
-      "en": "Pedicure + gel polish",
-      "ro": "Pedichiură + ojă semipermanentă"
-    },
-    "s_pediclassic": {
-      "ru": "Классический / комбинированный",
-      "en": "Classic / combined",
-      "ro": "Clasică / combinată"
-    },
-    "s_pediapp": {
-      "ru": "Аппаратный",
-      "en": "E-file",
-      "ro": "Cu aparat"
-    },
-    "s_pediedge": {
-      "ru": "Обрезной",
-      "en": "Trimmed",
-      "ro": "Cu tăiere"
-    },
-    "s_makeup": {
-      "ru": "Вечерний макияж",
-      "en": "Evening makeup",
-      "ro": "Machiaj de seară"
-    },
     "team_eyebrow": {
       "ru": "Команда",
       "en": "The team",
@@ -562,34 +387,6 @@
     "makeup": "Photos/makeup.jpg",
     "face_paint": "Photos/face-paint.jpg",
     "hair_coloring": "Photos/hair-coloring.jpg",
-    "work01": "Photos/work01.jpg",
-    "work02": "Photos/work02.jpg",
-    "work03": "Photos/work03.jpg",
-    "work04": "Photos/work04.jpg",
-    "work05": "Photos/work05.jpg",
-    "work06": "Photos/work06.jpg",
-    "work07": "Photos/work07.jpg",
-    "work08": "Photos/work08.jpg",
-    "work09": "Photos/work09.jpg",
-    "work10": "Photos/work10.jpg",
-    "work11": "Photos/work11.jpg",
-    "work12": "Photos/work12.jpg",
-    "work13": "Photos/work13.jpg",
-    "work14": "Photos/work14.jpg",
-    "work15": "Photos/work15.jpg",
-    "work16": "Photos/work16.jpg",
-    "work17": "Photos/work17.jpg",
-    "work18": "Photos/work18.jpg",
-    "work19": "Photos/work19.jpg",
-    "work20": "Photos/work20.jpg",
-    "work21": "Photos/work21.jpg",
-    "work22": "Photos/work22.jpg",
-    "work23": "Photos/work23.jpg",
-    "work24": "Photos/work24.jpg",
-    "work25": "Photos/work25.jpg",
-    "work26": "Photos/work26.jpg",
-    "work27": "Photos/work27.jpg",
-    "work28": "Photos/work28.jpg",
     "ba1_before": "Photos/ba1-before.jpg",
     "ba1_after": "Photos/ba1-after.jpg",
     "ba2_before": "Photos/ba2-before.jpg",
@@ -597,161 +394,561 @@
     "ba3_before": "Photos/ba3-before.jpg",
     "ba3_after": "Photos/ba3-after.jpg"
   },
-  "prices": {
-    "hair_kids": {
-      "num": "200",
-      "plus": true,
-      "cur": "MDL"
+  "pricing": {
+    "categories": [
+      {
+        "id": "hair",
+        "name": {
+          "ru": "Стрижки",
+          "en": "Haircuts",
+          "ro": "Tunsori"
+        },
+        "services": [
+          {
+            "id": "hair_kids",
+            "name": {
+              "ru": "Детская стрижка",
+              "en": "Kids' haircut",
+              "ro": "Tuns pentru copii"
+            },
+            "num": "200",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "hair_women",
+            "name": {
+              "ru": "Женская стрижка",
+              "en": "Women's haircut",
+              "ro": "Tuns damă"
+            },
+            "num": "350",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "hair_men",
+            "name": {
+              "ru": "Мужская стрижка",
+              "en": "Men's haircut",
+              "ro": "Tuns bărbați"
+            },
+            "num": "250",
+            "plus": true,
+            "cur": "MDL"
+          }
+        ]
+      },
+      {
+        "id": "style",
+        "name": {
+          "ru": "Укладка",
+          "en": "Styling",
+          "ro": "Coafură"
+        },
+        "services": [
+          {
+            "id": "style_bioperm",
+            "name": {
+              "ru": "Биозавивка (любая длина)",
+              "en": "Bio-perm (any length)",
+              "ro": "Biopermanent (orice lungime)"
+            },
+            "num": "500",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "style_long",
+            "name": {
+              "ru": "Укладка на длинные волосы",
+              "en": "Styling, long hair",
+              "ro": "Coafură, păr lung"
+            },
+            "num": "500",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "style_mid",
+            "name": {
+              "ru": "Укладка на среднюю длину",
+              "en": "Styling, medium hair",
+              "ro": "Coafură, păr mediu"
+            },
+            "num": "400",
+            "plus": false,
+            "cur": "MDL"
+          }
+        ]
+      },
+      {
+        "id": "color",
+        "name": {
+          "ru": "Окрашивание",
+          "en": "Colour",
+          "ro": "Vopsire"
+        },
+        "services": [
+          {
+            "id": "color_curls",
+            "name": {
+              "ru": "Локоны",
+              "en": "Curls",
+              "ro": "Bucle"
+            },
+            "num": "400",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "color_updo",
+            "name": {
+              "ru": "Вечерняя / свадебная причёска",
+              "en": "Evening / bridal updo",
+              "ro": "Coafură de seară / mireasă"
+            },
+            "num": "800",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "color_lighttone",
+            "name": {
+              "ru": "Осветление + тонирование",
+              "en": "Lightening + toning",
+              "ro": "Decolorare + tonifiere"
+            },
+            "num": "800",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "color_lightroots",
+            "name": {
+              "ru": "Осветление корней",
+              "en": "Root lightening",
+              "ro": "Decolorarea rădăcinilor"
+            },
+            "num": "350",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "color_hidden",
+            "name": {
+              "ru": "Скрытое окрашивание",
+              "en": "Hidden colour",
+              "ro": "Vopsire ascunsă"
+            },
+            "num": "500",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "color_airtouch",
+            "name": {
+              "ru": "Air Touch",
+              "en": "Air Touch",
+              "ro": "Air Touch"
+            },
+            "num": "1200",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "color_ombre",
+            "name": {
+              "ru": "Омбре",
+              "en": "Ombré",
+              "ro": "Ombré"
+            },
+            "num": "800",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "color_highlights",
+            "name": {
+              "ru": "Мелирование",
+              "en": "Highlights",
+              "ro": "Șuvițe"
+            },
+            "num": "1000",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "color_balayage",
+            "name": {
+              "ru": "Балаяж",
+              "en": "Балаяж",
+              "ro": "Балаяж"
+            },
+            "num": "800",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "color_labor",
+            "name": {
+              "ru": "Работа (без материалов)",
+              "en": "Labour (excl. materials)",
+              "ro": "Manoperă (fără materiale)"
+            },
+            "num": "200",
+            "plus": true,
+            "cur": "MDL"
+          }
+        ]
+      },
+      {
+        "id": "brows",
+        "name": {
+          "ru": "Брови",
+          "en": "Brows",
+          "ro": "Sprâncene"
+        },
+        "services": [
+          {
+            "id": "brows_shape",
+            "name": {
+              "ru": "Оформление бровей",
+              "en": "Brow shaping",
+              "ro": "Modelarea sprâncenelor"
+            },
+            "num": "150",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "brows_tint",
+            "name": {
+              "ru": "Окрашивание бровей",
+              "en": "Brow tinting",
+              "ro": "Vopsirea sprâncenelor"
+            },
+            "num": "100",
+            "plus": false,
+            "cur": "MDL"
+          }
+        ]
+      },
+      {
+        "id": "mani",
+        "name": {
+          "ru": "Маникюр",
+          "en": "Manicure",
+          "ro": "Manichiură"
+        },
+        "services": [
+          {
+            "id": "mani_gel",
+            "name": {
+              "ru": "Маникюр + гель-лак",
+              "en": "Manicure + gel polish",
+              "ro": "Manichiură + ojă semipermanentă"
+            },
+            "num": "700",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "mani_combo",
+            "name": {
+              "ru": "Комбинированный / аппаратный",
+              "en": "Combined / e-file",
+              "ro": "Combinată / cu aparat"
+            },
+            "num": "300",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "mani_strength",
+            "name": {
+              "ru": "Укрепление гелем / базой",
+              "en": "Gel / base strengthening",
+              "ro": "Întărire cu gel / bază"
+            },
+            "num": "100",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "mani_french",
+            "name": {
+              "ru": "Френч / лунный",
+              "en": "French / moon",
+              "ro": "Franceză / lună"
+            },
+            "num": "100",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "mani_design",
+            "name": {
+              "ru": "Дизайн (за ноготь)",
+              "en": "Design (per nail)",
+              "ro": "Design (per unghie)"
+            },
+            "num": "10",
+            "plus": true,
+            "cur": "MDL"
+          },
+          {
+            "id": "mani_repair",
+            "name": {
+              "ru": "Ремонт ногтя",
+              "en": "Nail repair",
+              "ro": "Reparația unghiei"
+            },
+            "num": "50",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "mani_removal",
+            "name": {
+              "ru": "Снятие",
+              "en": "Removal",
+              "ro": "Înlăturare"
+            },
+            "num": "100",
+            "plus": false,
+            "cur": "MDL"
+          }
+        ]
+      },
+      {
+        "id": "pedi",
+        "name": {
+          "ru": "Педикюр",
+          "en": "Pedicure",
+          "ro": "Pedichiură"
+        },
+        "services": [
+          {
+            "id": "pedi_gel",
+            "name": {
+              "ru": "Педикюр + гель-лак",
+              "en": "Pedicure + gel polish",
+              "ro": "Pedichiură + ojă semipermanentă"
+            },
+            "num": "1000",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "pedi_classic",
+            "name": {
+              "ru": "Классический / комбинированный",
+              "en": "Classic / combined",
+              "ro": "Clasică / combinată"
+            },
+            "num": "700",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "pedi_app",
+            "name": {
+              "ru": "Аппаратный",
+              "en": "E-file",
+              "ro": "Cu aparat"
+            },
+            "num": "500",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "pedi_edge",
+            "name": {
+              "ru": "Обрезной",
+              "en": "Trimmed",
+              "ro": "Cu tăiere"
+            },
+            "num": "450",
+            "plus": false,
+            "cur": "MDL"
+          },
+          {
+            "id": "pedi_removal",
+            "name": {
+              "ru": "Снятие",
+              "en": "Removal",
+              "ro": "Înlăturare"
+            },
+            "num": "100",
+            "plus": false,
+            "cur": "MDL"
+          }
+        ]
+      },
+      {
+        "id": "makeup",
+        "name": {
+          "ru": "Макияж",
+          "en": "Makeup",
+          "ro": "Machiaj"
+        },
+        "services": [
+          {
+            "id": "makeup_evening",
+            "name": {
+              "ru": "Вечерний макияж",
+              "en": "Evening makeup",
+              "ro": "Machiaj de seară"
+            },
+            "num": "750",
+            "plus": false,
+            "cur": "MDL"
+          }
+        ]
+      }
+    ]
+  },
+  "works": [
+    {
+      "id": "work01",
+      "img": "Photos/work01.jpg",
+      "alt": "Укладка и окрашивание, стрижка пикси"
     },
-    "hair_women": {
-      "num": "350",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work02",
+      "img": "Photos/work02.jpg",
+      "alt": "Стрижка каре, холодный блонд"
     },
-    "hair_men": {
-      "num": "250",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work03",
+      "img": "Photos/work03.jpg",
+      "alt": "Каре, тёплый шатен"
     },
-    "style_bioperm": {
-      "num": "500",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work04",
+      "img": "Photos/work04.jpg",
+      "alt": "Стрижка пикси, блонд"
     },
-    "style_long": {
-      "num": "500",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work05",
+      "img": "Photos/work05.jpg",
+      "alt": "Окрашивание и мягкие локоны"
     },
-    "style_mid": {
-      "num": "400",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work06",
+      "img": "Photos/work06.jpg",
+      "alt": "Короткая стрижка, платиновый блонд"
     },
-    "color_curls": {
-      "num": "400",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work07",
+      "img": "Photos/work07.jpg",
+      "alt": "Яркое окрашивание, медный пикси"
     },
-    "color_updo": {
-      "num": "800",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work08",
+      "img": "Photos/work08.jpg",
+      "alt": "Каре, пепельный блонд"
     },
-    "color_lighttone": {
-      "num": "800",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work09",
+      "img": "Photos/work09.jpg",
+      "alt": "Каре, глянцевый шатен"
     },
-    "color_lightroots": {
-      "num": "350",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work10",
+      "img": "Photos/work10.jpg",
+      "alt": "Окрашивание в медь, длинные волосы"
     },
-    "color_hidden": {
-      "num": "500",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work11",
+      "img": "Photos/work11.jpg",
+      "alt": "Каре, блеск и уход"
     },
-    "color_airtouch": {
-      "num": "1200",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work12",
+      "img": "Photos/work12.jpg",
+      "alt": "Объёмная укладка, медный блонд"
     },
-    "color_ombre": {
-      "num": "800",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work13",
+      "img": "Photos/work13.jpg",
+      "alt": "Стрижка пикси, медь"
     },
-    "color_highlights": {
-      "num": "1000",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work14",
+      "img": "Photos/work14.jpg",
+      "alt": "Асимметричное каре, шатен"
     },
-    "color_balayage": {
-      "num": "800",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work15",
+      "img": "Photos/work15.jpg",
+      "alt": "Короткая стрижка, тёмный шатен"
     },
-    "color_labor": {
-      "num": "200",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work16",
+      "img": "Photos/work16.jpg",
+      "alt": "Пикси, тёплый блонд"
     },
-    "brows_shape": {
-      "num": "150",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work17",
+      "img": "Photos/work17.jpg",
+      "alt": "Пикси, клубничный блонд"
     },
-    "brows_tint": {
-      "num": "100",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work18",
+      "img": "Photos/work18.jpg",
+      "alt": "Стрижка пикси, блонд"
     },
-    "mani_gel": {
-      "num": "700",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work19",
+      "img": "Photos/work19.jpg",
+      "alt": "Короткая стрижка, платина"
     },
-    "mani_combo": {
-      "num": "300",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work20",
+      "img": "Photos/work20.jpg",
+      "alt": "Медный пикси, вид сзади"
     },
-    "mani_strength": {
-      "num": "100",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work21",
+      "img": "Photos/work21.jpg",
+      "alt": "Длинные волосы, шатен"
     },
-    "mani_french": {
-      "num": "100",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work22",
+      "img": "Photos/work22.jpg",
+      "alt": "Каре, шатен, вид сзади"
     },
-    "mani_design": {
-      "num": "10",
-      "plus": true,
-      "cur": "MDL"
+    {
+      "id": "work23",
+      "img": "Photos/work23.jpg",
+      "alt": "Каре, медь, вид сзади"
     },
-    "mani_repair": {
-      "num": "50",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work24",
+      "img": "Photos/work24.jpg",
+      "alt": "Каре, блонд, вид сзади"
     },
-    "mani_removal": {
-      "num": "100",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work25",
+      "img": "Photos/work25.jpg",
+      "alt": "Каре, блонд, вид сзади"
     },
-    "pedi_gel": {
-      "num": "1000",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work26",
+      "img": "Photos/work26.jpg",
+      "alt": "Балаяж, блонд, локоны"
     },
-    "pedi_classic": {
-      "num": "700",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work27",
+      "img": "Photos/work27.jpg",
+      "alt": "Каре с объёмом, блонд"
     },
-    "pedi_app": {
-      "num": "500",
-      "plus": false,
-      "cur": "MDL"
-    },
-    "pedi_edge": {
-      "num": "450",
-      "plus": false,
-      "cur": "MDL"
-    },
-    "pedi_removal": {
-      "num": "100",
-      "plus": false,
-      "cur": "MDL"
-    },
-    "makeup_evening": {
-      "num": "750",
-      "plus": false,
-      "cur": "MDL"
+    {
+      "id": "work28",
+      "img": "Photos/work28.jpg",
+      "alt": "Объёмная укладка, короткая стрижка"
     }
-  }
+  ]
 }

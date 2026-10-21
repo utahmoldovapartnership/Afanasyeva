@@ -45,19 +45,6 @@
    * ------------------------------------------------------------------ */
   function svc(keys) { return keys.map(function (k) { return { t: 'text', key: k }; }); }
 
-  var PRICE_FIELDS = [
-    ['hair_kids', 'Детская стрижка'], ['hair_women', 'Женская стрижка'], ['hair_men', 'Мужская стрижка'],
-    ['style_bioperm', 'Биозавивка'], ['style_long', 'Укладка (длинные)'], ['style_mid', 'Укладка (средние)'],
-    ['color_curls', 'Локоны'], ['color_updo', 'Вечерняя / свадебная причёска'], ['color_lighttone', 'Осветление + тонирование'],
-    ['color_lightroots', 'Осветление корней'], ['color_hidden', 'Скрытое окрашивание'], ['color_airtouch', 'Air Touch'],
-    ['color_ombre', 'Омбре'], ['color_highlights', 'Мелирование'], ['color_balayage', 'Балаяж'], ['color_labor', 'Работа (без материалов)'],
-    ['brows_shape', 'Оформление бровей'], ['brows_tint', 'Окрашивание бровей'],
-    ['mani_gel', 'Маникюр + гель-лак'], ['mani_combo', 'Комбинированный / аппаратный'], ['mani_strength', 'Укрепление'],
-    ['mani_french', 'Френч / лунный'], ['mani_design', 'Дизайн (за ноготь)'], ['mani_repair', 'Ремонт ногтя'], ['mani_removal', 'Снятие'],
-    ['pedi_gel', 'Педикюр + гель-лак'], ['pedi_classic', 'Классический / комбинированный'], ['pedi_app', 'Аппаратный'],
-    ['pedi_edge', 'Обрезной'], ['pedi_removal', 'Снятие (педикюр)'], ['makeup_evening', 'Вечерний макияж']
-  ].map(function (p) { return { t: 'price', id: p[0], label: p[1] }; });
-
   var SECTIONS = [
     { id: 'contacts', ico: '📞', title: 'Контакты', intro: 'Телефон, email, адрес и часы работы.', fields: [
       { t: 'site', key: 'phone', label: 'Телефон (для кнопки «Позвонить»)', input: 'tel', hint: 'Без пробелов, с кодом страны, напр. +37369177796' },
@@ -93,16 +80,10 @@
       { t: 'text', key: 'about_cap', label: 'Подпись к фото' },
       { t: 'image', slot: 'about_portrait', label: 'Фото в разделе «О студии»' }
     ]},
-    { id: 'prices', ico: '💅', title: 'Услуги и цены', intro: 'Цены (числа) меняются в разметке сайта. Здесь — заголовки и названия услуг.', fields: [].concat(
-      [ { t: 'text', key: 'price_title', label: 'Заголовок раздела', serif: true },
-        { t: 'text', key: 'price_note', label: 'Примечание под ценами', multiline: true },
-        { t: 'note', html: '<strong>Категории</strong>' } ],
-      svc(['cat_hair', 'cat_style', 'cat_color', 'cat_brows', 'cat_mani', 'cat_pedi', 'cat_makeup']),
-      [ { t: 'note', html: '<strong>Цены</strong> — число и галочка «от» (цена «от …»). Валюта — MDL.' } ],
-      PRICE_FIELDS,
-      [ { t: 'note', html: '<strong>Названия услуг</strong>' } ],
-      svc(['s_kids','s_women','s_men','s_bioperm','s_long','s_mid','s_curls','s_updo','s_lighttone','s_lightroots','s_hidden','s_ombre','s_highlights','s_labor','s_browshape','s_browtint','s_manigel','s_manicombo','s_strength','s_french','s_design','s_repair','s_removal','s_pedigel','s_pediclassic','s_pediapp','s_pediedge','s_makeup'])
-    )},
+    { id: 'prices', ico: '💅', title: 'Услуги и цены', builder: 'pricing', fields: [
+      { t: 'text', key: 'price_title', label: 'Заголовок раздела', serif: true },
+      { t: 'text', key: 'price_note', label: 'Примечание под ценами', multiline: true }
+    ]},
     { id: 'team', ico: '👩‍🎨', title: 'Команда', fields: [
       { t: 'text', key: 'team_title', label: 'Заголовок раздела', serif: true },
       { t: 'text', key: 'm1_name', label: 'Мастер 1 — имя' },
@@ -121,9 +102,7 @@
         { t: 'note', html: '<strong>Фотографии витрины</strong>' } ],
       ['g6','g3','g4','g8','g13','g7','g12','nails','hair_coloring','makeup','g2','face_paint','g5','g10','g9','g1','g11','toes'].map(function (s) { return { t: 'image', slot: s, label: s }; })
     )},
-    { id: 'works', ico: '📸', title: 'Работы (каталог)', intro: 'Фотографии во всплывающем каталоге «Смотреть все работы».', fields:
-      Array.apply(null, { length: 28 }).map(function (_, i) { var n = ('0' + (i + 1)).slice(-2); return { t: 'image', slot: 'work' + n, label: 'Работа ' + (i + 1) }; })
-    },
+    { id: 'works', ico: '📸', title: 'Работы (каталог)', builder: 'works' },
     { id: 'beforeafter', ico: '🔁', title: 'До / После', fields: [
       { t: 'text', key: 'ba_title', label: 'Заголовок', serif: true },
       { t: 'text', key: 'ba1_cap', label: 'Пример 1 — подпись' },
@@ -178,7 +157,7 @@
    * State
    * ------------------------------------------------------------------ */
   var state = {
-    content: { version: 1, updated: '', site: {}, text: {}, images: {}, prices: {} },
+    content: { version: 1, updated: '', site: {}, text: {}, images: {}, pricing: { categories: [] }, works: [] },
     base: null,
     uiLang: 'ru',
     activeSection: SECTIONS[0].id,
@@ -196,8 +175,10 @@
     fetch('../data/content.json?v=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (json) {
-        var c = json || { version: 1, site: {}, text: {}, images: {}, prices: {} };
-        c.site = c.site || {}; c.text = c.text || {}; c.images = c.images || {}; c.prices = c.prices || {};
+        var c = json || { version: 1, site: {}, text: {}, images: {}, pricing: { categories: [] }, works: [] };
+        c.site = c.site || {}; c.text = c.text || {}; c.images = c.images || {};
+        c.pricing = c.pricing && c.pricing.categories ? c.pricing : { categories: [] };
+        c.works = c.works || [];
         state.base = deepClone(c);
         // overlay local unsaved draft (if present)
         var draft = null;
@@ -217,7 +198,8 @@
     if (over.site) for (var k in over.site) base.site[k] = over.site[k];
     if (over.text) for (var t in over.text) { base.text[t] = Object.assign(base.text[t] || {}, over.text[t]); }
     if (over.images) for (var im in over.images) base.images[im] = over.images[im];
-    if (over.prices) { base.prices = base.prices || {}; for (var pr in over.prices) base.prices[pr] = over.prices[pr]; }
+    if (over.pricing && over.pricing.categories) base.pricing = over.pricing;
+    if (over.works) base.works = over.works;
     return base;
   }
 
@@ -263,18 +245,21 @@
 
   function render() {
     var sec = sectionById(state.activeSection);
-    var hasText = sec.fields.some(function (f) { return f.t === 'text'; });
+    var fields = sec.fields || [];
+    var hasText = fields.some(function (f) { return f.t === 'text'; }) || sec.builder === 'pricing';
     $('#lang-row').classList.toggle('hide', !hasText);
 
     var wrap = $('#fields'); wrap.innerHTML = '';
     if (sec.intro) { var p = document.createElement('p'); p.className = 'section-intro'; p.textContent = sec.intro; wrap.appendChild(p); }
 
-    sec.fields.forEach(function (f) {
+    fields.forEach(function (f) {
       if (f.t === 'note') { var n = document.createElement('p'); n.className = 'section-intro'; n.style.marginTop = '8px'; n.innerHTML = f.html; wrap.appendChild(n); return; }
       if (f.t === 'image') { wrap.appendChild(renderImage(f)); return; }
-      if (f.t === 'price') { wrap.appendChild(renderPrice(f)); return; }
       wrap.appendChild(renderText(f));
     });
+
+    if (sec.builder === 'pricing') wrap.appendChild(renderPricingBuilder());
+    if (sec.builder === 'works') wrap.appendChild(renderWorksBuilder());
   }
 
   function renderText(f) {
@@ -303,32 +288,137 @@
     return box;
   }
 
-  function renderPrice(f) {
-    var id = f.id;
-    var cur = (state.content.prices[id]) || { num: '', plus: false, cur: 'MDL' };
-    var box = document.createElement('div'); box.className = 'fld';
-    var lab = document.createElement('span'); lab.className = 'fld__label'; lab.textContent = f.label; box.appendChild(lab);
+  /* ---------------- Pricing builder (visual) ---------------- */
+  function renderPricingBuilder() {
+    var wrap = document.createElement('div'); wrap.className = 'builder';
+    var note = document.createElement('p'); note.className = 'section-intro';
+    note.innerHTML = 'Перетаскивать не нужно: нажмите на поле, чтобы изменить. Галочка <b>«от»</b> добавляет «+» к цене. Переключатель языка вверху меняет язык названий.';
+    wrap.appendChild(note);
 
-    var row = document.createElement('div'); row.className = 'price-row';
-    var inp = document.createElement('input'); inp.type = 'text'; inp.inputMode = 'numeric'; inp.value = cur.num != null ? cur.num : '';
-    var currency = document.createElement('span'); currency.className = 'cur'; currency.textContent = 'MDL';
+    var cats = state.content.pricing.categories;
+    cats.forEach(function (cat, ci) { wrap.appendChild(renderCategoryCard(cat, ci)); });
 
-    var chkWrap = document.createElement('label'); chkWrap.className = 'price-chk';
-    var chk = document.createElement('input'); chk.type = 'checkbox'; chk.checked = !!cur.plus;
-    var chkTxt = document.createElement('span'); chkTxt.textContent = 'цена «от …» (+)';
-    chkWrap.appendChild(chk); chkWrap.appendChild(chkTxt);
+    var add = document.createElement('button'); add.type = 'button'; add.className = 'btn btn-ghost add-block';
+    add.textContent = '＋ Добавить категорию';
+    add.addEventListener('click', function () {
+      cats.push({ id: 'cat_' + Date.now(), name: { ru: 'Новая категория', en: 'New category', ro: 'Categorie nouă' }, services: [] });
+      onEdit(); render();
+    });
+    wrap.appendChild(add);
+    return wrap;
+  }
 
-    function update() {
-      if (!state.content.prices) state.content.prices = {};
-      state.content.prices[id] = { num: inp.value.replace(/[^0-9]/g, ''), plus: chk.checked, cur: 'MDL' };
-      onEdit();
-    }
-    inp.addEventListener('input', update);
-    chk.addEventListener('change', update);
+  function renderCategoryCard(cat, ci) {
+    var cats = state.content.pricing.categories;
+    var card = document.createElement('div'); card.className = 'bcat';
 
-    row.appendChild(inp); row.appendChild(currency); row.appendChild(chkWrap);
-    box.appendChild(row);
-    return box;
+    var head = document.createElement('div'); head.className = 'bcat__head';
+    var nameInp = document.createElement('input'); nameInp.type = 'text'; nameInp.className = 'bcat__name';
+    nameInp.value = (cat.name && cat.name[state.uiLang]) || '';
+    nameInp.placeholder = 'Название категории';
+    nameInp.addEventListener('input', function () { if (!cat.name) cat.name = {}; cat.name[state.uiLang] = nameInp.value; onEdit(); });
+
+    var ctrls = document.createElement('div'); ctrls.className = 'bcat__ctrls';
+    ctrls.appendChild(moveBtn('↑', function () { if (ci > 0) { cats.splice(ci - 1, 0, cats.splice(ci, 1)[0]); onEdit(); render(); } }));
+    ctrls.appendChild(moveBtn('↓', function () { if (ci < cats.length - 1) { cats.splice(ci + 1, 0, cats.splice(ci, 1)[0]); onEdit(); render(); } }));
+    var del = document.createElement('button'); del.type = 'button'; del.className = 'bdel'; del.title = 'Удалить категорию'; del.textContent = '✕';
+    del.addEventListener('click', function () { if (confirm('Удалить категорию «' + (nameInp.value || '') + '» и все её услуги?')) { cats.splice(ci, 1); onEdit(); render(); } });
+    ctrls.appendChild(del);
+
+    head.appendChild(nameInp); head.appendChild(ctrls); card.appendChild(head);
+
+    var list = document.createElement('div'); list.className = 'bcat__svcs';
+    (cat.services || []).forEach(function (sv, si) { list.appendChild(renderServiceRow(cat, sv, si)); });
+    card.appendChild(list);
+
+    var addS = document.createElement('button'); addS.type = 'button'; addS.className = 'btn btn-ghost btn-sm add-svc';
+    addS.textContent = '＋ Добавить услугу';
+    addS.addEventListener('click', function () {
+      if (!cat.services) cat.services = [];
+      cat.services.push({ id: 'svc_' + Date.now(), name: { ru: 'Новая услуга', en: 'New service', ro: 'Serviciu nou' }, num: '', plus: false, cur: 'MDL' });
+      onEdit(); render();
+    });
+    card.appendChild(addS);
+    return card;
+  }
+
+  function renderServiceRow(cat, sv, si) {
+    var row = document.createElement('div'); row.className = 'bsvc';
+    var nameInp = document.createElement('input'); nameInp.type = 'text'; nameInp.className = 'bsvc__name';
+    nameInp.value = (sv.name && sv.name[state.uiLang]) || ''; nameInp.placeholder = 'Название услуги';
+    nameInp.addEventListener('input', function () { if (!sv.name) sv.name = {}; sv.name[state.uiLang] = nameInp.value; onEdit(); });
+
+    var priceInp = document.createElement('input'); priceInp.type = 'text'; priceInp.inputMode = 'numeric'; priceInp.className = 'bsvc__price';
+    priceInp.value = sv.num != null ? sv.num : ''; priceInp.placeholder = '0';
+    priceInp.addEventListener('input', function () { sv.num = priceInp.value.replace(/[^0-9]/g, ''); onEdit(); });
+
+    var cur = document.createElement('span'); cur.className = 'bsvc__cur'; cur.textContent = 'MDL';
+
+    var chkWrap = document.createElement('label'); chkWrap.className = 'bsvc__plus'; chkWrap.title = 'Цена «от …»';
+    var chk = document.createElement('input'); chk.type = 'checkbox'; chk.checked = !!sv.plus;
+    chk.addEventListener('change', function () { sv.plus = chk.checked; onEdit(); });
+    var plusT = document.createElement('span'); plusT.textContent = 'от';
+    chkWrap.appendChild(chk); chkWrap.appendChild(plusT);
+
+    var del = document.createElement('button'); del.type = 'button'; del.className = 'bdel bdel--sm'; del.title = 'Удалить услугу'; del.textContent = '✕';
+    del.addEventListener('click', function () { cat.services.splice(si, 1); onEdit(); render(); });
+
+    row.appendChild(nameInp); row.appendChild(priceInp); row.appendChild(cur); row.appendChild(chkWrap); row.appendChild(del);
+    return row;
+  }
+
+  function moveBtn(txt, fn) { var b = document.createElement('button'); b.type = 'button'; b.className = 'bmove'; b.textContent = txt; b.addEventListener('click', fn); return b; }
+
+  /* ---------------- Works builder (add/remove photos) ---------------- */
+  function renderWorksBuilder() {
+    var wrap = document.createElement('div'); wrap.className = 'works-builder';
+    var note = document.createElement('p'); note.className = 'section-intro';
+    note.textContent = 'Фотографии во всплывающем каталоге «Смотреть все работы». Нажмите «＋», чтобы добавить фото.';
+    wrap.appendChild(note);
+
+    var grid = document.createElement('div'); grid.className = 'works-grid';
+    var works = state.content.works;
+    works.forEach(function (w, i) { grid.appendChild(renderWorkCard(w, i)); });
+
+    // Add (+) tile
+    var addTile = document.createElement('button'); addTile.type = 'button'; addTile.className = 'work-add';
+    addTile.innerHTML = '<span class="work-add__plus">＋</span><span>Добавить фото</span>';
+    var fileAdd = document.createElement('input'); fileAdd.type = 'file'; fileAdd.accept = 'image/*'; fileAdd.style.display = 'none';
+    addTile.addEventListener('click', function () { fileAdd.click(); });
+    fileAdd.addEventListener('change', function () {
+      if (!(fileAdd.files && fileAdd.files[0])) return;
+      var w = { id: 'work_' + Date.now(), img: '', alt: '' };
+      works.push(w);
+      handleFile(w.id, fileAdd.files[0], function (p) { w.img = p; });
+    });
+    grid.appendChild(addTile); grid.appendChild(fileAdd);
+    wrap.appendChild(grid);
+    return wrap;
+  }
+
+  function renderWorkCard(w, i) {
+    var card = document.createElement('div'); card.className = 'work-card';
+    var token = w.id;
+    var img = document.createElement('img');
+    var src = state.uploads[token] ? state.uploads[token].dataUrl : (w.img ? '../' + w.img : '');
+    if (src) img.src = src; img.alt = '';
+    card.appendChild(img);
+
+    var ov = document.createElement('div'); ov.className = 'work-card__ov';
+    var rep = document.createElement('button'); rep.type = 'button'; rep.className = 'work-mini'; rep.title = 'Заменить'; rep.textContent = '↺';
+    var file = document.createElement('input'); file.type = 'file'; file.accept = 'image/*'; file.style.display = 'none';
+    rep.addEventListener('click', function () { file.click(); });
+    file.addEventListener('change', function () { if (file.files && file.files[0]) handleFile(token, file.files[0], function (p) { w.img = p; }); });
+    var del = document.createElement('button'); del.type = 'button'; del.className = 'work-mini work-mini--del'; del.title = 'Удалить'; del.textContent = '✕';
+    del.addEventListener('click', function () {
+      if (!confirm('Удалить это фото из каталога?')) return;
+      delete state.uploads[token];
+      state.content.works.splice(i, 1); onEdit(); render();
+    });
+    ov.appendChild(rep); ov.appendChild(del);
+    card.appendChild(ov); card.appendChild(file);
+    if (state.uploads[token]) { var badge = document.createElement('span'); badge.className = 'chip-new'; badge.textContent = 'новое'; badge.style.position = 'absolute'; badge.style.top = '6px'; badge.style.left = '6px'; card.appendChild(badge); }
+    return card;
   }
 
   function currentImageSrc(slot) {
@@ -353,8 +443,9 @@
 
     var pick = document.createElement('button'); pick.type = 'button'; pick.className = 'btn btn-ghost btn-sm'; pick.textContent = 'Выбрать файл';
     var file = document.createElement('input'); file.type = 'file'; file.accept = 'image/*,video/*'; file.style.display = 'none';
+    var applySlot = function (p) { state.content.images[slot] = p; };
     pick.addEventListener('click', function () { file.click(); });
-    file.addEventListener('change', function () { if (file.files && file.files[0]) handleFile(slot, file.files[0]); });
+    file.addEventListener('change', function () { if (file.files && file.files[0]) handleFile(slot, file.files[0], applySlot); });
 
     var reset = document.createElement('button'); reset.type = 'button'; reset.className = 'btn btn-ghost btn-sm'; reset.textContent = 'Отменить';
     reset.style.display = state.uploads[slot] ? '' : 'none';
@@ -368,19 +459,19 @@
 
     ['dragenter', 'dragover'].forEach(function (ev) { dz.addEventListener(ev, function (e) { e.preventDefault(); dz.classList.add('drag'); }); });
     ['dragleave', 'drop'].forEach(function (ev) { dz.addEventListener(ev, function (e) { e.preventDefault(); dz.classList.remove('drag'); }); });
-    dz.addEventListener('drop', function (e) { var dt = e.dataTransfer; if (dt && dt.files && dt.files[0]) handleFile(slot, dt.files[0]); });
+    dz.addEventListener('drop', function (e) { var dt = e.dataTransfer; if (dt && dt.files && dt.files[0]) handleFile(slot, dt.files[0], applySlot); });
     return box;
   }
 
-  function handleFile(slot, file) {
+  function handleFile(token, file, applyFn) {
     if (file.size > 25 * 1024 * 1024) { toast('Файл больше 25 МБ — слишком большой', 'err'); return; }
     var ext = (file.name.split('.').pop() || 'jpg').toLowerCase().replace(/[^a-z0-9]/g, '') || 'jpg';
-    var name = slot.replace(/[^a-z0-9_]/gi, '') + '-' + Date.now() + '.' + ext;
+    var name = token.replace(/[^a-z0-9_]/gi, '') + '-' + Date.now() + '.' + ext;
     var frPrev = new FileReader();
     frPrev.onload = function () {
       var frBuf = new FileReader();
       frBuf.onload = function () {
-        state.uploads[slot] = { name: name, dataUrl: frPrev.result, buffer: frBuf.result, type: file.type };
+        state.uploads[token] = { name: name, dataUrl: frPrev.result, buffer: frBuf.result, type: file.type, apply: applyFn };
         onEdit(); render();
       };
       frBuf.readAsArrayBuffer(file);
@@ -400,7 +491,7 @@
   }
   function saveDraft() {
     try {
-      var d = { version: 1, site: state.content.site, text: state.content.text, images: state.content.images, prices: state.content.prices };
+      var d = { version: 1, site: state.content.site, text: state.content.text, images: state.content.images, pricing: state.content.pricing, works: state.content.works };
       localStorage.setItem(DRAFT_KEY, JSON.stringify(d));
     } catch (e) {}
   }
@@ -451,14 +542,14 @@
   function doSave() {
     if (!cfg.token) { openSettings('Сначала подключите GitHub-токен.'); return; }
     setSaving(true);
-    var slots = Object.keys(state.uploads);
+    var tokens = Object.keys(state.uploads);
     // upload media sequentially, then content.json
     var chain = Promise.resolve();
-    slots.forEach(function (slot) {
+    tokens.forEach(function (token) {
       chain = chain.then(function () {
-        var up = state.uploads[slot];
-        return ghPut('Photos/' + up.name, bufToB64(up.buffer), 'Edit portal: upload image (' + slot + ')')
-          .then(function () { state.content.images[slot] = 'Photos/' + up.name; });
+        var up = state.uploads[token];
+        return ghPut('Photos/' + up.name, bufToB64(up.buffer), 'Edit portal: upload image')
+          .then(function () { if (up.apply) up.apply('Photos/' + up.name); });
       });
     });
     chain.then(function () {
