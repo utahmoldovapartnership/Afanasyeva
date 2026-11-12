@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updated": "2026-10-21T10:53:05.486Z",
+  "updated": "2026-11-12T12:27:22.813Z",
   "site": {
     "phone": "+37369177796",
     "phoneDisplay": "+373 691 77 796",
     "email": "afanasyevabeautysalon@gmail.com",
-    "instagram": "",
-    "facebook": "",
+    "instagram": "kristina_r08",
+    "facebook": "https://www.facebook.com/share/1AHbnZyMzA/",
     "tiktok": "",
     "googleReview": "https://g.page/r/CXGWeK6UMR_PEBM/review",
     "googleMaps": "https://maps.app.goo.gl/gVwxx37gpCNpFZhd9"
@@ -158,12 +158,12 @@
       "ro": "Transformări"
     },
     "ba1_cap": {
-      "ru": "Окрашивание в шатен",
+      "ru": "Окрашивание",
       "en": "Colour to brunette",
       "ro": "Vopsire în șaten"
     },
     "ba2_cap": {
-      "ru": "Осветление и балаяж",
+      "ru": "",
       "en": "Lightening & balayage",
       "ro": "Decolorare și balayage"
     },
@@ -364,35 +364,35 @@
     }
   },
   "images": {
-    "hero": "Photos/hero.jpg",
-    "about_portrait": "Photos/Татьяна.jpg",
-    "tatiana": "Photos/Татьяна.jpg",
-    "kristina": "Photos/Кристина.jpg",
-    "inna": "Photos/Инна.jpg",
+    "hero": "Photos/hero-1794480953784.jpg",
+    "about_portrait": "Photos/about_portrait-1794480964024.jpg",
+    "tatiana": "Photos/tatiana-1794481102776.jpg",
+    "kristina": "Photos/kristina-1794482594621.jpg",
+    "inna": "Photos/inna-1794483938024.jpg",
     "g1": "Photos/g1.jpg",
-    "g2": "Photos/g2.jpg",
-    "g3": "Photos/g3.jpg",
-    "g4": "Photos/g4.jpg",
-    "g5": "Photos/g5.jpg",
-    "g6": "Photos/g6.jpg",
+    "g2": "Photos/g2-1794484020469.jpg",
+    "g3": "Photos/g3-1794481182279.jpg",
+    "g4": "Photos/g4-1794481190433.jpg",
+    "g5": "Photos/g5-1794484033938.jpg",
+    "g6": "Photos/g6-1794481173287.jpg",
     "g7": "Photos/g7.jpg",
-    "g8": "Photos/g8.jpg",
-    "g9": "Photos/g9.jpg",
-    "g10": "Photos/g10.jpg",
+    "g8": "Photos/g8-1794481205496.jpg",
+    "g9": "Photos/g9-1794482691271.jpg",
+    "g10": "Photos/g10-1794484038289.jpg",
     "g11": "Photos/g11.jpg",
-    "g12": "Photos/g12.jpg",
-    "g13": "Photos/g13.jpg",
-    "nails": "Photos/nails.jpg",
+    "g12": "Photos/g12-1794481228394.jpg",
+    "g13": "Photos/g13-1794481214090.jpg",
+    "nails": "Photos/nails-1794481237496.jpg",
     "toes": "Photos/toes.jpg",
-    "makeup": "Photos/makeup.jpg",
+    "makeup": "Photos/makeup-1794484376190.jpg",
     "face_paint": "Photos/face-paint.jpg",
-    "hair_coloring": "Photos/hair-coloring.jpg",
-    "ba1_before": "Photos/ba1-before.jpg",
-    "ba1_after": "Photos/ba1-after.jpg",
-    "ba2_before": "Photos/ba2-before.jpg",
-    "ba2_after": "Photos/ba2-after.jpg",
-    "ba3_before": "Photos/ba3-before.jpg",
-    "ba3_after": "Photos/ba3-after.jpg"
+    "hair_coloring": "Photos/hair_coloring-1794482664828.jpg",
+    "ba1_before": "Photos/ba1_before-1794486269474.jpg",
+    "ba1_after": "Photos/ba1_after-1794486276246.jpg",
+    "ba2_before": "Photos/ba2_before-1794486292326.jpg",
+    "ba2_after": "Photos/ba2_after-1794486307754.jpg",
+    "ba3_before": "Photos/ba3_before-1794486311949.jpg",
+    "ba3_after": "Photos/ba3_after-1794486316488.jpg"
   },
   "pricing": {
     "categories": [
@@ -736,7 +736,7 @@
               "en": "Pedicure + gel polish",
               "ro": "Pedichiură + ojă semipermanentă"
             },
-            "num": "1000",
+            "num": "700",
             "plus": false,
             "cur": "MDL"
           },
@@ -758,7 +758,7 @@
               "en": "E-file",
               "ro": "Cu aparat"
             },
-            "num": "500",
+            "num": "600",
             "plus": false,
             "cur": "MDL"
           },
@@ -811,144 +811,79 @@
   },
   "works": [
     {
-      "id": "work01",
-      "img": "Photos/work01.jpg",
-      "alt": "Укладка и окрашивание, стрижка пикси"
+      "id": "work_1794484532510",
+      "img": "Photos/work_1794484532510-1794484532554.jpg",
+      "alt": ""
     },
     {
-      "id": "work02",
-      "img": "Photos/work02.jpg",
-      "alt": "Стрижка каре, холодный блонд"
+      "id": "work_1794484535337",
+      "img": "Photos/work_1794484535337-1794484535363.jpg",
+      "alt": ""
     },
     {
-      "id": "work03",
-      "img": "Photos/work03.jpg",
-      "alt": "Каре, тёплый шатен"
+      "id": "work_1794484549052",
+      "img": "Photos/work_1794484549052-1794484549114.jpg",
+      "alt": ""
     },
     {
-      "id": "work04",
-      "img": "Photos/work04.jpg",
-      "alt": "Стрижка пикси, блонд"
+      "id": "work_1794484554233",
+      "img": "Photos/work_1794484554233-1794484554288.jpg",
+      "alt": ""
     },
     {
-      "id": "work05",
-      "img": "Photos/work05.jpg",
-      "alt": "Окрашивание и мягкие локоны"
+      "id": "work_1794484561039",
+      "img": "Photos/work_1794484561039-1794484561078.jpg",
+      "alt": ""
     },
     {
-      "id": "work06",
-      "img": "Photos/work06.jpg",
-      "alt": "Короткая стрижка, платиновый блонд"
+      "id": "work_1794484566885",
+      "img": "Photos/work_1794484566885-1794484566918.jpg",
+      "alt": ""
     },
     {
-      "id": "work07",
-      "img": "Photos/work07.jpg",
-      "alt": "Яркое окрашивание, медный пикси"
+      "id": "work_1794484577262",
+      "img": "Photos/work_1794484577262-1794484577317.jpg",
+      "alt": ""
     },
     {
-      "id": "work08",
-      "img": "Photos/work08.jpg",
-      "alt": "Каре, пепельный блонд"
+      "id": "work_1794484583968",
+      "img": "Photos/work_1794484583968-1794484584034.jpg",
+      "alt": ""
     },
     {
-      "id": "work09",
-      "img": "Photos/work09.jpg",
-      "alt": "Каре, глянцевый шатен"
+      "id": "work_1794484593645",
+      "img": "Photos/work_1794484593645-1794484593692.jpg",
+      "alt": ""
     },
     {
-      "id": "work10",
-      "img": "Photos/work10.jpg",
-      "alt": "Окрашивание в медь, длинные волосы"
+      "id": "work_1794484601225",
+      "img": "Photos/work_1794484601225-1794484601281.jpg",
+      "alt": ""
     },
     {
-      "id": "work11",
-      "img": "Photos/work11.jpg",
-      "alt": "Каре, блеск и уход"
+      "id": "work_1794484610607",
+      "img": "Photos/work_1794484610607-1794484610661.jpg",
+      "alt": ""
     },
     {
-      "id": "work12",
-      "img": "Photos/work12.jpg",
-      "alt": "Объёмная укладка, медный блонд"
+      "id": "work_1794484617852",
+      "img": "Photos/work_1794484617852-1794484617909.jpg",
+      "alt": ""
     },
     {
-      "id": "work13",
-      "img": "Photos/work13.jpg",
-      "alt": "Стрижка пикси, медь"
+      "id": "work_1794484676611",
+      "img": "Photos/work_1794484676611-1794484676646.jpg",
+      "alt": ""
     },
     {
-      "id": "work14",
-      "img": "Photos/work14.jpg",
-      "alt": "Асимметричное каре, шатен"
+      "id": "work_1794486024925",
+      "img": "Photos/work_1794486024925-1794486024962.jpg",
+      "alt": ""
     },
     {
-      "id": "work15",
-      "img": "Photos/work15.jpg",
-      "alt": "Короткая стрижка, тёмный шатен"
-    },
-    {
-      "id": "work16",
-      "img": "Photos/work16.jpg",
-      "alt": "Пикси, тёплый блонд"
-    },
-    {
-      "id": "work17",
-      "img": "Photos/work17.jpg",
-      "alt": "Пикси, клубничный блонд"
-    },
-    {
-      "id": "work18",
-      "img": "Photos/work18.jpg",
-      "alt": "Стрижка пикси, блонд"
-    },
-    {
-      "id": "work19",
-      "img": "Photos/work19.jpg",
-      "alt": "Короткая стрижка, платина"
-    },
-    {
-      "id": "work20",
-      "img": "Photos/work20.jpg",
-      "alt": "Медный пикси, вид сзади"
-    },
-    {
-      "id": "work21",
-      "img": "Photos/work21.jpg",
-      "alt": "Длинные волосы, шатен"
-    },
-    {
-      "id": "work22",
-      "img": "Photos/work22.jpg",
-      "alt": "Каре, шатен, вид сзади"
-    },
-    {
-      "id": "work23",
-      "img": "Photos/work23.jpg",
-      "alt": "Каре, медь, вид сзади"
-    },
-    {
-      "id": "work24",
-      "img": "Photos/work24.jpg",
-      "alt": "Каре, блонд, вид сзади"
-    },
-    {
-      "id": "work25",
-      "img": "Photos/work25.jpg",
-      "alt": "Каре, блонд, вид сзади"
-    },
-    {
-      "id": "work26",
-      "img": "Photos/work26.jpg",
-      "alt": "Балаяж, блонд, локоны"
-    },
-    {
-      "id": "work27",
-      "img": "Photos/work27.jpg",
-      "alt": "Каре с объёмом, блонд"
-    },
-    {
-      "id": "work28",
-      "img": "Photos/work28.jpg",
-      "alt": "Объёмная укладка, короткая стрижка"
+      "id": "work_1794486226177",
+      "img": "Photos/work_1794486226177-1794486226223.jpg",
+      "alt": ""
     }
   ]
 }
